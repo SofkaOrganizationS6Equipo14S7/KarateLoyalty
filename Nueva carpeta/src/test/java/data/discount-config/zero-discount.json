@@ -1,0 +1,8 @@
+{
+  "maxDiscount": 0,
+  "priorities": {
+    "temporal":  1,
+    "fidelidad": 2,
+    "producto":  3
+  }
+}

@@ -1,0 +1,5 @@
+[
+  { "nivel": "Bronce", "min": 0,  "max": 10 },
+  { "nivel": "Plata",  "min": 11, "max": 50 },
+  { "nivel": "Oro",    "min": 51             }
+]

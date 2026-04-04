@@ -1,0 +1,307 @@
+19:57:36.545 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+19:57:38.026 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.475 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-001","totalCompras":25,"montoTotalGastado":1500.0,"mesesComoCliente":18}
+
+19:57:38.493 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 303 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.495 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:14
+When method POST
+http call failed after 303 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:14
+19:57:38.531 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.543 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: INVALID-KEY-000
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-001","totalCompras":25,"montoTotalGastado":1500.0,"mesesComoCliente":18}
+
+19:57:38.555 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 13 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.556 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:28
+When method POST
+http call failed after 13 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:28
+19:57:38.575 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.584 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-005","totalCompras":10,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.607 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 24 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.607 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:50
+When method POST
+http call failed after 24 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:50
+19:57:38.620 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.627 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-005","totalCompras":11,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.631 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 5 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.631 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:50
+When method POST
+http call failed after 5 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:50
+19:57:38.646 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.655 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-005","totalCompras":50,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.668 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 15 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.669 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:50
+When method POST
+http call failed after 15 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:50
+19:57:38.686 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.695 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-005","totalCompras":51,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.718 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 24 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.719 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:50
+When method POST
+http call failed after 24 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:50
+19:57:38.734 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.741 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 85
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-006","totalCompras":0,"montoTotalGastado":0.0,"mesesComoCliente":0}
+
+19:57:38.743 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.743 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:79
+When method POST
+http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:79
+19:57:38.756 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.763 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 41
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-007","totalCompras":-1}
+
+19:57:38.766 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 5 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.767 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:99
+When method POST
+http call failed after 5 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:99
+19:57:38.778 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.784 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 70
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-008","montoTotalGastado":100.0,"mesesComoCliente":6}
+
+19:57:38.788 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 5 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.788 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:111
+When method POST
+http call failed after 5 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:111
+19:57:38.804 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.811 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 66
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"totalCompras":20,"montoTotalGastado":100.0,"mesesComoCliente":6}
+
+19:57:38.815 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 6 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.816 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:111
+When method POST
+http call failed after 6 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:111
+19:57:38.829 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.835 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 2
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{}
+
+19:57:38.838 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.839 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:111
+When method POST
+http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:111
+19:57:38.851 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.856 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-009","totalCompras":5,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.880 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 25 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.881 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:139
+When method POST
+http call failed after 25 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:139
+19:57:38.892 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.898 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-009","totalCompras":30,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.912 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 16 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.913 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:139
+When method POST
+http call failed after 16 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:139
+19:57:38.922 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.928 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 89
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-009","totalCompras":75,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.930 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 3 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.931 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:139
+When method POST
+http call failed after 3 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:139
+19:57:38.940 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.946 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 91
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-009","totalCompras":null,"montoTotalGastado":500.0,"mesesComoCliente":12}
+
+19:57:38.949 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.950 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:164
+When method POST
+http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:164
+19:57:38.959 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.965 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-001","totalCompras":25,"montoTotalGastado":1500.0,"mesesComoCliente":18}
+
+19:57:38.978 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 15 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.979 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:187
+When method POST
+http call failed after 15 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:187
+19:57:38.988 [main] INFO  com.intuit.karate - karate.env system property was: null 
+19:57:38.994 [main] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:8080/api/v1/engine/calculate
+1 > x-api-key: a1b2c3d4-e5f6-7890-abcd-ef1234567890
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 90
+1 > Host: localhost:8080
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/25.0.2)
+1 > Accept-Encoding: gzip,deflate
+{"idCliente":"CLI-010","totalCompras":60,"montoTotalGastado":3000.0,"mesesComoCliente":24}
+
+19:57:38.997 [main] ERROR com.intuit.karate - org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt, http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+19:57:38.997 [main] ERROR com.intuit.karate - classpath:features/engine/calculate-engine.feature:228
+When method POST
+http call failed after 4 milliseconds for url: http://localhost:8080/api/v1/engine/calculate
+org.apache.http.conn.HttpHostConnectException: Connect to localhost:8080 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: getsockopt
+classpath:features/engine/calculate-engine.feature:228
