@@ -1,0 +1,4397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"6d7215ee-3f15-4506-972f-c5ea92e01834",karate_version:"1.5.0",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.store_admin.store-admin</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-04-04 07:26:42 p. m.</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>TC-029 - STORE_ADMIN crea usuario en su propio ecommerce y obtiene HTTP 201</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:22]"><span>[2:22]</span> <span>TC-030 - STORE_ADMIN crea usuario en ecommerce ajeno y obtiene HTTP 403</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:32]"><span>[3:32]</span> <span>TC-031 - STORE_ADMIN consulta su propio ecommerce y obtiene HTTP 200</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:39]"><span>[4:39]</span> <span>TC-031b - STORE_ADMIN consulta ecommerce ajeno y obtiene HTTP 403</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:46]"><span>[5:46]</span> <span>TC-031c - Sin sesión obtiene HTTP 401 al listar usuarios</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/store_admin/store-admin.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">HU-03 - Gestión restringida por STORE_ADMIN</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">TC-029 - STORE_ADMIN crea usuario en su propio ecommerce y obtiene HTTP 201</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2034</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:26:40.524 karate.env: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def utils           = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.common-utils</div>
+      </div>
+      <div class="time-cell passed">3</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">787</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">19:26:41.325 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.create-store-admin</div>
+      </div>
+      <div class="time-cell passed">779</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">176</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.6.0.call">
+      <div class="step-container" id="0.6.0.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">171</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5">19:26:40.541 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">169</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.8">19:26:40.553 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
+
+19:26:40.720 response time in milliseconds: 166
+1 &lt; 200
+1 &lt; X-Correlation-Id: 7ce6d9a6-f3fc-42be-826a-21aae7a893be
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwfQ.1x5_WL7OlXP-6Stcr1686VX5niPMtkJ45-1zU1xjJ0TJ5JuNM1y5p01ttvOyAMks&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def prefix     = typeof prefix != &#39;undefined&#39; ? prefix : &#39;sa&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecommerce  = typeof ecommerce != &#39;undefined&#39; ? ecommerce : validEcommerceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username   = prefix + &#39;.&#39; + java.util.UUID.randomUUID()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email      = username + &#39;@test.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, email: &#39;#(email)&#39;, password: &#39;#(testUserPassword)&#39;, roleId: &#39;#(storeAdminRoleId)&#39;, ecommerceId: &#39;#(ecommerce)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">317</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.16">19:26:40.729 request:
+1 &gt; POST http://localhost:8081/api/v1/users
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwfQ.1x5_WL7OlXP-6Stcr1686VX5niPMtkJ45-1zU1xjJ0TJ5JuNM1y5p01ttvOyAMks
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 241
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895&quot;,&quot;email&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+
+19:26:41.043 response time in milliseconds: 313
+1 &lt; 201
+1 &lt; X-Correlation-Id: acbdaf72-101d-4839-846f-69923428baa5
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:41 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;uid&quot;:&quot;c82753e6-010c-4022-b3b7-6e0483227a85&quot;,&quot;username&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:41.033917900Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:41.033917900Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username  = response.username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def saLogin   = call read(&#39;classpath:common/login.feature&#39;) { username: &#39;#(username)&#39;, password: &#39;#(testUserPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">279</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.6.0.call">
+      <div class="step-container" id="0.6.0.call.0.19.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">274</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">274</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.19.0.call.0.8">19:26:41.052 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 81
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
+
+19:26:41.323 response time in milliseconds: 270
+1 &lt; 200
+1 &lt; X-Correlation-Id: e941d90f-1e16-4a50-9297-2dd1dc1d0d36
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:41 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yYTczMTkwYy0wMGM2LTRkMTAtYmQ1YS1lM2IxOGEyZDI4OTUiLCJ1c2VySWQiOiJjODI3NTNlNi0wMTBjLTQwMjItYjNiNy02ZTA0ODMyMjdhODUiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzUzNDE2MDEsImV4cCI6MTc3NTQyODAwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.jcRR0VzAGAAT-unfjsBh-MaUACrcBXhnqr7PnYuAiwXR30hnp8bEHnMeM0uZSpBu&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895&quot;,&quot;role&quot;:&quot;STORE_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = saLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">866</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:26:42.191 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-user.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.8.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.create-store-user</div>
+      </div>
+      <div class="time-cell passed">860</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">149</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.8.0.call">
+      <div class="step-container" id="0.8.0.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">147</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
+    <div class="step-container" id="0.8.0.call.0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.5.0.call.0.5">19:26:41.328 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-user.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
+    <div class="step-container" id="0.8.0.call.0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
+    <div class="step-container" id="0.8.0.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
+    <div class="step-container" id="0.8.0.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">146</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.5.0.call.0.8">19:26:41.335 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
+
+19:26:41.477 response time in milliseconds: 142
+1 &lt; 200
+1 &lt; X-Correlation-Id: a69b3929-ffd8-4b6b-bd0e-3d6261eef7fe
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:41 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMSwiZXhwIjoxNzc1NDI4MDAxfQ.aFWIyxS7ZH3Qkqzy8MP_OuUTRyrjYueauJm1kKWkreMFFcyEAdtgY6LkQdF1ezg3&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
+    <div class="step-container" id="0.8.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
+    <div class="step-container" id="0.8.0.call.0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
+    <div class="step-container" id="0.8.0.call.0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username   = &#39;std.&#39; + java.util.UUID.randomUUID()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email      = username + &#39;@test.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, email: &#39;#(email)&#39;, password: &#39;#(testUserPassword)&#39;, roleId: &#39;#(storeUserRoleId)&#39;, ecommerceId: &#39;#(validEcommerceId)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">26</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">343</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.14">19:26:41.510 request:
+1 &gt; POST http://localhost:8081/api/v1/users
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMSwiZXhwIjoxNzc1NDI4MDAxfQ.aFWIyxS7ZH3Qkqzy8MP_OuUTRyrjYueauJm1kKWkreMFFcyEAdtgY6LkQdF1ezg3
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 243
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85&quot;,&quot;email&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+
+19:26:41.851 response time in milliseconds: 341
+1 &lt; 201
+1 &lt; X-Correlation-Id: a1bf571a-0ba4-4374-9160-5975b93f96ec
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:41 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;uid&quot;:&quot;9bb41a83-e4b5-4d39-bc0a-434a3bc8d621&quot;,&quot;username&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:41.829888900Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:41.829888900Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uid       = response.uid</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username  = response.username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userLogin = call read(&#39;classpath:common/login.feature&#39;) { username: &#39;#(username)&#39;, password: &#39;#(testUserPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">337</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.8.0.call">
+      <div class="step-container" id="0.8.0.call.0.18.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">319</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
+    <div class="step-container" id="0.8.0.call.0.18.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
+    <div class="step-container" id="0.8.0.call.0.18.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
+    <div class="step-container" id="0.8.0.call.0.18.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
+    <div class="step-container" id="0.8.0.call.0.18.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">317</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.18.0.call.0.8">19:26:41.873 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 82
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
+
+19:26:42.189 response time in milliseconds: 315
+1 &lt; 200
+1 &lt; X-Correlation-Id: 70b0491a-1789-4546-8f6f-4ef0f96dabf6
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:42 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdGQuZGFkM2IwZTItOGUxNC00MGM2LThmMjgtNjljZmFmM2M3ZDg1IiwidXNlcklkIjoiOWJiNDFhODMtZTRiNS00ZDM5LWJjMGEtNDM0YTNiYzhkNjIxIiwicm9sZSI6IlNUT1JFX1VTRVIiLCJpYXQiOjE3NzUzNDE2MDIsImV4cCI6MTc3NTQyODAwMiwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.ZPriIAbIi6-KDKZn-OBLdDVBbIwAql371Tw7zVfZedc2F4a2wCDTMymZKA3QCVaP&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85&quot;,&quot;role&quot;:&quot;STORE_USER&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
+    <div class="step-container" id="0.8.0.call.0.18.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
+    <div class="step-container" id="0.8.0.call.0.18.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
+    <div class="step-container" id="0.8.0.call.0.18.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = userLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newUser  = &#39;tc029.&#39; + utils.uuid()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newEmail = newUser + &#39;@test.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body     = read(&#39;classpath:data/store-admin/create-user-own-ecommerce.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">366</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">19:26:42.197 request:
+1 &gt; POST http://localhost:8081/api/v1/users
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yYTczMTkwYy0wMGM2LTRkMTAtYmQ1YS1lM2IxOGEyZDI4OTUiLCJ1c2VySWQiOiJjODI3NTNlNi0wMTBjLTQwMjItYjNiNy02ZTA0ODMyMjdhODUiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzUzNDE2MDEsImV4cCI6MTc3NTQyODAwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.jcRR0VzAGAAT-unfjsBh-MaUACrcBXhnqr7PnYuAiwXR30hnp8bEHnMeM0uZSpBu
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 247
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;tc029.e9b7d833-2621-4f08-850d-85886bf6b009&quot;,&quot;email&quot;:&quot;tc029.e9b7d833-2621-4f08-850d-85886bf6b009@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+
+19:26:42.561 response time in milliseconds: 363
+1 &lt; 201
+1 &lt; X-Correlation-Id: 9938aabe-bd62-4cb0-a549-e5f74f231926
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:42 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;uid&quot;:&quot;d01ae93d-4b63-4124-a6de-957184b7abbc&quot;,&quot;username&quot;:&quot;tc029.e9b7d833-2621-4f08-850d-85886bf6b009&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.e9b7d833-2621-4f08-850d-85886bf6b009@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:42.549562200Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:42.549562200Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.ecommerceId == validEcommerceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:22]</span>
+                <span class="scenario-name">TC-030 - STORE_ADMIN crea usuario en ecommerce ajeno y obtiene HTTP 403</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1704</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:26:40.540 karate.env: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def utils           = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.common-utils</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">777</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">19:26:41.326 this thread waited 775 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">865</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:26:42.191 this thread waited 863 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newUser  = &#39;tc030.&#39; + utils.uuid()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newEmail = newUser + &#39;@test.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def body     = read(&#39;classpath:data/store-admin/create-user-other-ecommerce.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request body</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">50</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">19:26:42.197 request:
+1 &gt; POST http://localhost:8081/api/v1/users
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yYTczMTkwYy0wMGM2LTRkMTAtYmQ1YS1lM2IxOGEyZDI4OTUiLCJ1c2VySWQiOiJjODI3NTNlNi0wMTBjLTQwMjItYjNiNy02ZTA0ODMyMjdhODUiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzUzNDE2MDEsImV4cCI6MTc3NTQyODAwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.jcRR0VzAGAAT-unfjsBh-MaUACrcBXhnqr7PnYuAiwXR30hnp8bEHnMeM0uZSpBu
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 247
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;tc030.529931c3-5ad1-46a8-9472-0fb8ebb32b3a&quot;,&quot;email&quot;:&quot;tc030.529931c3-5ad1-46a8-9472-0fb8ebb32b3a@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;}
+
+19:26:42.246 response time in milliseconds: 47
+1 &lt; 403
+1 &lt; X-Correlation-Id: 7fc31522-c8b7-4ac4-a3e1-2d1171a6a873
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:42 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2026-04-04T22:26:42.241453800Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;Solo puede crear usuarios dentro de su ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 403</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:32]</span>
+                <span class="scenario-name">TC-031 - STORE_ADMIN consulta su propio ecommerce y obtiene HTTP 200</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1692</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:26:40.557 karate.env: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def utils           = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.common-utils</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">759</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">19:26:41.326 this thread waited 758 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">865</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:26:42.192 this thread waited 864 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:32]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ecommerceId = validEcommerceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">19:26:42.193 request:
+1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440000
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yYTczMTkwYy0wMGM2LTRkMTAtYmQ1YS1lM2IxOGEyZDI4OTUiLCJ1c2VySWQiOiJjODI3NTNlNi0wMTBjLTQwMjItYjNiNy02ZTA0ODMyMjdhODUiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzUzNDE2MDEsImV4cCI6MTc3NTQyODAwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.jcRR0VzAGAAT-unfjsBh-MaUACrcBXhnqr7PnYuAiwXR30hnp8bEHnMeM0uZSpBu
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:26:42.249 response time in milliseconds: 55
+1 &lt; 200
+1 &lt; X-Correlation-Id: e2fb54a9-b40d-45e3-a91d-2282f4834920
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:42 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+[{&quot;uid&quot;:&quot;81639e24-ca66-4473-b1f8-58feb4f967a5&quot;,&quot;username&quot;:&quot;sa.da9fb2c1-beef-4690-8fa7-dd9d8e15e760&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.da9fb2c1-beef-4690-8fa7-dd9d8e15e760@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T20:07:29.040689Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T20:07:29.040689Z&quot;},{&quot;uid&quot;:&quot;952d7318-982b-4b17-be60-f3b9cb407178&quot;,&quot;username&quot;:&quot;std.5fabbf9b-ff67-4314-828f-41a8c9468046&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.5fabbf9b-ff67-4314-828f-41a8c9468046@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T20:07:29.840192Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T20:07:29.840192Z&quot;},{&quot;uid&quot;:&quot;c2b67853-05a1-400a-929a-50ce9e44565b&quot;,&quot;username&quot;:&quot;tc029.fbd1ceb1-588b-44ab-9bf9-0a347391d6dc&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.fbd1ceb1-588b-44ab-9bf9-0a347391d6dc@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T20:07:30.490456Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T20:07:30.490456Z&quot;},{&quot;uid&quot;:&quot;820a6b9f-a115-40df-889f-99d545569e54&quot;,&quot;username&quot;:&quot;std.7ede8ef0-dc70-4e23-a249-ed07c280ef84&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.7ede8ef0-dc70-4e23-a249-ed07c280ef84@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T20:07:48.888033Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T20:07:48.888033Z&quot;},{&quot;uid&quot;:&quot;95c8e518-027d-4866-9261-66b651be877c&quot;,&quot;username&quot;:&quot;std.6d03e993-a18f-47dc-a9e3-67c9a783e866&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;a@b.c&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T20:10:25.800793Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T20:10:26.514133Z&quot;},{&quot;uid&quot;:&quot;b9245808-7bbc-46af-9719-13b8eaef9ff5&quot;,&quot;username&quot;:&quot;sa.dee9c5e8-4cdc-423a-9914-fd689f606de4&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.dee9c5e8-4cdc-423a-9914-fd689f606de4@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:04:41.770619Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:04:41.770619Z&quot;},{&quot;uid&quot;:&quot;9e9450d6-0977-4621-9ba9-9b3cf03650c5&quot;,&quot;username&quot;:&quot;std.584776fb-3a94-438e-a4d1-4eef4a2a2726&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.584776fb-3a94-438e-a4d1-4eef4a2a2726@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:04:42.953330Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:04:42.953330Z&quot;},{&quot;uid&quot;:&quot;1e25f697-469b-4b50-a7a9-dda7e10d3fc1&quot;,&quot;username&quot;:&quot;tc029.55b571cf-5103-464e-b27b-d23c8ece86bd&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.55b571cf-5103-464e-b27b-d23c8ece86bd@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:04:43.910237Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:04:43.910237Z&quot;},{&quot;uid&quot;:&quot;8f6db666-9460-4176-9b69-d02ede8055a6&quot;,&quot;username&quot;:&quot;std.ec668b5d-e48b-4fb1-9d60-3bdf6778bc6f&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.ec668b5d-e48b-4fb1-9d60-3bdf6778bc6f@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:04:45.463676Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:04:45.463676Z&quot;},{&quot;uid&quot;:&quot;393b244e-c686-4314-8c7a-d6d674695a8f&quot;,&quot;username&quot;:&quot;tc028.58d60069-0a15-4cb3-8640-e0119a9c46fa&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.58d60069-0a15-4cb3-8640-e0119a9c46fa@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:04:47.877143Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:04:47.877143Z&quot;},{&quot;uid&quot;:&quot;66352b91-1456-40bb-b4be-9675563fbd66&quot;,&quot;username&quot;:&quot;loyalty.9dac7f82-d83e-4e4a-a79b-686ef78d1335&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.9dac7f82-d83e-4e4a-a79b-686ef78d1335@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:04:49.629342Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:04:49.629342Z&quot;},{&quot;uid&quot;:&quot;05b15fac-297d-458f-82ef-e28f04dd1574&quot;,&quot;username&quot;:&quot;loyalty.02d0b7d2-6a71-4ac8-aa44-d1d71f40353a&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.02d0b7d2-6a71-4ac8-aa44-d1d71f40353a@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:04:50.940064Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:04:50.940064Z&quot;},{&quot;uid&quot;:&quot;6580a235-0c8b-4835-ac31-aa2319f7c94c&quot;,&quot;username&quot;:&quot;loyalty.6da1348f-27be-41bd-8024-b3308786507e&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.6da1348f-27be-41bd-8024-b3308786507e@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:12.201891Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:12.201891Z&quot;},{&quot;uid&quot;:&quot;570ff44b-75e5-481a-b920-02dccedfc5a2&quot;,&quot;username&quot;:&quot;loyalty.fda6f21a-63fc-4372-9c1d-998306a55001&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.fda6f21a-63fc-4372-9c1d-998306a55001@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:12.218179Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:12.218179Z&quot;},{&quot;uid&quot;:&quot;a2ac0f0a-af50-4fb6-8d59-c9840b827ca9&quot;,&quot;username&quot;:&quot;loyalty.3fcd10c8-c611-4caa-9603-a56058767737&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.3fcd10c8-c611-4caa-9603-a56058767737@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:13.545953Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:13.545953Z&quot;},{&quot;uid&quot;:&quot;8c542006-db7e-4c55-9a13-9998da26511b&quot;,&quot;username&quot;:&quot;loyalty.cd2fdb54-f95b-435d-a607-aa57c0ff1aec&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.cd2fdb54-f95b-435d-a607-aa57c0ff1aec@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:13.571817Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:13.571817Z&quot;},{&quot;uid&quot;:&quot;60e0b032-8a48-4d1b-92d2-32284a62f731&quot;,&quot;username&quot;:&quot;sa.b0e25bdf-bb2c-4df6-892b-c53619587df7&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.b0e25bdf-bb2c-4df6-892b-c53619587df7@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:14.686466Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:14.686466Z&quot;},{&quot;uid&quot;:&quot;c73f90ec-2e2b-405c-a5ea-1d3d52370224&quot;,&quot;username&quot;:&quot;std.62d68a94-0283-4d95-b97c-4bc2d26b7136&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.62d68a94-0283-4d95-b97c-4bc2d26b7136@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:15.768398Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:15.768398Z&quot;},{&quot;uid&quot;:&quot;f38b94ea-ae52-4d4b-aef1-5494e2d3d11d&quot;,&quot;username&quot;:&quot;tc029.b7746ae0-193a-4c41-9c6f-da3b8e6ce391&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.b7746ae0-193a-4c41-9c6f-da3b8e6ce391@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:16.639084Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:16.639084Z&quot;},{&quot;uid&quot;:&quot;df89b7ce-3405-4cf7-8479-0004d070415e&quot;,&quot;username&quot;:&quot;std.6191f63b-164b-43bd-8f91-93d6589302ab&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.6191f63b-164b-43bd-8f91-93d6589302ab@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:17.205307Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:17.205307Z&quot;},{&quot;uid&quot;:&quot;bfa00f86-97b7-45ca-8d92-3f92fe7d73b6&quot;,&quot;username&quot;:&quot;tc028.41e8e565-a1a2-408d-85e5-0be5c0f63791&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.41e8e565-a1a2-408d-85e5-0be5c0f63791@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:18.156927Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:18.156927Z&quot;},{&quot;uid&quot;:&quot;29c09545-fed1-407f-8ab5-d52c4a7de438&quot;,&quot;username&quot;:&quot;std.4a3a83d7-dd58-4bde-b666-ca9e5895e54c&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.4a3a83d7-dd58-4bde-b666-ca9e5895e54c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:05:18.253935Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:05:18.253935Z&quot;},{&quot;uid&quot;:&quot;de7f4b0a-f5a6-42f1-99fb-618d3a467fae&quot;,&quot;username&quot;:&quot;sa.9c085401-6b91-47e4-9d5c-86328e629be4&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.9c085401-6b91-47e4-9d5c-86328e629be4@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:41:31.322689Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:41:31.322689Z&quot;},{&quot;uid&quot;:&quot;2219dd64-6bac-49d5-b7f3-e0cc806dc097&quot;,&quot;username&quot;:&quot;std.8f0dd844-86b7-4ef4-bd42-7917dcbfc52e&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.8f0dd844-86b7-4ef4-bd42-7917dcbfc52e@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:41:32.042807Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:41:32.042807Z&quot;},{&quot;uid&quot;:&quot;2ad1aadf-b85a-436e-8bb9-ab8719ef2aa3&quot;,&quot;username&quot;:&quot;tc029.33d93b7b-1e39-482d-b0e1-832b4937c4a4&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.33d93b7b-1e39-482d-b0e1-832b4937c4a4@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:41:32.658407Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:41:32.658407Z&quot;},{&quot;uid&quot;:&quot;12211f94-a333-4c10-8959-5d66eddcd624&quot;,&quot;username&quot;:&quot;std.b5bca3d9-7624-40f9-a74d-649dade6fca9&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.b5bca3d9-7624-40f9-a74d-649dade6fca9@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:41:32.938271Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:41:32.938271Z&quot;},{&quot;uid&quot;:&quot;6aa903db-bb61-4e9e-9b0e-7c0cab561592&quot;,&quot;username&quot;:&quot;tc028.10e150b3-7c65-4008-b897-7c3f3f1d6e3b&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.10e150b3-7c65-4008-b897-7c3f3f1d6e3b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:41:33.738173Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:41:33.738173Z&quot;},{&quot;uid&quot;:&quot;330a6915-5fc5-4d70-ba63-4e875c499b7f&quot;,&quot;username&quot;:&quot;std.b94a6029-340e-47bc-9084-8d882ded02ae&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.ccd058dd-93d5-4fc9-b8bf-7e05dd2706a2@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:41:33.825104Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:41:34.193965Z&quot;},{&quot;uid&quot;:&quot;c0aa7f47-a453-4dc1-95e3-91d58d525889&quot;,&quot;username&quot;:&quot;sa.c379afc2-6974-42c1-a875-e408e2c9c407&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.c379afc2-6974-42c1-a875-e408e2c9c407@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:44:59.281121Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:44:59.281121Z&quot;},{&quot;uid&quot;:&quot;30e7de13-e7ee-4419-8f5f-e3302a456b90&quot;,&quot;username&quot;:&quot;std.67f7f203-5fbe-4f55-960a-453091cba48c&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.67f7f203-5fbe-4f55-960a-453091cba48c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:44:59.964463Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:44:59.964463Z&quot;},{&quot;uid&quot;:&quot;b0b688fb-edc0-41e4-9c01-3ae5cd54fe79&quot;,&quot;username&quot;:&quot;std.812cccdd-7c29-473c-bf33-444c54986f5c&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.812cccdd-7c29-473c-bf33-444c54986f5c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:45:00.940451Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:45:00.940451Z&quot;},{&quot;uid&quot;:&quot;957b54c8-efc5-4ded-98e7-4490ca62d7bd&quot;,&quot;username&quot;:&quot;tc029.81ab5faf-14c8-46d4-9422-34449aa28bb5&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.81ab5faf-14c8-46d4-9422-34449aa28bb5@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:45:00.624167Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:45:00.624167Z&quot;},{&quot;uid&quot;:&quot;c5eca2ba-9b9e-433d-bd40-b7f939348abe&quot;,&quot;username&quot;:&quot;tc028.8c0359f2-4d53-4fcc-a7b3-eef5759ac55f&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.8c0359f2-4d53-4fcc-a7b3-eef5759ac55f@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:45:01.953419Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:45:01.953419Z&quot;},{&quot;uid&quot;:&quot;3f6b3e15-5d22-4977-b13a-6b7c6d66c9c8&quot;,&quot;username&quot;:&quot;std.b3e9f867-7685-40bb-8ad5-d4c3fdcf57b1&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.90e2555d-4950-4a86-ba68-49769cb04252@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:45:02.092410Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:45:02.549697Z&quot;},{&quot;uid&quot;:&quot;34c55783-640f-472a-9103-a0a6628a0e01&quot;,&quot;username&quot;:&quot;loyalty.15a69fba-fab1-4116-bf92-db7e018e341d&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.15a69fba-fab1-4116-bf92-db7e018e341d@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:36.660257Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:36.660257Z&quot;},{&quot;uid&quot;:&quot;732e49ac-382e-4356-b1e5-de436b723e1c&quot;,&quot;username&quot;:&quot;sa.3c02690f-cf02-46a3-838d-b40086014980&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.3c02690f-cf02-46a3-838d-b40086014980@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:38.400352Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:38.400352Z&quot;},{&quot;uid&quot;:&quot;797cdc80-b4c2-43ce-aa3f-bb1f8a6a73ed&quot;,&quot;username&quot;:&quot;std.4b11fa6a-b34b-4d93-b876-729e5a664b92&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.4b11fa6a-b34b-4d93-b876-729e5a664b92@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:39.445162Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:39.445162Z&quot;},{&quot;uid&quot;:&quot;2e4ae0b0-7a4b-485f-a523-5ab7b209ac1e&quot;,&quot;username&quot;:&quot;std.f854e05b-77c3-4460-825a-5b37fd9d76bd&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.f854e05b-77c3-4460-825a-5b37fd9d76bd@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:40.813886Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:40.813886Z&quot;},{&quot;uid&quot;:&quot;dbec4390-6454-4fb1-805e-6264de46d537&quot;,&quot;username&quot;:&quot;tc028.c2e05564-2c86-48ad-87bb-595c93d7e86d&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.c2e05564-2c86-48ad-87bb-595c93d7e86d@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:42.002426Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:42.002426Z&quot;},{&quot;uid&quot;:&quot;35bc2527-db0b-4812-a2bd-eea470e2a74a&quot;,&quot;username&quot;:&quot;std.0e132142-009b-4ef3-bba2-810e9c45dd8f&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.fbba2f38-384c-4c98-889f-bc202b474c9b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:42.078470Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:42.579850Z&quot;},{&quot;uid&quot;:&quot;b2f831bc-cdc3-4f4c-addd-8116a4590ccd&quot;,&quot;username&quot;:&quot;loyalty.33a9588b-94b1-48a5-9024-ae71b1449b73&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.33a9588b-94b1-48a5-9024-ae71b1449b73@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:36.660257Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:36.660257Z&quot;},{&quot;uid&quot;:&quot;369ccc27-8ac8-487e-97cc-acea61d827e7&quot;,&quot;username&quot;:&quot;tc029.75c74e66-0733-473a-af8e-9cca6fbe3463&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.75c74e66-0733-473a-af8e-9cca6fbe3463@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:48:40.328615Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:48:40.328615Z&quot;},{&quot;uid&quot;:&quot;ce067e92-8442-484e-a13a-89307cfac7f1&quot;,&quot;username&quot;:&quot;loyalty.41d96407-3220-4db3-a0cc-dc04bf71b294&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.41d96407-3220-4db3-a0cc-dc04bf71b294@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:54.067247Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:54.067247Z&quot;},{&quot;uid&quot;:&quot;fc16a8ed-4abf-431a-8d7e-2052ac8419b0&quot;,&quot;username&quot;:&quot;loyalty.1c9bfaec-8fb3-4ab3-80e6-22f21967f756&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.1c9bfaec-8fb3-4ab3-80e6-22f21967f756@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:54.080295Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:54.080295Z&quot;},{&quot;uid&quot;:&quot;a1c37581-b9ad-4b3a-a106-783d638f4348&quot;,&quot;username&quot;:&quot;sa.c8dc5cb2-ac8b-412c-96e2-30eaccf1ab98&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.c8dc5cb2-ac8b-412c-96e2-30eaccf1ab98@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:55.145864Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:55.145864Z&quot;},{&quot;uid&quot;:&quot;522dd852-3afc-4ca6-bcf5-edbdd38a5c60&quot;,&quot;username&quot;:&quot;std.d4224550-b98f-439d-ad6e-9bffbac8c5dd&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.d4224550-b98f-439d-ad6e-9bffbac8c5dd@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:55.938167Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:55.938167Z&quot;},{&quot;uid&quot;:&quot;b119fc01-32c2-42fd-973c-4eaa2ca87529&quot;,&quot;username&quot;:&quot;tc029.90234a39-5f32-438b-a585-f9b89c4074fa&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.90234a39-5f32-438b-a585-f9b89c4074fa@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:56.571695Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:56.571695Z&quot;},{&quot;uid&quot;:&quot;6805a578-a119-43dc-b033-2da97f1df0c2&quot;,&quot;username&quot;:&quot;std.00367d28-e833-4469-9ffa-c13a153b4c35&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.00367d28-e833-4469-9ffa-c13a153b4c35@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:56.872711Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:56.872711Z&quot;},{&quot;uid&quot;:&quot;35d32529-6e48-4313-8e8e-ab7edb036210&quot;,&quot;username&quot;:&quot;tc028.423c0ed0-37a7-4dbb-bdb3-e2e8b7ec4c96&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.423c0ed0-37a7-4dbb-bdb3-e2e8b7ec4c96@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:57.791595Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:57.791595Z&quot;},{&quot;uid&quot;:&quot;f3b2b0d9-b812-4836-bda9-c32e120ebc75&quot;,&quot;username&quot;:&quot;std.f3d05cf1-3f21-44eb-9612-a45f28509fb1&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.8524213c-81c4-4b77-bf05-64ffc134f8ec@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:51:57.858590Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:51:58.183406Z&quot;},{&quot;uid&quot;:&quot;0fd2f063-3873-4302-919d-21c32210cd82&quot;,&quot;username&quot;:&quot;loyalty.f65bb7cb-6c66-4344-ac96-5e23f6297a07&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.f65bb7cb-6c66-4344-ac96-5e23f6297a07@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:08.714376Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:08.714376Z&quot;},{&quot;uid&quot;:&quot;ad5c5bee-8f83-48c6-bb03-0d522236160c&quot;,&quot;username&quot;:&quot;loyalty.5547a422-3a5d-4282-ae1c-a66ce6034432&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.5547a422-3a5d-4282-ae1c-a66ce6034432@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:08.720560Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:08.720560Z&quot;},{&quot;uid&quot;:&quot;92a946c7-e698-4b43-8a51-ab81401a13a8&quot;,&quot;username&quot;:&quot;sa.be13ea80-ee94-4d4e-9974-1192b9f24d4c&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.be13ea80-ee94-4d4e-9974-1192b9f24d4c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:09.843964Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:09.843964Z&quot;},{&quot;uid&quot;:&quot;1a7d8b2d-11ba-488c-be3f-4488fedd4202&quot;,&quot;username&quot;:&quot;std.fcb2a2aa-ac51-416b-b06b-822bce07e474&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.fcb2a2aa-ac51-416b-b06b-822bce07e474@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:10.640316Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:10.640316Z&quot;},{&quot;uid&quot;:&quot;7fbf1a00-235c-4489-b98c-d64b2142fc01&quot;,&quot;username&quot;:&quot;tc029.c62789d7-a7bd-480c-8a23-9ed334dc282d&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.c62789d7-a7bd-480c-8a23-9ed334dc282d@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:11.472995Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:11.472995Z&quot;},{&quot;uid&quot;:&quot;ed6c355c-0935-480b-bdf2-ef9d0b2ca09b&quot;,&quot;username&quot;:&quot;std.d0927675-787c-478b-bc18-eabb149facc8&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.d0927675-787c-478b-bc18-eabb149facc8@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:11.832930Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:11.832930Z&quot;},{&quot;uid&quot;:&quot;07afa713-7de3-48b7-83dc-df4db1404d0c&quot;,&quot;username&quot;:&quot;tc028.798c54d8-b0ad-4713-894e-51bd0927bfbc&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.798c54d8-b0ad-4713-894e-51bd0927bfbc@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:12.884401Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:12.884401Z&quot;},{&quot;uid&quot;:&quot;0ca056b9-1d87-47e9-8f06-647d84838a43&quot;,&quot;username&quot;:&quot;std.41bf2dfa-ccc2-41de-a407-4d0e36c18102&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.161f957a-8f6e-4c9c-8a71-dea67be83ee3@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:53:12.996496Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:53:13.469535Z&quot;},{&quot;uid&quot;:&quot;ecfb6996-f9e7-445e-b4e7-af94e8049e20&quot;,&quot;username&quot;:&quot;loyalty.08ab6674-c27d-4176-809b-b6d62e42f85e&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.08ab6674-c27d-4176-809b-b6d62e42f85e@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:13.090578Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:13.090578Z&quot;},{&quot;uid&quot;:&quot;1f7f5192-af42-40e9-a5a8-db39ac0b2bc2&quot;,&quot;username&quot;:&quot;loyalty.e6fefd03-1d72-4984-b9f3-47792ffad061&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.e6fefd03-1d72-4984-b9f3-47792ffad061@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:13.093663Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:13.093663Z&quot;},{&quot;uid&quot;:&quot;6d01740b-eeff-4786-b1ec-70c141a5599d&quot;,&quot;username&quot;:&quot;sa.36a6509e-4e5c-4934-9182-e607a4028b01&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.36a6509e-4e5c-4934-9182-e607a4028b01@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:14.352361Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:14.352361Z&quot;},{&quot;uid&quot;:&quot;bce8b1d5-ef5d-40eb-91e7-b3f62416f65b&quot;,&quot;username&quot;:&quot;std.1ce5ae4e-7d45-4f56-a260-4fefc17e8ebb&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.1ce5ae4e-7d45-4f56-a260-4fefc17e8ebb@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:15.228581Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:15.228581Z&quot;},{&quot;uid&quot;:&quot;ba64e000-741e-4918-8efc-e50c7e798e3b&quot;,&quot;username&quot;:&quot;tc029.73d2bafe-c673-4653-af11-52c5d5449520&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.73d2bafe-c673-4653-af11-52c5d5449520@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:16.047869Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:16.047869Z&quot;},{&quot;uid&quot;:&quot;48629e95-101a-463d-86a7-4501cdfa0102&quot;,&quot;username&quot;:&quot;std.4a07e42c-7ff5-476a-aacb-a6cab8b87aa6&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.4a07e42c-7ff5-476a-aacb-a6cab8b87aa6@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:16.344199Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:16.344199Z&quot;},{&quot;uid&quot;:&quot;c24ca6a8-9c36-40dd-bd8d-278b4e82bf56&quot;,&quot;username&quot;:&quot;tc028.ed598286-abd2-4b9d-aed1-9a12cdd6d1fc&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.ed598286-abd2-4b9d-aed1-9a12cdd6d1fc@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:17.062110Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:17.062110Z&quot;},{&quot;uid&quot;:&quot;93f4ee0c-231e-4e77-bb8b-c52a086e37a5&quot;,&quot;username&quot;:&quot;std.7422c895-8790-44bc-87a7-d5761474ba10&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.14dda98d-0847-4555-8f9d-5830c5cdbec1@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:10:17.121357Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:10:17.438156Z&quot;},{&quot;uid&quot;:&quot;1779afd6-c46a-430c-ad68-66ecac411395&quot;,&quot;username&quot;:&quot;loyalty.fa91f9cf-06dd-4dd6-b7f6-34a1900f6129&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.fa91f9cf-06dd-4dd6-b7f6-34a1900f6129@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:23:58.104938Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:23:58.104938Z&quot;},{&quot;uid&quot;:&quot;0399b672-9ed9-490d-a92f-52649271b93d&quot;,&quot;username&quot;:&quot;loyalty.411f0ce7-40d0-45a9-830f-dac1230861b2&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.411f0ce7-40d0-45a9-830f-dac1230861b2@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:23:58.143695Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:23:58.143695Z&quot;},{&quot;uid&quot;:&quot;da34a588-c78a-4691-a81f-7e0b83283e18&quot;,&quot;username&quot;:&quot;sa.42fd6c2d-14e1-4293-8977-9173ea7fd408&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.42fd6c2d-14e1-4293-8977-9173ea7fd408@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:23:59.120627Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:23:59.120627Z&quot;},{&quot;uid&quot;:&quot;4ce62f36-74b6-453f-8024-65ae4d518575&quot;,&quot;username&quot;:&quot;std.6e80ecc3-a0f9-49f4-97fd-24d0dc257790&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.6e80ecc3-a0f9-49f4-97fd-24d0dc257790@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:23:59.930123Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:23:59.930123Z&quot;},{&quot;uid&quot;:&quot;ad4984d7-7751-47f1-8be1-a5ce7d94c0df&quot;,&quot;username&quot;:&quot;tc029.ece4e917-1abe-4fe9-abed-2d9a292fec2f&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.ece4e917-1abe-4fe9-abed-2d9a292fec2f@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:24:00.759977Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:24:00.759977Z&quot;},{&quot;uid&quot;:&quot;cef4c97f-c143-418b-824c-f13783d77096&quot;,&quot;username&quot;:&quot;std.526115bf-5c4a-4964-bdcd-ee9254e1a9f9&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.526115bf-5c4a-4964-bdcd-ee9254e1a9f9@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:24:01.187449Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:24:01.187449Z&quot;},{&quot;uid&quot;:&quot;ccef18a1-58d9-43de-91f1-ffdc79442883&quot;,&quot;username&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:39.787864Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:39.787864Z&quot;},{&quot;uid&quot;:&quot;c82753e6-010c-4022-b3b7-6e0483227a85&quot;,&quot;username&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.2a73190c-00c6-4d10-bd5a-e3b18a2d2895@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:41.033918Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:41.033918Z&quot;},{&quot;uid&quot;:&quot;9bb41a83-e4b5-4d39-bc0a-434a3bc8d621&quot;,&quot;username&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.dad3b0e2-8e14-40c6-8f28-69cfaf3c7d85@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:41.829889Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:41.829889Z&quot;},{&quot;uid&quot;:&quot;26c29a9e-3967-4925-ac6b-7df1f0609dfd&quot;,&quot;username&quot;:&quot;std.31b2b495-89f5-4230-9cfa-d906bd8d2dd3&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.083820f1-3387-41ac-aee3-2dd0ea0d4dba@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:24:02.302805Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:24:02.849652Z&quot;},{&quot;uid&quot;:&quot;dc227634-6f57-4c69-9888-48e4179e92f9&quot;,&quot;username&quot;:&quot;loyalty.dc0da4c8-b722-4843-901e-f776449651f2&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.dc0da4c8-b722-4843-901e-f776449651f2@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:39.850131Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:39.850131Z&quot;}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:39]</span>
+                <span class="scenario-name">TC-031b - STORE_ADMIN consulta ecommerce ajeno y obtiene HTTP 403</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1668</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:26:40.572 karate.env: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def utils           = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.common-utils</div>
+      </div>
+      <div class="time-cell passed">3</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">743</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">19:26:41.326 this thread waited 740 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">866</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:26:42.192 this thread waited 864 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ecommerceId = otherEcommerceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">19:26:42.194 request:
+1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440001
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yYTczMTkwYy0wMGM2LTRkMTAtYmQ1YS1lM2IxOGEyZDI4OTUiLCJ1c2VySWQiOiJjODI3NTNlNi0wMTBjLTQwMjItYjNiNy02ZTA0ODMyMjdhODUiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzUzNDE2MDEsImV4cCI6MTc3NTQyODAwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.jcRR0VzAGAAT-unfjsBh-MaUACrcBXhnqr7PnYuAiwXR30hnp8bEHnMeM0uZSpBu
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:26:42.241 response time in milliseconds: 46
+1 &lt; 403
+1 &lt; X-Correlation-Id: 9787c8a9-cfc0-4c19-8433-d5bbd241d87c
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Sat, 04 Apr 2026 22:26:42 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;timestamp&quot;:&quot;2026-04-04T22:26:42.237139900Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;No tiene permiso para acceder a este ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 403</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:46]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:46]</span>
+                <span class="scenario-name">TC-031c - Sin sesión obtiene HTTP 401 al listar usuarios</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1553</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:46]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">19:26:40.643 karate.env: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def utils           = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.common-utils</div>
+      </div>
+      <div class="time-cell passed">2</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[5:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">674</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">19:26:41.325 this thread waited 673 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">866</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">19:26:42.192 this thread waited 864 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ecommerceId = validEcommerceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">19:26:42.194 request:
+1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440000
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+19:26:42.198 response time in milliseconds: 4
+1 &lt; 401
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json;charset=ISO-8859-1
+1 &lt; Content-Length: 52
+1 &lt; Date: Sat, 04 Apr 2026 22:26:42 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;error&quot;:&quot;Unauthorized&quot;,&quot;message&quot;:&quot;Token requerido&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

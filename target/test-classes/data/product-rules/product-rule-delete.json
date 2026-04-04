@@ -1,0 +1,9 @@
+{
+  "name": "Product Rule",
+  "description": "Regla de producto",
+  "discountPercentage": 30,
+  "discountPriorityId": "#(productPriorityId)",
+  "attributes": {
+    "product_type": "#(tipoProducto)"
+  }
+}

@@ -1,6 +1,14 @@
 {
-  "idCliente"         : "CLI-001",
-  "totalCompras"      : 25,
-  "montoTotalGastado" : 1500.00,
-  "mesesComoCliente"  : 18
+  "ecommerceId"  : "550e8400-e29b-41d4-a716-446655440000",
+  "subtotal"     : 1500.00,
+  "total"        : 1650.00,
+  "beforeTax"    : 1500.00,
+  "afterTax"     : 1650.00,
+  "totalSpent"   : 1500.00,
+  "orderCount"   : 25,
+  "loyaltyPoints": 0,
+  "discounts"    : [
+    { "type": "LOYALTY",   "amount": 150.00 },
+    { "type": "SEASONAL",  "amount": 100.00 }
+  ]
 }

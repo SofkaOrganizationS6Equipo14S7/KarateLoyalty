@@ -1,0 +1,7 @@
+{
+  "username": "#(uniqueUser)",
+  "email": "#(uniqueEmail)",
+  "password": "#(testUserPassword)",
+  "roleId": "#(storeUserRoleId)",
+  "ecommerceId": "#(validEcommerceId)"
+}
