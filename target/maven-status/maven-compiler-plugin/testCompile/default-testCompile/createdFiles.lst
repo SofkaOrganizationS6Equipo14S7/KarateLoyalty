@@ -2,7 +2,7 @@ features\engine\EngineAuthRunner.class
 features\user_profile\UserProfileRunner.class
 features\auth\AuthRunner.class
 features\product_rules\ProductRulesRunner.class
-examples\ExamplesTest.class
+examples\TestLoyalty.class
 features\seasonal_rules\SeasonalRulesRunner.class
 features\discount_config\DiscountConfigRunner.class
 features\engine\EngineClassificationRunner.class

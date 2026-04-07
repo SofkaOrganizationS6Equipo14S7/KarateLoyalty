@@ -2,9 +2,8 @@ Feature: HU-06 - Gestión de reglas de temporada
 
   Background:
     * configure url = adminBaseUrl
-    * def loyaltyUser  = callonce read('classpath:common/create-loyalty-user.feature')
-    * def loyaltyToken = loyaltyUser.authToken
-    * def authHeader   = 'Bearer ' + loyaltyToken
+    * def loyaltyUser  = callonce read('classpath:common/create-store-admin.feature') { prefix: 'loyalty' }
+    * def authHeader   = 'Bearer ' + loyaltyUser.authToken
     * def basePath     = '/api/v1/rules'
 
   Scenario: TC-036 - Crear regla de temporada retorna HTTP 201 y regla activa en listado

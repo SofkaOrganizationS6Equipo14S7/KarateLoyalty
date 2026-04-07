@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-06 11:31:40 p. m.</div>
+    <div>2026-04-06 11:43:03 p. m.</div>
   </div>
 </div>
 
@@ -93,7 +93,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>538</span>
+              <span>ms:</span>&nbsp;<span>661</span>
             </div>
           </div>
           <div class="step-row">
@@ -116,7 +116,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">225</div>
+    <div class="time-cell passed">287</div>
   </div>
 
    
@@ -125,516 +125,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4">23:31:38.463 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/setup-engine-config.feature&#39;)
-</div>   
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="1.4.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.setup-engine-config</div>
-      </div>
-      <div class="time-cell passed">218</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
-      </div>
-    </div>
-    <div class="time-cell passed">171</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row" data-parent="1.4.0.call">
-      <div class="step-container" id="1.4.0.call.0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.login</div>
-      </div>
-      <div class="time-cell passed">165</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
-    <div class="step-container" id="1.4.0.call.0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.4.0.call.0.5.0.call.0.5">23:31:38.228 karate.env: dev 
-23:31:38.241 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/setup-engine-config.feature&#39;)
+  <div class="preformatted" data-parent="1.4">23:43:00.196 karate.env: dev 
+23:43:00.487 this thread waited 283 milliseconds for callonce lock: read(&#39;classpath:common/setup-engine-config.feature&#39;)
 </div>   
 
   
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
-    <div class="step-container" id="1.4.0.call.0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
-    <div class="step-container" id="1.4.0.call.0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
-    <div class="step-container" id="1.4.0.call.0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">162</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.4.0.call.0.5.0.call.0.8">23:31:38.254 request:
-1 &gt; POST http://localhost:8081/api/v1/auth/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 42
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
-
-23:31:38.413 response time in milliseconds: 158
-1 &lt; 200
-1 &lt; X-Correlation-Id: d4e53eab-0109-42e2-8cd7-376fd0b7e4b5
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTA5OCwiZXhwIjoxNzc1NjE1NDk4fQ.9udWsPFBXsA0vV1uCrzxnJG8-ibIzlbg6tZBPKG4JzwDvln3E1fVsE7O4NHXA1o9&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
-    <div class="step-container" id="1.4.0.call.0.5.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
-    <div class="step-container" id="1.4.0.call.0.5.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
-    <div class="step-container" id="1.4.0.call.0.5.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminAuth = &#39;Bearer &#39; + adminLogin.authToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/discount-config&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39;, maxDiscountCap: 50, currencyCode: &#39;USD&#39;, allowStacking: true, roundingRule: &#39;HALF_UP&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">45</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.4.0.call.0.11">23:31:38.419 request:
-1 &gt; POST http://localhost:8081/api/v1/discount-config
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTA5OCwiZXhwIjoxNzc1NjE1NDk4fQ.9udWsPFBXsA0vV1uCrzxnJG8-ibIzlbg6tZBPKG4JzwDvln3E1fVsE7O4NHXA1o9
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 141
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountCap&quot;:50,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
-
-23:31:38.461 response time in milliseconds: 41
-1 &lt; 500
-1 &lt; X-Correlation-Id: 9ffc3b35-4b2e-4756-afa5-3f682a7cc447
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-04-07T02:31:38.457673Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;could not execute statement [ERROR: duplicate key value violates unique constraint \&quot;idx_discount_settings_ecommerce_active\&quot;\n  Detail: Key (ecommerce_id)=(550e8400-e29b-41d4-a716-446655440000) already exists.] [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [idx_discount_settings_ecommerce_active]&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.4.0.call">
-    <div class="step-container" id="1.4.0.call.0.12">
-      <div class="step-ref bg-step">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>assert responseStatus == 201 || responseStatus == 500</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
 
 </div>
 </div>
@@ -707,7 +202,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">284</div>
+    <div class="time-cell passed">345</div>
   </div>
 
    
@@ -716,851 +211,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.7">23:31:38.748 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
-</div>   
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="1.7.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.create-api-key</div>
-      </div>
-      <div class="time-cell passed">273</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
-      </div>
-    </div>
-    <div class="time-cell passed">176</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row" data-parent="1.7.0.call">
-      <div class="step-container" id="1.7.0.call.0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.login</div>
-      </div>
-      <div class="time-cell passed">170</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call.0.5.0.call">
-    <div class="step-container" id="1.7.0.call.0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.7.0.call.0.5.0.call.0.5">23:31:38.468 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
+  <div class="preformatted" data-parent="1.7">23:43:00.834 this thread waited 341 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
 </div>   
 
   
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call.0.5.0.call">
-    <div class="step-container" id="1.7.0.call.0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call.0.5.0.call">
-    <div class="step-container" id="1.7.0.call.0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call.0.5.0.call">
-    <div class="step-container" id="1.7.0.call.0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">169</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.7.0.call.0.5.0.call.0.8">23:31:38.480 request:
-1 &gt; POST http://localhost:8081/api/v1/auth/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 42
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
-
-23:31:38.647 response time in milliseconds: 165
-1 &lt; 200
-1 &lt; X-Correlation-Id: 39c1bb29-180e-4c5c-91b4-79e463e97697
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTA5OCwiZXhwIjoxNzc1NjE1NDk4fQ.9udWsPFBXsA0vV1uCrzxnJG8-ibIzlbg6tZBPKG4JzwDvln3E1fVsE7O4NHXA1o9&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call.0.5.0.call">
-    <div class="step-container" id="1.7.0.call.0.5.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call.0.5.0.call">
-    <div class="step-container" id="1.7.0.call.0.5.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call.0.5.0.call">
-    <div class="step-container" id="1.7.0.call.0.5.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/ecommerces/&#39; + validEcommerceId + &#39;/api-keys&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.12">
-      <div class="step-ref bg-step">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">45</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.7.0.call.0.12">23:31:38.652 request:
-1 &gt; POST http://localhost:8081/api/v1/ecommerces/550e8400-e29b-41d4-a716-446655440000/api-keys
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTA5OCwiZXhwIjoxNzc1NjE1NDk4fQ.9udWsPFBXsA0vV1uCrzxnJG8-ibIzlbg6tZBPKG4JzwDvln3E1fVsE7O4NHXA1o9
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 2
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-{}
-
-23:31:38.694 response time in milliseconds: 41
-1 &lt; 201
-1 &lt; X-Correlation-Id: 7c98f31f-e5d4-4d61-84c6-914fc07501ff
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;872bd99a-3b8a-4927-96f1-6de0af19e8e1&quot;,&quot;key&quot;:&quot;ae6c5f3a-4d3f-4d4c-a54f-7fab15c1fe4b&quot;,&quot;expiresAt&quot;:&quot;2027-04-07T02:31:38.681634Z&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;createdAt&quot;:&quot;2026-04-07T02:31:38.681634Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:31:38.681634Z&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.13">
-      <div class="step-ref bg-step">13</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.14">
-      <div class="step-ref bg-step">14</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def apiKey = response.key</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.16">
-      <div class="step-ref bg-step">16</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy retryPayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.17">
-      <div class="step-ref bg-step">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set retryPayload.externalOrderId = java.util.UUID.randomUUID() + &#39;&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.18">
-      <div class="step-ref bg-step">18</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure retry = { count: 20, interval: 1000 }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.19">
-      <div class="step-ref bg-step">19</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.20">
-      <div class="step-ref bg-step">20</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/engine/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.21">
-      <div class="step-ref bg-step">21</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header X-API-KEY = apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.22">
-      <div class="step-ref bg-step">22</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request retryPayload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.23">
-      <div class="step-ref bg-step">23</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>retry until responseStatus != 401</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.24">
-      <div class="step-ref bg-step">24</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">41</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.7.0.call.0.24">23:31:38.708 request:
-2 &gt; POST http://localhost:8082/api/v1/engine/calculate
-2 &gt; X-API-KEY: ae6c5f3a-4d3f-4d4c-a54f-7fab15c1fe4b
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 288
-2 &gt; Host: localhost:8082
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;externalOrderId&quot;:&quot;8b55206f-2dae-4544-8752-3d5c37a98dbf&quot;,&quot;customerId&quot;:&quot;test-customer-001&quot;,&quot;totalSpent&quot;:1500.0,&quot;orderCount&quot;:25,&quot;membershipDays&quot;:365,&quot;items&quot;:[{&quot;productId&quot;:&quot;PROD-001&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:100.0,&quot;category&quot;:&quot;GENERAL&quot;}]}
-
-23:31:38.745 response time in milliseconds: 36
-2 &lt; 200
-2 &lt; X-Correlation-Id: f5355766-3588-405e-a6d5-f37f5d66a36f
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-XSS-Protection: 0
-2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 &lt; Pragma: no-cache
-2 &lt; Expires: 0
-2 &lt; X-Frame-Options: DENY
-2 &lt; Content-Type: application/json
-2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
-2 &lt; Keep-Alive: timeout=60
-2 &lt; Connection: keep-alive
-{&quot;subtotalAmount&quot;:100.0000,&quot;discountCalculated&quot;:0.00,&quot;discountApplied&quot;:0.00,&quot;finalAmount&quot;:100.00,&quot;customerTier&quot;:&quot;UNCLASSIFIED&quot;,&quot;wasCapped&quot;:false,&quot;capReason&quot;:null,&quot;appliedRules&quot;:[],&quot;transactionId&quot;:&quot;2dc4a5e1-c130-4d09-ac9c-caec6222346a&quot;,&quot;calculatedAt&quot;:1775529098.724625200}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.7.0.call">
-    <div class="step-container" id="1.7.0.call.0.25">
-      <div class="step-ref bg-step">25</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
 
 </div>
 </div>
@@ -1661,7 +315,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1689,7 +343,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">25</div>
   </div>
 
    
@@ -1698,9 +352,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.14">23:31:38.753 request:
+  <div class="preformatted" data-parent="1.14">23:43:00.841 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: ae6c5f3a-4d3f-4d4c-a54f-7fab15c1fe4b
+1 &gt; x-api-key: 1b6abf32-7d0f-47cf-8d4c-a9689a5db7ba
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 54
 1 &gt; Host: localhost:8082
@@ -1709,9 +363,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
 
-23:31:38.776 response time in milliseconds: 23
+23:43:00.862 response time in milliseconds: 20
 1 &lt; 400
-1 &lt; X-Correlation-Id: 71a8f2a7-b082-4034-bd0e-a6fb6ac0c438
+1 &lt; X-Correlation-Id: b32c0b96-2c2c-45e5-9d11-e4606bfe16ea
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1720,9 +374,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775529098.768628900,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: membershipDays: membership_days is required, externalOrderId: external_order_id is required, orderCount: order_count is required, totalSpent: total_spent is required, items: items array is required (min 1), customerId: customer_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775529780.856284800,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: items: items array is required (min 1), orderCount: order_count is required, customerId: customer_id is required, membershipDays: membership_days is required, externalOrderId: external_order_id is required, totalSpent: total_spent is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -1772,7 +426,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>539</span>
+              <span>ms:</span>&nbsp;<span>665</span>
             </div>
           </div>
           <div class="step-row">
@@ -1795,7 +449,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">226</div>
+    <div class="time-cell passed">286</div>
   </div>
 
    
@@ -1804,11 +458,516 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.4">23:31:38.228 karate.env: dev 
-23:31:38.464 this thread waited 223 milliseconds for callonce lock: read(&#39;classpath:common/setup-engine-config.feature&#39;)
+  <div class="preformatted" data-parent="2.4">23:43:00.486 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/setup-engine-config.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.setup-engine-config</div>
+      </div>
+      <div class="time-cell passed">272</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">209</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="2.4.0.call">
+      <div class="step-container" id="2.4.0.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">200</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call.0.5.0.call">
+    <div class="step-container" id="2.4.0.call.0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4.0.call.0.5.0.call.0.5">23:43:00.196 karate.env: dev 
+23:43:00.204 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/setup-engine-config.feature&#39;)
 </div>   
 
   
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call.0.5.0.call">
+    <div class="step-container" id="2.4.0.call.0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call.0.5.0.call">
+    <div class="step-container" id="2.4.0.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call.0.5.0.call">
+    <div class="step-container" id="2.4.0.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">197</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4.0.call.0.5.0.call.0.8">23:43:00.226 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
+
+23:43:00.419 response time in milliseconds: 192
+1 &lt; 200
+1 &lt; X-Correlation-Id: 32580e65-896c-414e-923f-bd3f5e47c835
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call.0.5.0.call">
+    <div class="step-container" id="2.4.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call.0.5.0.call">
+    <div class="step-container" id="2.4.0.call.0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call.0.5.0.call">
+    <div class="step-container" id="2.4.0.call.0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAuth = &#39;Bearer &#39; + adminLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/discount-config&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39;, maxDiscountCap: 50, currencyCode: &#39;USD&#39;, allowStacking: true, roundingRule: &#39;HALF_UP&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">60</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4.0.call.0.11">23:43:00.426 request:
+1 &gt; POST http://localhost:8081/api/v1/discount-config
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 141
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountCap&quot;:50,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
+
+23:43:00.483 response time in milliseconds: 56
+1 &lt; 500
+1 &lt; X-Correlation-Id: af3831e7-bded-4ed7-a121-64944ab16270
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:00.477436100Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;could not execute statement [ERROR: duplicate key value violates unique constraint \&quot;idx_discount_settings_ecommerce_active\&quot;\n  Detail: Key (ecommerce_id)=(550e8400-e29b-41d4-a716-446655440000) already exists.] [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [idx_discount_settings_ecommerce_active]&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.4.0.call">
+    <div class="step-container" id="2.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert responseStatus == 201 || responseStatus == 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
 
 </div>
 </div>
@@ -1881,7 +1040,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">284</div>
+    <div class="time-cell passed">345</div>
   </div>
 
    
@@ -1890,7 +1049,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.7">23:31:38.749 this thread waited 281 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
+  <div class="preformatted" data-parent="2.7">23:43:00.833 this thread waited 341 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
 </div>   
 
   
@@ -1938,7 +1097,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2022,7 +1181,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">30</div>
   </div>
 
    
@@ -2031,9 +1190,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.14">23:31:38.753 request:
+  <div class="preformatted" data-parent="2.14">23:43:00.839 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: ae6c5f3a-4d3f-4d4c-a54f-7fab15c1fe4b
+1 &gt; x-api-key: 1b6abf32-7d0f-47cf-8d4c-a9689a5db7ba
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 17
 1 &gt; Host: localhost:8082
@@ -2042,9 +1201,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;orderCount&quot;:10}
 
-23:31:38.776 response time in milliseconds: 22
+23:43:00.865 response time in milliseconds: 25
 1 &lt; 400
-1 &lt; X-Correlation-Id: d3f9afbe-0760-47cf-912d-fa6d7c5a6757
+1 &lt; X-Correlation-Id: 624d13d2-adeb-4fbc-bcbc-09d8567a9ba9
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2053,9 +1212,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775529098.767630600,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: ecommerceId: ecommerce_id is required, externalOrderId: external_order_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required, items: items array is required (min 1), customerId: customer_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775529780.857291200,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: ecommerceId: ecommerce_id is required, externalOrderId: external_order_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required, items: items array is required (min 1), customerId: customer_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -2105,7 +1264,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>435</span>
+              <span>ms:</span>&nbsp;<span>519</span>
             </div>
           </div>
           <div class="step-row">
@@ -2128,7 +1287,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">119</div>
+    <div class="time-cell passed">145</div>
   </div>
 
    
@@ -2137,8 +1296,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.4">23:31:38.343 karate.env: dev 
-23:31:38.463 this thread waited 117 milliseconds for callonce lock: read(&#39;classpath:common/setup-engine-config.feature&#39;)
+  <div class="preformatted" data-parent="3.4">23:43:00.334 karate.env: dev 
+23:43:00.486 this thread waited 140 milliseconds for callonce lock: read(&#39;classpath:common/setup-engine-config.feature&#39;)
 </div>   
 
   
@@ -2214,7 +1373,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">285</div>
+    <div class="time-cell passed">344</div>
   </div>
 
    
@@ -2223,10 +1382,851 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.7">23:31:38.749 this thread waited 281 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
+  <div class="preformatted" data-parent="3.7">23:43:00.831 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="3.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.create-api-key</div>
+      </div>
+      <div class="time-cell passed">333</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">196</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="3.7.0.call">
+      <div class="step-container" id="3.7.0.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">187</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call.0.5.0.call">
+    <div class="step-container" id="3.7.0.call.0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7.0.call.0.5.0.call.0.5">23:43:00.492 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
 </div>   
 
   
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call.0.5.0.call">
+    <div class="step-container" id="3.7.0.call.0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call.0.5.0.call">
+    <div class="step-container" id="3.7.0.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call.0.5.0.call">
+    <div class="step-container" id="3.7.0.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">184</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7.0.call.0.5.0.call.0.8">23:43:00.508 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
+
+23:43:00.689 response time in milliseconds: 180
+1 &lt; 200
+1 &lt; X-Correlation-Id: cd6932ab-087f-4814-8d48-ad42e697cfec
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call.0.5.0.call">
+    <div class="step-container" id="3.7.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call.0.5.0.call">
+    <div class="step-container" id="3.7.0.call.0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call.0.5.0.call">
+    <div class="step-container" id="3.7.0.call.0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/ecommerces/&#39; + validEcommerceId + &#39;/api-keys&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">63</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7.0.call.0.12">23:43:00.698 request:
+1 &gt; POST http://localhost:8081/api/v1/ecommerces/550e8400-e29b-41d4-a716-446655440000/api-keys
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+23:43:00.757 response time in milliseconds: 57
+1 &lt; 201
+1 &lt; X-Correlation-Id: 0c590096-599e-4ff4-9787-73a4468ee4f2
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;uid&quot;:&quot;e302079d-606c-4a67-b161-ba5b0539ab1f&quot;,&quot;key&quot;:&quot;1b6abf32-7d0f-47cf-8d4c-a9689a5db7ba&quot;,&quot;expiresAt&quot;:&quot;2027-04-07T02:43:00.738397900Z&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;createdAt&quot;:&quot;2026-04-07T02:43:00.739508900Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:00.739508900Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def apiKey = response.key</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>copy retryPayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>set retryPayload.externalOrderId = java.util.UUID.randomUUID() + &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure retry = { count: 20, interval: 1000 }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url engineBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/engine/calculate&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-API-KEY = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request retryPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until responseStatus != 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.24">
+      <div class="step-ref bg-step">24</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">62</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7.0.call.0.24">23:43:00.772 request:
+2 &gt; POST http://localhost:8082/api/v1/engine/calculate
+2 &gt; X-API-KEY: 1b6abf32-7d0f-47cf-8d4c-a9689a5db7ba
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 288
+2 &gt; Host: localhost:8082
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;externalOrderId&quot;:&quot;180a32e1-e233-4065-b042-6fb86e9e63a1&quot;,&quot;customerId&quot;:&quot;test-customer-001&quot;,&quot;totalSpent&quot;:1500.0,&quot;orderCount&quot;:25,&quot;membershipDays&quot;:365,&quot;items&quot;:[{&quot;productId&quot;:&quot;PROD-001&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:100.0,&quot;category&quot;:&quot;GENERAL&quot;}]}
+
+23:43:00.828 response time in milliseconds: 54
+2 &lt; 200
+2 &lt; X-Correlation-Id: 1d2b4521-1a45-4842-89da-1399fad17e84
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
+2 &lt; Keep-Alive: timeout=60
+2 &lt; Connection: keep-alive
+{&quot;subtotalAmount&quot;:100.0000,&quot;discountCalculated&quot;:0.00,&quot;discountApplied&quot;:0.00,&quot;finalAmount&quot;:100.00,&quot;customerTier&quot;:&quot;UNCLASSIFIED&quot;,&quot;wasCapped&quot;:false,&quot;capReason&quot;:null,&quot;appliedRules&quot;:[],&quot;transactionId&quot;:&quot;3656f0f3-8681-4bfb-a78f-480b100dd654&quot;,&quot;calculatedAt&quot;:1775529780.792089200}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="3.7.0.call">
+    <div class="step-container" id="3.7.0.call.0.25">
+      <div class="step-ref bg-step">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
 
 </div>
 </div>
@@ -2271,7 +2271,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2355,7 +2355,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">29</div>
+    <div class="time-cell passed">27</div>
   </div>
 
    
@@ -2364,9 +2364,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.14">23:31:38.753 request:
+  <div class="preformatted" data-parent="3.14">23:43:00.837 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: ae6c5f3a-4d3f-4d4c-a54f-7fab15c1fe4b
+1 &gt; x-api-key: 1b6abf32-7d0f-47cf-8d4c-a9689a5db7ba
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: localhost:8082
@@ -2375,9 +2375,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-23:31:38.780 response time in milliseconds: 26
+23:43:00.861 response time in milliseconds: 23
 1 &lt; 400
-1 &lt; X-Correlation-Id: 92a70f97-b816-4efe-9f75-a07e7dbcf959
+1 &lt; X-Correlation-Id: c4c37188-1215-49a5-bf33-0884aae8f8b3
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2386,9 +2386,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775529098.771626900,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: totalSpent: total_spent is required, items: items array is required (min 1), customerId: customer_id is required, externalOrderId: external_order_id is required, ecommerceId: ecommerce_id is required, orderCount: order_count is required, membershipDays: membership_days is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775529780.853287600,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: customerId: customer_id is required, ecommerceId: ecommerce_id is required, items: items array is required (min 1), membershipDays: membership_days is required, externalOrderId: external_order_id is required, totalSpent: total_spent is required, orderCount: order_count is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -2438,7 +2438,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>163</span>
+              <span>ms:</span>&nbsp;<span>197</span>
             </div>
           </div>
           <div class="step-row">
@@ -2461,7 +2461,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -2470,7 +2470,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="4.4">23:31:38.609 karate.env: dev 
+  <div class="preformatted" data-parent="4.4">23:43:00.658 karate.env: dev 
 </div>   
 
   
@@ -2546,7 +2546,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">131</div>
+    <div class="time-cell passed">165</div>
   </div>
 
    
@@ -2555,7 +2555,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="4.7">23:31:38.749 this thread waited 129 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
+  <div class="preformatted" data-parent="4.7">23:43:00.833 this thread waited 161 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
 </div>   
 
   
@@ -2631,7 +2631,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2659,7 +2659,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39;, orderCount: null }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2687,7 +2687,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">27</div>
+    <div class="time-cell passed">24</div>
   </div>
 
    
@@ -2696,9 +2696,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="4.14">23:31:38.753 request:
+  <div class="preformatted" data-parent="4.14">23:43:00.839 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: ae6c5f3a-4d3f-4d4c-a54f-7fab15c1fe4b
+1 &gt; x-api-key: 1b6abf32-7d0f-47cf-8d4c-a9689a5db7ba
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 72
 1 &gt; Host: localhost:8082
@@ -2707,9 +2707,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:null}
 
-23:31:38.778 response time in milliseconds: 24
+23:43:00.860 response time in milliseconds: 21
 1 &lt; 400
-1 &lt; X-Correlation-Id: b8ae4244-54ff-42f0-bffe-d74985effffd
+1 &lt; X-Correlation-Id: 71c49d6e-f9a4-4ac5-9e3e-9c9445685de0
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2718,9 +2718,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775529098.769632300,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: items: items array is required (min 1), orderCount: order_count is required, customerId: customer_id is required, externalOrderId: external_order_id is required, totalSpent: total_spent is required, membershipDays: membership_days is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775529780.854285200,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: orderCount: order_count is required, customerId: customer_id is required, items: items array is required (min 1), membershipDays: membership_days is required, externalOrderId: external_order_id is required, totalSpent: total_spent is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -2770,7 +2770,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>146</span>
+              <span>ms:</span>&nbsp;<span>177</span>
             </div>
           </div>
           <div class="step-row">
@@ -2793,7 +2793,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2802,7 +2802,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="5.4">23:31:38.630 karate.env: dev 
+  <div class="preformatted" data-parent="5.4">23:43:00.680 karate.env: dev 
 </div>   
 
   
@@ -2850,7 +2850,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/engine/calculate&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2878,7 +2878,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">115</div>
+    <div class="time-cell passed">146</div>
   </div>
 
    
@@ -2887,7 +2887,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="5.7">23:31:38.748 this thread waited 113 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
+  <div class="preformatted" data-parent="5.7">23:43:00.832 this thread waited 142 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
 </div>   
 
   
@@ -3019,7 +3019,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">27</div>
+    <div class="time-cell passed">26</div>
   </div>
 
    
@@ -3028,9 +3028,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="5.14">23:31:38.753 request:
+  <div class="preformatted" data-parent="5.14">23:43:00.838 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: ae6c5f3a-4d3f-4d4c-a54f-7fab15c1fe4b
+1 &gt; x-api-key: 1b6abf32-7d0f-47cf-8d4c-a9689a5db7ba
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 70
 1 &gt; Host: localhost:8082
@@ -3039,9 +3039,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:-1}
 
-23:31:38.778 response time in milliseconds: 24
+23:43:00.859 response time in milliseconds: 20
 1 &lt; 400
-1 &lt; X-Correlation-Id: b644d273-dcf8-4ddf-b9e4-d6d5836f3935
+1 &lt; X-Correlation-Id: 4fea88b1-e367-4006-b4b3-46bcf4780f56
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3050,9 +3050,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775529098.771626900,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: totalSpent: total_spent is required, customerId: customer_id is required, items: items array is required (min 1), orderCount: order_count must be &gt;= 0, externalOrderId: external_order_id is required, membershipDays: membership_days is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775529780.852294300,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: orderCount: order_count must be &gt;= 0, externalOrderId: external_order_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required, customerId: customer_id is required, items: items array is required (min 1)&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 

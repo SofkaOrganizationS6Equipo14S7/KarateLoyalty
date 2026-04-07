@@ -49,25 +49,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-06 11:31:42 p. m.</div>
+    <div>2026-04-06 11:43:04 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1:11]"><span>[1:11]</span> <span>TC-029 - STORE_ADMIN crea usuario en su propio ecommerce y obtiene HTTP 201</span></a>
+            <a href="#[1:10]"><span>[1:10]</span> <span>TC-029 - STORE_ADMIN crea usuario en su propio ecommerce y obtiene HTTP 201</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[2:22]"><span>[2:22]</span> <span>TC-030 - STORE_ADMIN crea usuario en ecommerce ajeno y obtiene HTTP 403</span></a>
+            <a href="#[2:21]"><span>[2:21]</span> <span>TC-030 - STORE_ADMIN crea usuario en ecommerce ajeno y obtiene HTTP 403</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[3:32]"><span>[3:32]</span> <span>TC-031 - STORE_ADMIN consulta su propio ecommerce y obtiene HTTP 200</span></a>
+            <a href="#[3:31]"><span>[3:31]</span> <span>TC-031 - STORE_ADMIN consulta su propio ecommerce y obtiene HTTP 200</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[4:39]"><span>[4:39]</span> <span>TC-031b - STORE_ADMIN consulta ecommerce ajeno y obtiene HTTP 403</span></a>
+            <a href="#[4:38]"><span>[4:38]</span> <span>TC-031b - STORE_ADMIN consulta ecommerce ajeno y obtiene HTTP 403</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[5:46]"><span>[5:46]</span> <span>TC-031c - Sin sesión obtiene HTTP 401 al listar usuarios</span></a>
+            <a href="#[5:45]"><span>[5:45]</span> <span>TC-031c - Sin sesión obtiene HTTP 401 al listar usuarios</span></a>
           </div>
         </div>
       </div>
@@ -81,29 +81,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:11]">
+          <div class="scenario-heading" id="[1:10]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:11]</span>
+                Scenario: <span>[1:10]</span>
                 <span class="scenario-name">TC-029 - STORE_ADMIN crea usuario en su propio ecommerce y obtiene HTTP 201</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2281</span>
+              <span>ms:</span>&nbsp;<span>1457</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:11]bg">
+            <div class="step-container" id="[1:10]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:11]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -125,14 +125,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">23:31:40.128 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:02.552 karate.env: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:11]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -145,7 +145,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell passed">14</div>
   </div>
 
    
@@ -154,7 +154,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">23:31:40.151 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/common-utils.feature&#39;)
+  <div class="preformatted" data-parent="0.5">23:43:02.570 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/common-utils.feature&#39;)
 </div>   
 
   <div>
@@ -165,7 +165,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.common-utils</div>
       </div>
-      <div class="time-cell passed">6</div>
+      <div class="time-cell passed">4</div>
     </div>
     <div>
       <div><div>
@@ -181,7 +181,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -190,7 +190,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.5">23:31:40.139 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/common-utils.feature&#39;)
+  <div class="preformatted" data-parent="0.5.0.call.0.5">23:43:02.561 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/common-utils.feature&#39;)
 </div>   
 
   
@@ -210,7 +210,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -238,7 +238,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -258,7 +258,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:11]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -271,7 +271,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">901</div>
+    <div class="time-cell passed">1005</div>
   </div>
 
    
@@ -280,7 +280,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">23:31:41.044 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">23:43:03.575 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   <div>
@@ -291,7 +291,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.create-store-admin</div>
       </div>
-      <div class="time-cell passed">893</div>
+      <div class="time-cell passed">992</div>
     </div>
     <div>
       <div><div>
@@ -307,7 +307,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">178</div>
+    <div class="time-cell passed">242</div>
   </div>
 
    
@@ -327,7 +327,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">169</div>
+      <div class="time-cell passed">230</div>
     </div>
     <div>
       <div><div>
@@ -353,7 +353,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5">23:31:40.154 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5">23:43:02.575 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
@@ -403,7 +403,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -432,7 +432,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">166</div>
+    <div class="time-cell passed">225</div>
   </div>
 
    
@@ -441,7 +441,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.8">23:31:40.171 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.8">23:43:02.601 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 42
@@ -451,9 +451,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
 
-23:31:40.334 response time in milliseconds: 162
+23:43:02.820 response time in milliseconds: 218
 1 &lt; 200
-1 &lt; X-Correlation-Id: a870e1ce-4c86-4b11-bb8f-976abd7b3b0e
+1 &lt; X-Correlation-Id: 71b598c5-3ca7-41ea-857b-7d15784e5d95
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -462,10 +462,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTEwMCwiZXhwIjoxNzc1NjE1NTAwfQ.r8MAeJA9mBbYpb0gKgT2l74P2lH82qIIkDY8OLssdAigHBLne_coCj2Qxd23uqZq&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MiwiZXhwIjoxNzc1NjE2MTgyfQ.GNlPbaie3RgBC4xnZBG4EigX1MYKEDL5bUcxGn3KigPvXqWzP60BhniAxdpvcPvZ&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
 
 </div>   
 
@@ -662,7 +662,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def username   = prefix + &#39;.&#39; + java.util.UUID.randomUUID()</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -830,7 +830,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">371</div>
+    <div class="time-cell passed">393</div>
   </div>
 
    
@@ -839,20 +839,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.16">23:31:40.346 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.16">23:43:02.833 request:
 1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTEwMCwiZXhwIjoxNzc1NjE1NTAwfQ.r8MAeJA9mBbYpb0gKgT2l74P2lH82qIIkDY8OLssdAigHBLne_coCj2Qxd23uqZq
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MiwiZXhwIjoxNzc1NjE2MTgyfQ.GNlPbaie3RgBC4xnZBG4EigX1MYKEDL5bUcxGn3KigPvXqWzP60BhniAxdpvcPvZ
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 241
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;sa.9612685e-f802-46a3-8952-484274cb12f0&quot;,&quot;email&quot;:&quot;sa.9612685e-f802-46a3-8952-484274cb12f0@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+{&quot;username&quot;:&quot;sa.2ef3a8e4-bd6e-4d56-ab99-6c49ce6f0ba8&quot;,&quot;email&quot;:&quot;sa.2ef3a8e4-bd6e-4d56-ab99-6c49ce6f0ba8@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
 
-23:31:40.714 response time in milliseconds: 366
+23:43:03.224 response time in milliseconds: 390
 1 &lt; 201
-1 &lt; X-Correlation-Id: 298e984e-caf9-42e5-a5fd-3b3dc14e2143
+1 &lt; X-Correlation-Id: f1d9d4c0-c133-4717-90ae-7b04fb4c38b3
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -861,10 +861,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:03 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;a157170e-4eda-47d9-a7c6-35af3e0ba49a&quot;,&quot;username&quot;:&quot;sa.9612685e-f802-46a3-8952-484274cb12f0&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.9612685e-f802-46a3-8952-484274cb12f0@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T02:31:40.693589500Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:31:40.693589500Z&quot;}
+{&quot;uid&quot;:&quot;e0a6e45d-f8fb-4442-8bdd-64042493d3a2&quot;,&quot;username&quot;:&quot;sa.2ef3a8e4-bd6e-4d56-ab99-6c49ce6f0ba8&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.2ef3a8e4-bd6e-4d56-ab99-6c49ce6f0ba8@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T02:43:03.204444300Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:03.204444300Z&quot;}
 
 </div>   
 
@@ -913,7 +913,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def username  = response.username</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -941,7 +941,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saLogin   = call read(&#39;classpath:common/login.feature&#39;) { username: &#39;#(username)&#39;, password: &#39;#(testUserPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">335</div>
+    <div class="time-cell passed">347</div>
   </div>
 
    
@@ -961,7 +961,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">327</div>
+      <div class="time-cell passed">340</div>
     </div>
     <div>
       <div><div>
@@ -1065,7 +1065,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">326</div>
+    <div class="time-cell passed">339</div>
   </div>
 
    
@@ -1074,7 +1074,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.19.0.call.0.8">23:31:40.725 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.19.0.call.0.8">23:43:03.236 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 81
@@ -1082,11 +1082,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;sa.9612685e-f802-46a3-8952-484274cb12f0&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
+{&quot;username&quot;:&quot;sa.2ef3a8e4-bd6e-4d56-ab99-6c49ce6f0ba8&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
 
-23:31:41.044 response time in milliseconds: 319
+23:43:03.572 response time in milliseconds: 332
 1 &lt; 200
-1 &lt; X-Correlation-Id: cd41b8ec-ecee-4919-af28-02e2f1e527f4
+1 &lt; X-Correlation-Id: e5d34fd3-a37b-445c-b86a-85866b55f801
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1095,10 +1095,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:41 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:03 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS45NjEyNjg1ZS1mODAyLTQ2YTMtODk1Mi00ODQyNzRjYjEyZjAiLCJ1c2VySWQiOiJhMTU3MTcwZS00ZWRhLTQ3ZDktYTdjNi0zNWFmM2UwYmE0OWEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MjkxMDEsImV4cCI6MTc3NTYxNTUwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.AmfCXWo_7D8ftR4R6g0Fs6_lCLeycwe4Ac5PUHyjugGp8iaiJX6erBt6VH-o0GwZ&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;sa.9612685e-f802-46a3-8952-484274cb12f0&quot;,&quot;role&quot;:&quot;STORE_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yZWYzYThlNC1iZDZlLTRkNTYtYWI5OS02YzQ5Y2U2ZjBiYTgiLCJ1c2VySWQiOiJlMGE2ZTQ1ZC1mOGZiLTQ0NDItOGJkZC02NDA0MjQ5M2QzYTIiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1Mjk3ODMsImV4cCI6MTc3NTYxNjE4MywiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.YFlsyyk4ChCOHO7rGXWhjZjr2xifBlLvTB_5YHyQgcEfFLSuHY76y2sA6lwUwzzI&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;sa.2ef3a8e4-bd6e-4d56-ab99-6c49ce6f0ba8&quot;,&quot;role&quot;:&quot;STORE_ADMIN&quot;}
 
 </div>   
 
@@ -1231,7 +1231,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:11]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -1259,7 +1259,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:11]bg"><div>
+          <div data-parent="[1:10]bg"><div>
   
 
   
@@ -1267,951 +1267,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="0.8">
       <div class="step-ref bg-step">8</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">945</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.8">23:31:41.994 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-user.feature&#39;)
-</div>   
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.8.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.create-store-user</div>
-      </div>
-      <div class="time-cell passed">937</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
-      </div>
-    </div>
-    <div class="time-cell passed">186</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row" data-parent="0.8.0.call">
-      <div class="step-container" id="0.8.0.call.0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.login</div>
-      </div>
-      <div class="time-cell passed">178</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
-    <div class="step-container" id="0.8.0.call.0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.8.0.call.0.5.0.call.0.5">23:31:41.044 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-user.feature&#39;)
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
-    <div class="step-container" id="0.8.0.call.0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
-    <div class="step-container" id="0.8.0.call.0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
-    <div class="step-container" id="0.8.0.call.0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">177</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.8.0.call.0.5.0.call.0.8">23:31:41.071 request:
-1 &gt; POST http://localhost:8081/api/v1/auth/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 42
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
-
-23:31:41.244 response time in milliseconds: 173
-1 &lt; 200
-1 &lt; X-Correlation-Id: 7d730141-6705-4b14-98a5-84289f794eea
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:41 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTEwMSwiZXhwIjoxNzc1NjE1NTAxfQ.GqZ_B5xOmEWEFLyN-vjCLcFjh1BnlndZWiW9HYpx49CJrMLwrUqUY_nm3nPYEfLe&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
-    <div class="step-container" id="0.8.0.call.0.5.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
-    <div class="step-container" id="0.8.0.call.0.5.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.5.0.call">
-    <div class="step-container" id="0.8.0.call.0.5.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def username   = &#39;std.&#39; + java.util.UUID.randomUUID()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def email      = username + &#39;@test.com&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/users&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.12">
-      <div class="step-ref bg-step">12</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.13">
-      <div class="step-ref bg-step">13</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, email: &#39;#(email)&#39;, password: &#39;#(testUserPassword)&#39;, roleId: &#39;#(storeUserRoleId)&#39;, ecommerceId: &#39;#(validEcommerceId)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">48</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.14">
-      <div class="step-ref bg-step">14</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">371</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.8.0.call.0.14">23:31:41.300 request:
-1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTEwMSwiZXhwIjoxNzc1NjE1NTAxfQ.GqZ_B5xOmEWEFLyN-vjCLcFjh1BnlndZWiW9HYpx49CJrMLwrUqUY_nm3nPYEfLe
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 243
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;std.ef2268ae-723f-48ef-ba22-1bf859e93e25&quot;,&quot;email&quot;:&quot;std.ef2268ae-723f-48ef-ba22-1bf859e93e25@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
-
-23:31:41.667 response time in milliseconds: 366
-1 &lt; 201
-1 &lt; X-Correlation-Id: 65ed8cbf-93d7-49c5-b132-571a8106a68c
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:41 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;0dda5fd8-1a0a-41a7-a90b-48b197228b6a&quot;,&quot;username&quot;:&quot;std.ef2268ae-723f-48ef-ba22-1bf859e93e25&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.ef2268ae-723f-48ef-ba22-1bf859e93e25@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T02:31:41.650049Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:31:41.650049Z&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.15">
-      <div class="step-ref bg-step">15</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.16">
-      <div class="step-ref bg-step">16</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def uid       = response.uid</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.17">
-      <div class="step-ref bg-step">17</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def username  = response.username</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.18">
-      <div class="step-ref bg-step">18</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def userLogin = call read(&#39;classpath:common/login.feature&#39;) { username: &#39;#(username)&#39;, password: &#39;#(testUserPassword)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">326</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row" data-parent="0.8.0.call">
-      <div class="step-container" id="0.8.0.call.0.18.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.login</div>
-      </div>
-      <div class="time-cell passed">317</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
-    <div class="step-container" id="0.8.0.call.0.18.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
-    <div class="step-container" id="0.8.0.call.0.18.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
-    <div class="step-container" id="0.8.0.call.0.18.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
-    <div class="step-container" id="0.8.0.call.0.18.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">314</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.8.0.call.0.18.0.call.0.8">23:31:41.683 request:
-1 &gt; POST http://localhost:8081/api/v1/auth/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 82
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;std.ef2268ae-723f-48ef-ba22-1bf859e93e25&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
-
-23:31:41.993 response time in milliseconds: 294
-1 &lt; 200
-1 &lt; X-Correlation-Id: 5682e8ca-67e4-4d0d-82ff-9e207e497301
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:41 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzdGQuZWYyMjY4YWUtNzIzZi00OGVmLWJhMjItMWJmODU5ZTkzZTI1IiwidXNlcklkIjoiMGRkYTVmZDgtMWEwYS00MWE3LWE5MGItNDhiMTk3MjI4YjZhIiwicm9sZSI6IlNUT1JFX1VTRVIiLCJpYXQiOjE3NzU1MjkxMDEsImV4cCI6MTc3NTYxNTUwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.7Pz8kLhM6TITt0BFHneHCFWtUZWrTSshcYiJnZ8dNqcQctGkF5xhzQRK8GlmAe_t&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;std.ef2268ae-723f-48ef-ba22-1bf859e93e25&quot;,&quot;role&quot;:&quot;STORE_USER&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
-    <div class="step-container" id="0.8.0.call.0.18.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
-    <div class="step-container" id="0.8.0.call.0.18.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call.0.18.0.call">
-    <div class="step-container" id="0.8.0.call.0.18.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.8.0.call">
-    <div class="step-container" id="0.8.0.call.0.19">
-      <div class="step-ref bg-step">19</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = userLogin.authToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-          <div data-parent="[1:11]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref bg-step">9</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
@@ -2238,14 +1293,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def newUser  = &#39;tc029.&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -2266,8 +1321,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def newEmail = newUser + &#39;@test.com&#39;</span>
@@ -2294,14 +1349,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def body     = read(&#39;classpath:data/store-admin/create-user-own-ecommerce.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path basePath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2326,7 +1409,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path basePath</span>
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2354,7 +1437,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+        <span>And</span>&nbsp;<span>request body</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2382,38 +1465,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">17</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request body</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">412</div>
+    <div class="time-cell passed">423</div>
   </div>
 
    
@@ -2422,20 +1477,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.18">23:31:42.007 request:
+  <div class="preformatted" data-parent="0.17">23:43:03.592 request:
 1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS45NjEyNjg1ZS1mODAyLTQ2YTMtODk1Mi00ODQyNzRjYjEyZjAiLCJ1c2VySWQiOiJhMTU3MTcwZS00ZWRhLTQ3ZDktYTdjNi0zNWFmM2UwYmE0OWEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MjkxMDEsImV4cCI6MTc3NTYxNTUwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.AmfCXWo_7D8ftR4R6g0Fs6_lCLeycwe4Ac5PUHyjugGp8iaiJX6erBt6VH-o0GwZ
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yZWYzYThlNC1iZDZlLTRkNTYtYWI5OS02YzQ5Y2U2ZjBiYTgiLCJ1c2VySWQiOiJlMGE2ZTQ1ZC1mOGZiLTQ0NDItOGJkZC02NDA0MjQ5M2QzYTIiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1Mjk3ODMsImV4cCI6MTc3NTYxNjE4MywiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.YFlsyyk4ChCOHO7rGXWhjZjr2xifBlLvTB_5YHyQgcEfFLSuHY76y2sA6lwUwzzI
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 247
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;tc029.996de576-a4be-4d1c-bdca-5907ce72bb04&quot;,&quot;email&quot;:&quot;tc029.996de576-a4be-4d1c-bdca-5907ce72bb04@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+{&quot;username&quot;:&quot;tc029.427ebba9-8863-4697-83cd-daaea71c69c5&quot;,&quot;email&quot;:&quot;tc029.427ebba9-8863-4697-83cd-daaea71c69c5@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
 
-23:31:42.415 response time in milliseconds: 407
+23:43:04.012 response time in milliseconds: 419
 1 &lt; 201
-1 &lt; X-Correlation-Id: fa7350dc-0bfc-4334-aab0-9c194efe9458
+1 &lt; X-Correlation-Id: 207d947e-1d75-4098-b1f4-78629b041977
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2444,10 +1499,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:42 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:04 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;7b9bd92c-71a4-408a-9963-344d9800f6cd&quot;,&quot;username&quot;:&quot;tc029.996de576-a4be-4d1c-bdca-5907ce72bb04&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.996de576-a4be-4d1c-bdca-5907ce72bb04@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T02:31:42.394887700Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:31:42.394887700Z&quot;}
+{&quot;uid&quot;:&quot;6a26064e-43bb-48aa-aeed-8d2b352e850b&quot;,&quot;username&quot;:&quot;tc029.427ebba9-8863-4697-83cd-daaea71c69c5&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.427ebba9-8863-4697-83cd-daaea71c69c5@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T02:43:03.981764200Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:03.981764200Z&quot;}
 
 </div>   
 
@@ -2461,8 +1516,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.19">
-      <div class="step-ref passed">19</div>
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
@@ -2489,14 +1544,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref passed">20</div>
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.ecommerceId == validEcommerceId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2513,29 +1568,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[2:22]">
+          <div class="scenario-heading" id="[2:21]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[2:22]</span>
+                Scenario: <span>[2:21]</span>
                 <span class="scenario-name">TC-030 - STORE_ADMIN crea usuario en ecommerce ajeno y obtiene HTTP 403</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1926</span>
+              <span>ms:</span>&nbsp;<span>1052</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[2:22]bg">
+            <div class="step-container" id="[2:21]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[2:22]bg"><div>
+          <div data-parent="[2:21]bg"><div>
   
 
   
@@ -2557,14 +1612,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">23:31:40.143 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:02.603 karate.env: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[2:22]bg"><div>
+          <div data-parent="[2:21]bg"><div>
   
 
   
@@ -2577,7 +1632,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -2586,14 +1641,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">23:31:40.151 this thread waited 3 milliseconds for callonce lock: read(&#39;classpath:common/common-utils.feature&#39;)
-</div>   
+     
 
   
 
 </div>
 </div>
-          <div data-parent="[2:22]bg"><div>
+          <div data-parent="[2:21]bg"><div>
   
 
   
@@ -2606,7 +1660,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">902</div>
+    <div class="time-cell passed">964</div>
   </div>
 
    
@@ -2615,14 +1669,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">23:31:41.044 this thread waited 889 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">23:43:03.577 this thread waited 960 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[2:22]bg"><div>
+          <div data-parent="[2:21]bg"><div>
   
 
   
@@ -2650,7 +1704,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[2:22]bg"><div>
+          <div data-parent="[2:21]bg"><div>
   
 
   
@@ -2658,35 +1712,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="0.8">
       <div class="step-ref bg-step">8</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">944</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.8">23:31:41.994 this thread waited 937 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[2:22]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref bg-step">9</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
@@ -2713,14 +1738,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.23">
-      <div class="step-ref passed">23</div>
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def newUser  = &#39;tc030.&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def newEmail = newUser + &#39;@test.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2745,10 +1798,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">24</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def newEmail = newUser + &#39;@test.com&#39;</span>
+        <span>*</span>&nbsp;<span>def body     = read(&#39;classpath:data/store-admin/create-user-other-ecommerce.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -2773,10 +1826,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">25</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def body     = read(&#39;classpath:data/store-admin/create-user-other-ecommerce.json&#39;)</span>
+        <span>Given</span>&nbsp;<span>path basePath</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2801,7 +1854,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">26</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path basePath</span>
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2829,7 +1882,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">27</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+        <span>And</span>&nbsp;<span>request body</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2857,38 +1910,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">28</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request body</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.29">
-      <div class="step-ref passed">29</div>
-      
-      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">66</div>
+    <div class="time-cell passed">71</div>
   </div>
 
    
@@ -2897,20 +1922,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">23:31:42.007 request:
+  <div class="preformatted" data-parent="0.28">23:43:03.595 request:
 1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS45NjEyNjg1ZS1mODAyLTQ2YTMtODk1Mi00ODQyNzRjYjEyZjAiLCJ1c2VySWQiOiJhMTU3MTcwZS00ZWRhLTQ3ZDktYTdjNi0zNWFmM2UwYmE0OWEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MjkxMDEsImV4cCI6MTc3NTYxNTUwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.AmfCXWo_7D8ftR4R6g0Fs6_lCLeycwe4Ac5PUHyjugGp8iaiJX6erBt6VH-o0GwZ
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yZWYzYThlNC1iZDZlLTRkNTYtYWI5OS02YzQ5Y2U2ZjBiYTgiLCJ1c2VySWQiOiJlMGE2ZTQ1ZC1mOGZiLTQ0NDItOGJkZC02NDA0MjQ5M2QzYTIiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1Mjk3ODMsImV4cCI6MTc3NTYxNjE4MywiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.YFlsyyk4ChCOHO7rGXWhjZjr2xifBlLvTB_5YHyQgcEfFLSuHY76y2sA6lwUwzzI
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 247
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;tc030.05071a62-35ed-4b27-9719-08629c9eea74&quot;,&quot;email&quot;:&quot;tc030.05071a62-35ed-4b27-9719-08629c9eea74@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;}
+{&quot;username&quot;:&quot;tc030.b5bc1365-9ebb-471b-aab4-88b9ecdcc41e&quot;,&quot;email&quot;:&quot;tc030.b5bc1365-9ebb-471b-aab4-88b9ecdcc41e@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;}
 
-23:31:42.071 response time in milliseconds: 64
+23:43:03.662 response time in milliseconds: 66
 1 &lt; 403
-1 &lt; X-Correlation-Id: f5e2f608-603c-4628-a2ed-af4fcbd80070
+1 &lt; X-Correlation-Id: e2b2eb85-f9f9-462b-9f11-158d60e20401
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2919,10 +1944,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:42 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:03 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2026-04-07T02:31:42.068073400Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;Solo puede crear usuarios dentro de su ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:03.657106900Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;Solo puede crear usuarios dentro de su ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
 
 </div>   
 
@@ -2936,8 +1961,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.30">
-      <div class="step-ref passed">30</div>
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 403</span>
@@ -2960,29 +1985,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[3:32]">
+          <div class="scenario-heading" id="[3:31]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[3:32]</span>
+                Scenario: <span>[3:31]</span>
                 <span class="scenario-name">TC-031 - STORE_ADMIN consulta su propio ecommerce y obtiene HTTP 200</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1941</span>
+              <span>ms:</span>&nbsp;<span>1026</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[3:32]bg">
+            <div class="step-container" id="[3:31]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[3:32]bg"><div>
+          <div data-parent="[3:31]bg"><div>
   
 
   
@@ -3004,14 +2029,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">23:31:40.143 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:02.625 karate.env: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[3:32]bg"><div>
+          <div data-parent="[3:31]bg"><div>
   
 
   
@@ -3024,7 +2049,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -3033,14 +2058,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">23:31:40.152 this thread waited 4 milliseconds for callonce lock: read(&#39;classpath:common/common-utils.feature&#39;)
-</div>   
+     
 
   
 
 </div>
 </div>
-          <div data-parent="[3:32]bg"><div>
+          <div data-parent="[3:31]bg"><div>
   
 
   
@@ -3053,7 +2077,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">901</div>
+    <div class="time-cell passed">944</div>
   </div>
 
    
@@ -3062,14 +2086,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">23:31:41.044 this thread waited 889 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">23:43:03.577 this thread waited 939 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[3:32]bg"><div>
+          <div data-parent="[3:31]bg"><div>
   
 
   
@@ -3097,7 +2121,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[3:32]bg"><div>
+          <div data-parent="[3:31]bg"><div>
   
 
   
@@ -3107,10 +2131,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">945</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3119,27 +2143,26 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">23:31:41.994 this thread waited 937 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
-</div>   
+     
 
   
 
 </div>
 </div>
-          <div data-parent="[3:32]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref bg-step">9</div>
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+        <span>Given</span>&nbsp;<span>path basePath</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3164,7 +2187,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">33</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path basePath</span>
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3192,7 +2215,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">34</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+        <span>And</span>&nbsp;<span>param ecommerceId = validEcommerceId</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3220,38 +2243,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">35</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>param ecommerceId = validEcommerceId</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">86</div>
+    <div class="time-cell passed">78</div>
   </div>
 
    
@@ -3260,18 +2255,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.36">23:31:41.994 request:
+  <div class="preformatted" data-parent="0.35">23:43:03.582 request:
 1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440000
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS45NjEyNjg1ZS1mODAyLTQ2YTMtODk1Mi00ODQyNzRjYjEyZjAiLCJ1c2VySWQiOiJhMTU3MTcwZS00ZWRhLTQ3ZDktYTdjNi0zNWFmM2UwYmE0OWEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MjkxMDEsImV4cCI6MTc3NTYxNTUwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.AmfCXWo_7D8ftR4R6g0Fs6_lCLeycwe4Ac5PUHyjugGp8iaiJX6erBt6VH-o0GwZ
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yZWYzYThlNC1iZDZlLTRkNTYtYWI5OS02YzQ5Y2U2ZjBiYTgiLCJ1c2VySWQiOiJlMGE2ZTQ1ZC1mOGZiLTQ0NDItOGJkZC02NDA0MjQ5M2QzYTIiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1Mjk3ODMsImV4cCI6MTc3NTYxNjE4MywiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.YFlsyyk4ChCOHO7rGXWhjZjr2xifBlLvTB_5YHyQgcEfFLSuHY76y2sA6lwUwzzI
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-23:31:42.086 response time in milliseconds: 91
+23:43:03.657 response time in milliseconds: 74
 1 &lt; 200
-1 &lt; X-Correlation-Id: 679fc282-f81c-41df-ac3a-27b066192b62
+1 &lt; X-Correlation-Id: 9cf48294-de0c-4f21-b2fd-9b95d71afa17
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3280,10 +2275,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:42 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:03 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;content&quot;:[{&quot;uid&quot;:&quot;c5c41e97-198c-4d36-86b4-3b66052e4b68&quot;,&quot;username&quot;:&quot;loyalty.5a026aef-4662-44e1-8d0b-0dd4f0a90150&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.5a026aef-4662-44e1-8d0b-0dd4f0a90150@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:43.083790Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:43.083790Z&quot;},{&quot;uid&quot;:&quot;7cfd39e1-77a7-4067-9cf2-4972f893a108&quot;,&quot;username&quot;:&quot;loyalty.1aac2d9b-6082-497c-bb8c-80a9e7d6f7cb&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.1aac2d9b-6082-497c-bb8c-80a9e7d6f7cb@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:43.067898Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:43.067898Z&quot;},{&quot;uid&quot;:&quot;80e62ef1-1a76-4492-92b1-7528341a750c&quot;,&quot;username&quot;:&quot;sa.bf88eedc-3b73-4194-a296-18aba8429611&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.bf88eedc-3b73-4194-a296-18aba8429611@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:45.752525Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:45.752525Z&quot;},{&quot;uid&quot;:&quot;a2d56b22-cc54-45bc-85b7-2a1535a7f124&quot;,&quot;username&quot;:&quot;std.9d53e683-e1a3-47b0-ad11-0aa9234b4944&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.9d53e683-e1a3-47b0-ad11-0aa9234b4944@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:47.036155Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:47.036155Z&quot;},{&quot;uid&quot;:&quot;314e5886-3c52-4514-80b0-c5045f048bfb&quot;,&quot;username&quot;:&quot;tc029.1642eb1c-3b3c-409d-a0db-e2f83f08699b&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.1642eb1c-3b3c-409d-a0db-e2f83f08699b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:48.101306Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:48.101306Z&quot;},{&quot;uid&quot;:&quot;d14f052e-3071-4076-afea-af05d534a638&quot;,&quot;username&quot;:&quot;std.9782f486-28ab-4cea-a72d-5225390aba91&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.9782f486-28ab-4cea-a72d-5225390aba91@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:48.630116Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:48.630116Z&quot;},{&quot;uid&quot;:&quot;70d4391d-90b1-4fa5-9b94-eabc97396c3f&quot;,&quot;username&quot;:&quot;tc028.28615195-f663-4b44-9e9a-0d149b331d94&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.28615195-f663-4b44-9e9a-0d149b331d94@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:49.831200Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:49.831200Z&quot;},{&quot;uid&quot;:&quot;e46ca3b5-29a7-473d-a445-3a8c16f99e96&quot;,&quot;username&quot;:&quot;std.8424df6f-fc47-4a12-b520-88e73c19a537&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.4d3cf24c-f9d2-480f-9ee5-7c659e3ebe3b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:49.905753Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:50.738030Z&quot;},{&quot;uid&quot;:&quot;0f28f34a-c7d5-43bf-86d9-47e4ecf6977a&quot;,&quot;username&quot;:&quot;loyalty.2d481024-cd0b-4f56-85ac-994cb2e39640&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.2d481024-cd0b-4f56-85ac-994cb2e39640@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;},{&quot;uid&quot;:&quot;0cab5f32-bfd1-45ea-88c1-8c13f6c87ad5&quot;,&quot;username&quot;:&quot;loyalty.23c6e15f-8c5a-4306-bef5-16d010e3614e&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.23c6e15f-8c5a-4306-bef5-16d010e3614e@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;},{&quot;uid&quot;:&quot;2277f8a4-2e56-4ff4-aef8-865e86f390f7&quot;,&quot;username&quot;:&quot;sa.0740d70e-2c70-4845-8fcc-8cbd83f1cd42&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.0740d70e-2c70-4845-8fcc-8cbd83f1cd42@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:00.008268Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:00.008268Z&quot;},{&quot;uid&quot;:&quot;e5c3d4f6-20e1-4cf0-bfd8-fb66cebaa9f2&quot;,&quot;username&quot;:&quot;std.96d6e7cc-563a-4cc2-9d01-b4c02e356f98&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.96d6e7cc-563a-4cc2-9d01-b4c02e356f98@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:01.232555Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:01.232555Z&quot;},{&quot;uid&quot;:&quot;26783d5f-0247-4f2b-9fb7-a8dd7f6de4de&quot;,&quot;username&quot;:&quot;tc029.3feef020-b2e1-49ba-834e-47c513e8b81c&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.3feef020-b2e1-49ba-834e-47c513e8b81c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:02.238882Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:02.238882Z&quot;},{&quot;uid&quot;:&quot;ac307fa6-917a-4bed-87e0-f490f2abbcc1&quot;,&quot;username&quot;:&quot;std.62d04ac6-cbbb-4930-b796-3fb691aade75&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.62d04ac6-cbbb-4930-b796-3fb691aade75@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:02.747172Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:02.747172Z&quot;},{&quot;uid&quot;:&quot;55e248a7-7761-40f4-9b64-1c5d031f71db&quot;,&quot;username&quot;:&quot;tc028.bf1fa6ca-4a7a-453b-b4d8-c16d0201b5e3&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.bf1fa6ca-4a7a-453b-b4d8-c16d0201b5e3@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:04.021299Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:04.021299Z&quot;},{&quot;uid&quot;:&quot;5c056cf5-84f0-4790-8c56-b9805a3e777c&quot;,&quot;username&quot;:&quot;std.d2f97401-d2a0-4008-af32-9b80cc29aeaf&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.cf5d520d-db35-47ff-bc3a-de810478460a@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:04.108504Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:04.671524Z&quot;},{&quot;uid&quot;:&quot;52f21cc6-8dfc-4515-aab9-59300ef4fd4e&quot;,&quot;username&quot;:&quot;loyalty.3a727ae0-2af3-4986-a6ff-350602f9f9be&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.3a727ae0-2af3-4986-a6ff-350602f9f9be@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:46.587493Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:46.587493Z&quot;},{&quot;uid&quot;:&quot;7d79936a-9160-443a-9800-5e3907c8e209&quot;,&quot;username&quot;:&quot;loyalty.3dbfd51f-932c-4af9-bcc1-621322d31914&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.3dbfd51f-932c-4af9-bcc1-621322d31914@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:46.580515Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:46.580515Z&quot;},{&quot;uid&quot;:&quot;4510a611-7ec2-4e2a-81d6-862e5c552934&quot;,&quot;username&quot;:&quot;sa.11cc2840-0fa5-4fd9-9314-86bed6f09063&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.11cc2840-0fa5-4fd9-9314-86bed6f09063@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:48.694043Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:48.694043Z&quot;},{&quot;uid&quot;:&quot;17fbc3a8-ed62-4cf6-9e8d-2f91838ec98a&quot;,&quot;username&quot;:&quot;std.73207a98-38b1-4bb7-a517-2c5a1d973556&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.73207a98-38b1-4bb7-a517-2c5a1d973556@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:50.091198Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:50.091198Z&quot;}],&quot;pageable&quot;:{&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;sorted&quot;:false,&quot;unsorted&quot;:true},&quot;offset&quot;:0,&quot;paged&quot;:true,&quot;unpaged&quot;:false},&quot;last&quot;:false,&quot;totalElements&quot;:84,&quot;totalPages&quot;:5,&quot;first&quot;:true,&quot;size&quot;:20,&quot;number&quot;:0,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;sorted&quot;:false,&quot;unsorted&quot;:true},&quot;numberOfElements&quot;:20,&quot;empty&quot;:false}
+{&quot;content&quot;:[{&quot;uid&quot;:&quot;c5c41e97-198c-4d36-86b4-3b66052e4b68&quot;,&quot;username&quot;:&quot;loyalty.5a026aef-4662-44e1-8d0b-0dd4f0a90150&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.5a026aef-4662-44e1-8d0b-0dd4f0a90150@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:43.083790Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:43.083790Z&quot;},{&quot;uid&quot;:&quot;7cfd39e1-77a7-4067-9cf2-4972f893a108&quot;,&quot;username&quot;:&quot;loyalty.1aac2d9b-6082-497c-bb8c-80a9e7d6f7cb&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.1aac2d9b-6082-497c-bb8c-80a9e7d6f7cb@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:43.067898Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:43.067898Z&quot;},{&quot;uid&quot;:&quot;80e62ef1-1a76-4492-92b1-7528341a750c&quot;,&quot;username&quot;:&quot;sa.bf88eedc-3b73-4194-a296-18aba8429611&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.bf88eedc-3b73-4194-a296-18aba8429611@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:45.752525Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:45.752525Z&quot;},{&quot;uid&quot;:&quot;a2d56b22-cc54-45bc-85b7-2a1535a7f124&quot;,&quot;username&quot;:&quot;std.9d53e683-e1a3-47b0-ad11-0aa9234b4944&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.9d53e683-e1a3-47b0-ad11-0aa9234b4944@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:47.036155Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:47.036155Z&quot;},{&quot;uid&quot;:&quot;314e5886-3c52-4514-80b0-c5045f048bfb&quot;,&quot;username&quot;:&quot;tc029.1642eb1c-3b3c-409d-a0db-e2f83f08699b&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.1642eb1c-3b3c-409d-a0db-e2f83f08699b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:48.101306Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:48.101306Z&quot;},{&quot;uid&quot;:&quot;d14f052e-3071-4076-afea-af05d534a638&quot;,&quot;username&quot;:&quot;std.9782f486-28ab-4cea-a72d-5225390aba91&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.9782f486-28ab-4cea-a72d-5225390aba91@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:48.630116Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:48.630116Z&quot;},{&quot;uid&quot;:&quot;70d4391d-90b1-4fa5-9b94-eabc97396c3f&quot;,&quot;username&quot;:&quot;tc028.28615195-f663-4b44-9e9a-0d149b331d94&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.28615195-f663-4b44-9e9a-0d149b331d94@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:49.831200Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:49.831200Z&quot;},{&quot;uid&quot;:&quot;e46ca3b5-29a7-473d-a445-3a8c16f99e96&quot;,&quot;username&quot;:&quot;std.8424df6f-fc47-4a12-b520-88e73c19a537&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.4d3cf24c-f9d2-480f-9ee5-7c659e3ebe3b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:49.905753Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:50.738030Z&quot;},{&quot;uid&quot;:&quot;0f28f34a-c7d5-43bf-86d9-47e4ecf6977a&quot;,&quot;username&quot;:&quot;loyalty.2d481024-cd0b-4f56-85ac-994cb2e39640&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.2d481024-cd0b-4f56-85ac-994cb2e39640@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;},{&quot;uid&quot;:&quot;0cab5f32-bfd1-45ea-88c1-8c13f6c87ad5&quot;,&quot;username&quot;:&quot;loyalty.23c6e15f-8c5a-4306-bef5-16d010e3614e&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.23c6e15f-8c5a-4306-bef5-16d010e3614e@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;},{&quot;uid&quot;:&quot;2277f8a4-2e56-4ff4-aef8-865e86f390f7&quot;,&quot;username&quot;:&quot;sa.0740d70e-2c70-4845-8fcc-8cbd83f1cd42&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.0740d70e-2c70-4845-8fcc-8cbd83f1cd42@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:00.008268Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:00.008268Z&quot;},{&quot;uid&quot;:&quot;e5c3d4f6-20e1-4cf0-bfd8-fb66cebaa9f2&quot;,&quot;username&quot;:&quot;std.96d6e7cc-563a-4cc2-9d01-b4c02e356f98&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.96d6e7cc-563a-4cc2-9d01-b4c02e356f98@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:01.232555Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:01.232555Z&quot;},{&quot;uid&quot;:&quot;26783d5f-0247-4f2b-9fb7-a8dd7f6de4de&quot;,&quot;username&quot;:&quot;tc029.3feef020-b2e1-49ba-834e-47c513e8b81c&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.3feef020-b2e1-49ba-834e-47c513e8b81c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:02.238882Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:02.238882Z&quot;},{&quot;uid&quot;:&quot;ac307fa6-917a-4bed-87e0-f490f2abbcc1&quot;,&quot;username&quot;:&quot;std.62d04ac6-cbbb-4930-b796-3fb691aade75&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.62d04ac6-cbbb-4930-b796-3fb691aade75@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:02.747172Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:02.747172Z&quot;},{&quot;uid&quot;:&quot;55e248a7-7761-40f4-9b64-1c5d031f71db&quot;,&quot;username&quot;:&quot;tc028.bf1fa6ca-4a7a-453b-b4d8-c16d0201b5e3&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.bf1fa6ca-4a7a-453b-b4d8-c16d0201b5e3@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:04.021299Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:04.021299Z&quot;},{&quot;uid&quot;:&quot;5c056cf5-84f0-4790-8c56-b9805a3e777c&quot;,&quot;username&quot;:&quot;std.d2f97401-d2a0-4008-af32-9b80cc29aeaf&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.cf5d520d-db35-47ff-bc3a-de810478460a@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:04.108504Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:04.671524Z&quot;},{&quot;uid&quot;:&quot;52f21cc6-8dfc-4515-aab9-59300ef4fd4e&quot;,&quot;username&quot;:&quot;loyalty.3a727ae0-2af3-4986-a6ff-350602f9f9be&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.3a727ae0-2af3-4986-a6ff-350602f9f9be@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:46.587493Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:46.587493Z&quot;},{&quot;uid&quot;:&quot;7d79936a-9160-443a-9800-5e3907c8e209&quot;,&quot;username&quot;:&quot;loyalty.3dbfd51f-932c-4af9-bcc1-621322d31914&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.3dbfd51f-932c-4af9-bcc1-621322d31914@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:46.580515Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:46.580515Z&quot;},{&quot;uid&quot;:&quot;4510a611-7ec2-4e2a-81d6-862e5c552934&quot;,&quot;username&quot;:&quot;sa.11cc2840-0fa5-4fd9-9314-86bed6f09063&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.11cc2840-0fa5-4fd9-9314-86bed6f09063@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:48.694043Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:48.694043Z&quot;},{&quot;uid&quot;:&quot;17fbc3a8-ed62-4cf6-9e8d-2f91838ec98a&quot;,&quot;username&quot;:&quot;std.73207a98-38b1-4bb7-a517-2c5a1d973556&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.73207a98-38b1-4bb7-a517-2c5a1d973556@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:50.091198Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:50.091198Z&quot;}],&quot;pageable&quot;:{&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;unsorted&quot;:true,&quot;sorted&quot;:false},&quot;offset&quot;:0,&quot;unpaged&quot;:false,&quot;paged&quot;:true},&quot;last&quot;:false,&quot;totalPages&quot;:6,&quot;totalElements&quot;:107,&quot;size&quot;:20,&quot;number&quot;:0,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;unsorted&quot;:true,&quot;sorted&quot;:false},&quot;first&quot;:true,&quot;numberOfElements&quot;:20,&quot;empty&quot;:false}
 
 </div>   
 
@@ -3297,8 +2292,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -3321,29 +2316,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[4:39]">
+          <div class="scenario-heading" id="[4:38]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[4:39]</span>
+                Scenario: <span>[4:38]</span>
                 <span class="scenario-name">TC-031b - STORE_ADMIN consulta ecommerce ajeno y obtiene HTTP 403</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1900</span>
+              <span>ms:</span>&nbsp;<span>997</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[4:39]bg">
+            <div class="step-container" id="[4:38]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[4:39]bg"><div>
+          <div data-parent="[4:38]bg"><div>
   
 
   
@@ -3365,14 +2360,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">23:31:40.168 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:02.646 karate.env: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[4:39]bg"><div>
+          <div data-parent="[4:38]bg"><div>
   
 
   
@@ -3385,7 +2380,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -3400,7 +2395,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[4:39]bg"><div>
+          <div data-parent="[4:38]bg"><div>
   
 
   
@@ -3413,7 +2408,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">881</div>
+    <div class="time-cell passed">925</div>
   </div>
 
    
@@ -3422,14 +2417,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">23:31:41.044 this thread waited 870 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">23:43:03.576 this thread waited 921 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[4:39]bg"><div>
+          <div data-parent="[4:38]bg"><div>
   
 
   
@@ -3457,7 +2452,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[4:39]bg"><div>
+          <div data-parent="[4:38]bg"><div>
   
 
   
@@ -3467,10 +2462,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">945</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3479,27 +2474,26 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">23:31:41.994 this thread waited 950 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
-</div>   
+     
 
   
 
 </div>
 </div>
-          <div data-parent="[4:39]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref bg-step">9</div>
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+        <span>Given</span>&nbsp;<span>path basePath</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -3524,7 +2518,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">40</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path basePath</span>
+        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3552,7 +2546,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">41</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = storeAuthHeader</span>
+        <span>And</span>&nbsp;<span>param ecommerceId = otherEcommerceId</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3580,38 +2574,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">42</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>param ecommerceId = otherEcommerceId</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.43">
-      <div class="step-ref passed">43</div>
-      
-      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">69</div>
+    <div class="time-cell passed">67</div>
   </div>
 
    
@@ -3620,18 +2586,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.43">23:31:41.994 request:
+  <div class="preformatted" data-parent="0.42">23:43:03.582 request:
 1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440001
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS45NjEyNjg1ZS1mODAyLTQ2YTMtODk1Mi00ODQyNzRjYjEyZjAiLCJ1c2VySWQiOiJhMTU3MTcwZS00ZWRhLTQ3ZDktYTdjNi0zNWFmM2UwYmE0OWEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MjkxMDEsImV4cCI6MTc3NTYxNTUwMSwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.AmfCXWo_7D8ftR4R6g0Fs6_lCLeycwe4Ac5PUHyjugGp8iaiJX6erBt6VH-o0GwZ
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS4yZWYzYThlNC1iZDZlLTRkNTYtYWI5OS02YzQ5Y2U2ZjBiYTgiLCJ1c2VySWQiOiJlMGE2ZTQ1ZC1mOGZiLTQ0NDItOGJkZC02NDA0MjQ5M2QzYTIiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1Mjk3ODMsImV4cCI6MTc3NTYxNjE4MywiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.YFlsyyk4ChCOHO7rGXWhjZjr2xifBlLvTB_5YHyQgcEfFLSuHY76y2sA6lwUwzzI
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-23:31:42.070 response time in milliseconds: 74
+23:43:03.646 response time in milliseconds: 62
 1 &lt; 403
-1 &lt; X-Correlation-Id: 98ed856a-333a-46a9-86b3-16c12e77839a
+1 &lt; X-Correlation-Id: 79b40a5c-c90f-4b98-a1c2-f67ead430efe
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3640,10 +2606,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 02:31:42 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:03 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2026-04-07T02:31:42.062717300Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;No tiene permiso para acceder a este ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:03.639266400Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;No tiene permiso para acceder a este ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
 
 </div>   
 
@@ -3657,8 +2623,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.44">
-      <div class="step-ref passed">44</div>
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 403</span>
@@ -3681,29 +2647,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[5:46]">
+          <div class="scenario-heading" id="[5:45]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[5:46]</span>
+                Scenario: <span>[5:45]</span>
                 <span class="scenario-name">TC-031c - Sin sesión obtiene HTTP 401 al listar usuarios</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1813</span>
+              <span>ms:</span>&nbsp;<span>937</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[5:46]bg">
+            <div class="step-container" id="[5:45]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[5:46]bg"><div>
+          <div data-parent="[5:45]bg"><div>
   
 
   
@@ -3725,14 +2691,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">23:31:40.193 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:02.650 karate.env: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[5:46]bg"><div>
+          <div data-parent="[5:45]bg"><div>
   
 
   
@@ -3745,7 +2711,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -3760,7 +2726,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[5:46]bg"><div>
+          <div data-parent="[5:45]bg"><div>
   
 
   
@@ -3773,7 +2739,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">855</div>
+    <div class="time-cell passed">919</div>
   </div>
 
    
@@ -3782,14 +2748,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">23:31:41.044 this thread waited 845 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">23:43:03.576 this thread waited 917 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[5:46]bg"><div>
+          <div data-parent="[5:45]bg"><div>
   
 
   
@@ -3817,7 +2783,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[5:46]bg"><div>
+          <div data-parent="[5:45]bg"><div>
   
 
   
@@ -3827,10 +2793,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def stdUser         = callonce read(&#39;classpath:common/create-store-user.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">946</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3839,24 +2805,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">23:31:41.994 this thread waited 950 milliseconds for callonce lock: read(&#39;classpath:common/create-store-user.feature&#39;)
-</div>   
+     
 
   
 
 </div>
 </div>
-          <div data-parent="[5:46]bg"><div>
+          <div><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref bg-step">9</div>
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
+        <span>Given</span>&nbsp;<span>path basePath</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -3884,7 +2849,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">47</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path basePath</span>
+        <span>And</span>&nbsp;<span>param ecommerceId = validEcommerceId</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -3912,38 +2877,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">48</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>param ecommerceId = validEcommerceId</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.49">
-      <div class="step-ref passed">49</div>
-      
-      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -3952,7 +2889,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.49">23:31:41.994 request:
+  <div class="preformatted" data-parent="0.48">23:43:03.582 request:
 1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440000
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
@@ -3960,7 +2897,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-23:31:42.007 response time in milliseconds: 13
+23:43:03.590 response time in milliseconds: 7
 1 &lt; 401
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
@@ -3970,7 +2907,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json;charset=ISO-8859-1
 1 &lt; Content-Length: 52
-1 &lt; Date: Tue, 07 Apr 2026 02:31:41 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:03 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;error&quot;:&quot;Unauthorized&quot;,&quot;message&quot;:&quot;Token requerido&quot;}
@@ -3987,8 +2924,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.50">
-      <div class="step-ref passed">50</div>
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 401</span>

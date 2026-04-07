@@ -7,7 +7,6 @@ Feature: HU-02 - Gestión de usuarios por administrador
     * def authHeader   = 'Bearer ' + loginResult.authToken
     * def basePath     = '/api/v1/users'
     * def stdUser      = callonce read('classpath:common/create-store-user.feature')
-    * def stdUsername  = stdUser.username
 
   Scenario Outline: TC-025 - Crear usuario: <escenario> retorna HTTP <expectedStatus>
     * def body = { username: '<username>', email: '<email>', password: '#(testUserPassword)', roleId: '#(storeUserRoleId)', ecommerceId: '<ecommerceId>' }
