@@ -2,6 +2,7 @@
 Feature: Helper - Crear API Key real para el engine
 
   Scenario: Crear una API Key via admin y devolver el plaintext key
+    * def utils      = call read('classpath:common/common-utils.feature')
     * def adminLogin = call read('classpath:common/login.feature') adminCredentials
     * def adminAuth  = 'Bearer ' + adminLogin.authToken
 
@@ -11,10 +12,10 @@ Feature: Helper - Crear API Key real para el engine
     And request {}
     When method POST
     Then status 201
-    * def apiKey = response.key
 
+    * def apiKey = response.key
     * copy retryPayload = read('classpath:data/engine/calculate-request.json')
-    * set retryPayload.externalOrderId = java.util.UUID.randomUUID() + ''
+    * set retryPayload.externalOrderId = utils.uuid()
     * configure retry = { count: 20, interval: 1000 }
     Given url engineBaseUrl
     And path '/api/v1/engine/calculate'

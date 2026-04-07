@@ -1,11 +1,10 @@
 Feature: HU-10 - Validación del motor de cálculo
 
   Background:
-    * def configSetup = callonce read('classpath:common/setup-engine-config.feature')
-    * configure url = engineBaseUrl
-    * def enginePath = '/api/v1/engine/calculate'
-    * def keySetup = callonce read('classpath:common/create-api-key.feature')
-    * def validApiKey = keySetup.apiKey
+    * def setup      = callonce read('classpath:common/engine-setup.feature')
+    * configure url  = engineBaseUrl
+    * def enginePath = setup.enginePath
+    * def validApiKey = setup.validApiKey
 
   Scenario Outline: TC-049 - Payload inválido (<escenario>) retorna HTTP 400
     Given path enginePath

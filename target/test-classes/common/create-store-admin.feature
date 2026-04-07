@@ -2,11 +2,12 @@
 Feature: Helper - Crear STORE_ADMIN reutilizable para tests
 
   Scenario: Crear usuario con rol STORE_ADMIN
+    * def utils      = call read('classpath:common/common-utils.feature')
     * def adminLogin = call read('classpath:common/login.feature') adminCredentials
     * def adminAuth  = 'Bearer ' + adminLogin.authToken
     * def prefix     = typeof prefix != 'undefined' ? prefix : 'sa'
     * def ecommerce  = typeof ecommerce != 'undefined' ? ecommerce : validEcommerceId
-    * def username   = prefix + '.' + java.util.UUID.randomUUID()
+    * def username   = prefix + '.' + utils.uuid()
     * def email      = username + '@test.com'
 
     Given url adminBaseUrl

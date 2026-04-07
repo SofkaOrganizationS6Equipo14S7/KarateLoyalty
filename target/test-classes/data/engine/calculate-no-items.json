@@ -1,0 +1,8 @@
+{
+  "ecommerceId": "#(validEcommerceId)",
+  "externalOrderId": "TC057-R3",
+  "customerId": "CUST-R3",
+  "totalSpent": 100,
+  "orderCount": 5,
+  "membershipDays": 30
+}
