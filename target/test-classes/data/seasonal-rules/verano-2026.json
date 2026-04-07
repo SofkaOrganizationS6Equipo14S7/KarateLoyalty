@@ -1,0 +1,10 @@
+{
+  "name": "Verano Test 2026",
+  "description": "Descuento de verano",
+  "discountPercentage": 15,
+  "discountPriorityId": "#(seasonalPriorityId)",
+  "attributes": {
+    "start_date": "2026-07-01",
+    "end_date": "2026-07-31"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "username": "#(newUser)",
+  "email": "#(newEmail)",
+  "password": "#(testUserPassword)",
+  "roleId": "#(storeUserRoleId)",
+  "ecommerceId": "#(otherEcommerceId)"
+}

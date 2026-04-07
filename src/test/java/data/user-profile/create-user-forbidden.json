@@ -1,0 +1,7 @@
+{
+  "username":    "hack",
+  "email":       "hack@x.com",
+  "password":    "#(testUserPassword)",
+  "roleId":      "#(storeUserRoleId)",
+  "ecommerceId": "#(validEcommerceId)"
+}

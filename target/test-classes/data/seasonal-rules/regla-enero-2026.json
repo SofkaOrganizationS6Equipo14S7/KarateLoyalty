@@ -1,0 +1,10 @@
+{
+  "name": "Regla a actualizar TC-038",
+  "description": "Regla inicial para actualización",
+  "discountPercentage": 10,
+  "discountPriorityId": "#(seasonalPriorityId)",
+  "attributes": {
+    "start_date": "2026-01-01",
+    "end_date": "2026-01-31"
+  }
+}

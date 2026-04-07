@@ -1,0 +1,7 @@
+{
+  "ecommerceId": "invalid-uuid-format",
+  "maxDiscountCap": 20,
+  "currencyCode": "USD",
+  "allowStacking": true,
+  "roundingRule": "HALF_UP"
+}

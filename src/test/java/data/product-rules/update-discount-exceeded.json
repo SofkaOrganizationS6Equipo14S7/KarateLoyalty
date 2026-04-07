@@ -1,0 +1,9 @@
+{
+  "name": "Updated Rule",
+  "description": "Updated",
+  "discountPercentage": 100.01,
+  "discountPriorityId": "#(productPriorityId)",
+  "attributes": {
+    "product_type": "#(tipoProducto)"
+  }
+}

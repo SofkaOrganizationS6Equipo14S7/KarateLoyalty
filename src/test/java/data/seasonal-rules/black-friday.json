@@ -1,0 +1,10 @@
+{
+  "name": "Black Friday 2026",
+  "description": "Descuento Black Friday",
+  "discountPercentage": 20,
+  "discountPriorityId": "#(seasonalPriorityId)",
+  "attributes": {
+    "start_date": "2026-11-27",
+    "end_date": "2026-11-30"
+  }
+}

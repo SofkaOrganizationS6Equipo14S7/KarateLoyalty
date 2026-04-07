@@ -1,0 +1,16 @@
+features\engine_item_validation\EngineItemValidationRunner.class
+features\rule_status\RuleStatusRunner.class
+features\ecommerces\EcommercesRunner.class
+features\auth\AuthRunner.class
+features\seasonal_rules\SeasonalRulesRunner.class
+features\discount_config\DiscountConfigRunner.class
+features\store_admin\StoreAdminRunner.class
+features\users\UsersRunner.class
+features\engine\EngineAuthRunner.class
+features\user_profile\UserProfileRunner.class
+features\engine_request_validation\EngineRequestValidationRunner.class
+features\engine_cap\EngineCapRunner.class
+features\product_rules\ProductRulesRunner.class
+examples\TestLoyalty.class
+features\engine\EngineClassificationRunner.class
+features\super_admin\SuperAdminRunner.class

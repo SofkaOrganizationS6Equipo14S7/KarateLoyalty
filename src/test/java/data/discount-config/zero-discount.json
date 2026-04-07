@@ -1,0 +1,7 @@
+{
+  "ecommerceId": "#(validEcommerceId)",
+  "maxDiscountCap": 0,
+  "currencyCode": "USD",
+  "allowStacking": true,
+  "roundingRule": "HALF_UP"
+}

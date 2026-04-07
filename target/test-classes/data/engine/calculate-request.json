@@ -1,0 +1,11 @@
+{
+  "ecommerceId"    : "#(validEcommerceId)",
+  "externalOrderId": "test-order-001",
+  "customerId"     : "test-customer-001",
+  "totalSpent"     : 1500.00,
+  "orderCount"     : 25,
+  "membershipDays" : 365,
+  "items"          : [
+    { "productId": "PROD-001", "quantity": 1, "unitPrice": 100.00, "category": "GENERAL" }
+  ]
+}

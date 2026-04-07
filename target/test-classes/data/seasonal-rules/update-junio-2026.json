@@ -1,0 +1,10 @@
+{
+  "name": "Regla actualizada TC-038",
+  "description": "Regla actualizada a junio",
+  "discountPercentage": 25,
+  "discountPriorityId": "#(seasonalPriorityId)",
+  "attributes": {
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30"
+  }
+}
