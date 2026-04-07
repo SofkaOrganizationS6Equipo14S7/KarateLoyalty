@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-04 07:26:41 p. m.</div>
+    <div>2026-04-06 11:43:03 p. m.</div>
   </div>
 </div>
 
@@ -90,7 +90,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>455</span>
+              <span>ms:</span>&nbsp;<span>414</span>
             </div>
           </div>
           <div class="step-row">
@@ -122,7 +122,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">19:26:38.075 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:42:59.895 karate.env: dev 
 </div>   
 
   
@@ -142,7 +142,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = callonce read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">224</div>
+    <div class="time-cell passed">217</div>
   </div>
 
    
@@ -151,7 +151,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">19:26:38.305 this thread waited 219 milliseconds for callonce lock: read(&#39;classpath:common/login.feature&#39;) adminCredentials
+  <div class="preformatted" data-parent="0.5">23:43:00.127 this thread waited 215 milliseconds for callonce lock: read(&#39;classpath:common/login.feature&#39;) adminCredentials
 </div>   
 
   
@@ -171,7 +171,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + adminLogin.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -255,7 +255,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request read(&#39;classpath:data/discount-config/valid-config.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -283,7 +283,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">109</div>
+    <div class="time-cell passed">69</div>
   </div>
 
    
@@ -292,20 +292,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.12">19:26:38.316 request:
+  <div class="preformatted" data-parent="0.12">23:43:00.139 request:
 1 &gt; POST http://localhost:8081/api/v1/discount-config
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 203
+1 &gt; Content-Length: 141
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;,&quot;maxDiscountLimit&quot;:20,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;capType&quot;:&quot;PERCENTAGE&quot;,&quot;capValue&quot;:50,&quot;capAppliesTo&quot;:&quot;ORDER&quot;}
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;,&quot;maxDiscountCap&quot;:20,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
 
-19:26:38.418 response time in milliseconds: 101
+23:43:00.204 response time in milliseconds: 63
 1 &lt; 500
-1 &lt; X-Correlation-Id: 7416021c-c4a7-4608-b275-d514b45613a8
+1 &lt; X-Correlation-Id: 57a5d308-2769-4afd-8646-4d4ddc5a8ee0
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -314,9 +314,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-04-04T22:26:38.413755100Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;could not execute statement [ERROR: duplicate key value violates unique constraint \&quot;idx_discount_settings_ecommerce_active\&quot;\n  Detail: Key (ecommerce_id)=(550e8400-e29b-41d4-a716-446655440001) already exists.] [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [idx_discount_settings_ecommerce_active]&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:00.197722500Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;could not execute statement [ERROR: duplicate key value violates unique constraint \&quot;idx_discount_settings_ecommerce_active\&quot;\n  Detail: Key (ecommerce_id)=(550e8400-e29b-41d4-a716-446655440001) already exists.] [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [idx_discount_settings_ecommerce_active]&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
 
 </div>   
 
@@ -337,7 +337,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>assert responseStatus == 201 || responseStatus == 500</span>
       </div>
     </div>
-    <div class="time-cell passed">42</div>
+    <div class="time-cell passed">53</div>
   </div>
 
    
@@ -418,10 +418,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">16</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>param ecommerceId = &#39;550e8400-e29b-41d4-a716-446655440001&#39;</span>
+        <span>And</span>&nbsp;<span>param ecommerceId = otherEcommerceId</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -449,7 +449,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">69</div>
+    <div class="time-cell passed">63</div>
   </div>
 
    
@@ -458,18 +458,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.17">19:26:38.471 request:
+  <div class="preformatted" data-parent="0.17">23:43:00.264 request:
 2 &gt; GET http://localhost:8081/api/v1/discount-config?ecommerceId=550e8400-e29b-41d4-a716-446655440001
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK
 2 &gt; Host: localhost:8081
 2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-19:26:38.526 response time in milliseconds: 54
+23:43:00.313 response time in milliseconds: 48
 2 &lt; 200
-2 &lt; X-Correlation-Id: 7761eb50-779f-428f-9e88-06468ee760ba
+2 &lt; X-Correlation-Id: e535f4eb-9761-4ed4-b3c2-3bd364563757
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-XSS-Protection: 0
 2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -478,10 +478,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; X-Frame-Options: DENY
 2 &lt; Content-Type: application/json
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+2 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 2 &lt; Keep-Alive: timeout=60
 2 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;371affea-e1ae-4585-b01b-199c8efbd2a9&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;,&quot;maxDiscountLimit&quot;:&quot;20.0000&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T21:44:57.487135Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T21:44:57.487135Z&quot;}
+{&quot;uid&quot;:&quot;84bd345a-90e1-497f-8964-9e046c061dfe&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;,&quot;maxDiscountCap&quot;:20.0000,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;isActive&quot;:true,&quot;version&quot;:1,&quot;createdAt&quot;:&quot;2026-04-07T00:33:54.090311Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T00:33:54.090311Z&quot;}
 
 </div>   
 
@@ -527,7 +527,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.maxDiscountLimit == &#39;#notnull&#39;</span>
+        <span>And</span>&nbsp;<span>match response.maxDiscountCap == &#39;#notnull&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -559,7 +559,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>291</span>
+              <span>ms:</span>&nbsp;<span>275</span>
             </div>
           </div>
           <div class="step-row">
@@ -591,7 +591,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4">19:26:38.075 karate.env: dev 
+  <div class="preformatted" data-parent="1.4">23:42:59.895 karate.env: dev 
 </div>   
 
   
@@ -611,7 +611,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = callonce read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">223</div>
+    <div class="time-cell passed">217</div>
   </div>
 
    
@@ -620,7 +620,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.5">19:26:38.303 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/login.feature&#39;) adminCredentials
+  <div class="preformatted" data-parent="1.5">23:43:00.126 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/login.feature&#39;) adminCredentials
 </div>   
 
   <div>
@@ -631,7 +631,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">207</div>
+      <div class="time-cell passed">201</div>
     </div>
     <div>
       <div><div>
@@ -656,7 +656,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.0.5">19:26:38.086 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/login.feature&#39;) adminCredentials
+  <div class="preformatted" data-parent="1.5.0.call.0.5">23:42:59.912 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/login.feature&#39;) adminCredentials
 </div>   
 
   
@@ -676,7 +676,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -732,7 +732,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">203</div>
+    <div class="time-cell passed">197</div>
   </div>
 
    
@@ -741,19 +741,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.5.0.call.0.8">19:26:38.098 request:
+  <div class="preformatted" data-parent="1.5.0.call.0.8">23:42:59.927 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 42
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
 
-19:26:38.298 response time in milliseconds: 198
+23:43:00.120 response time in milliseconds: 191
 1 &lt; 200
-1 &lt; X-Correlation-Id: 4f8c7556-6b58-4247-a5b8-d8146fa36021
+1 &lt; X-Correlation-Id: c3038176-0191-44c9-9514-eb4da4ebddb7
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -762,10 +762,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
 
 </div>   
 
@@ -814,7 +814,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -875,7 +875,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authHeader = &#39;Bearer &#39; + adminLogin.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -903,7 +903,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/discount-config&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -959,7 +959,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request read(&#39;classpath:data/discount-config/zero-discount.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -987,7 +987,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">48</div>
   </div>
 
    
@@ -996,20 +996,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.25">19:26:38.315 request:
+  <div class="preformatted" data-parent="1.25">23:43:00.138 request:
 1 &gt; POST http://localhost:8081/api/v1/discount-config
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 202
+1 &gt; Content-Length: 140
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountLimit&quot;:0,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;capType&quot;:&quot;PERCENTAGE&quot;,&quot;capValue&quot;:50,&quot;capAppliesTo&quot;:&quot;ORDER&quot;}
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountCap&quot;:0,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
 
-19:26:38.370 response time in milliseconds: 54
+23:43:00.183 response time in milliseconds: 44
 1 &lt; 400
-1 &lt; X-Correlation-Id: 26e2c114-208e-40e6-ac21-0ea373cb98a0
+1 &lt; X-Correlation-Id: 19d0acf7-9703-49e1-bb5c-b21a551fe481
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1018,9 +1018,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-04-04T22:26:38.364263500Z&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;BAD_REQUEST&quot;,&quot;message&quot;:&quot;maxDiscountLimit debe ser un valor positivo mayor a cero&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:00.177041200Z&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: maxDiscountCap: El maxDiscountCap debe ser mayor a 0&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
 
 </div>   
 
@@ -1070,7 +1070,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>146</span>
+              <span>ms:</span>&nbsp;<span>205</span>
             </div>
           </div>
           <div class="step-row">
@@ -1102,7 +1102,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.4">19:26:38.234 karate.env: dev 
+  <div class="preformatted" data-parent="2.4">23:42:59.973 karate.env: dev 
 </div>   
 
   
@@ -1122,7 +1122,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = callonce read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">66</div>
+    <div class="time-cell passed">146</div>
   </div>
 
    
@@ -1131,7 +1131,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.5">19:26:38.304 this thread waited 62 milliseconds for callonce lock: read(&#39;classpath:common/login.feature&#39;) adminCredentials
+  <div class="preformatted" data-parent="2.5">23:43:00.127 this thread waited 142 milliseconds for callonce lock: read(&#39;classpath:common/login.feature&#39;) adminCredentials
 </div>   
 
   
@@ -1179,7 +1179,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/discount-config&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1235,7 +1235,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request read(&#39;classpath:data/discount-config/invalid-ecommerce-format.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1263,7 +1263,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">72</div>
+    <div class="time-cell passed">50</div>
   </div>
 
    
@@ -1272,20 +1272,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.25">19:26:38.315 request:
+  <div class="preformatted" data-parent="2.25">23:43:00.138 request:
 1 &gt; POST http://localhost:8081/api/v1/discount-config
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 186
+1 &gt; Content-Length: 124
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;invalid-uuid-format&quot;,&quot;maxDiscountLimit&quot;:20,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;capType&quot;:&quot;PERCENTAGE&quot;,&quot;capValue&quot;:50,&quot;capAppliesTo&quot;:&quot;ORDER&quot;}
+{&quot;ecommerceId&quot;:&quot;invalid-uuid-format&quot;,&quot;maxDiscountCap&quot;:20,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
 
-19:26:38.382 response time in milliseconds: 67
+23:43:00.184 response time in milliseconds: 45
 1 &lt; 500
-1 &lt; X-Correlation-Id: f21fa1ce-5024-4a19-b744-cc6371837362
+1 &lt; X-Correlation-Id: fa0adab2-56da-43ab-ae97-39b6890fb5a3
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1294,9 +1294,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-04-04T22:26:38.375262Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;JSON parse error: Cannot deserialize value of type `java.util.UUID` from String \&quot;invalid-uuid-format\&quot;: UUID has to be represented by standard 36-char representation&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:00.178040900Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;JSON parse error: Cannot deserialize value of type `java.util.UUID` from String \&quot;invalid-uuid-format\&quot;: UUID has to be represented by standard 36-char representation&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
 
 </div>   
 
@@ -1346,7 +1346,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>151</span>
+              <span>ms:</span>&nbsp;<span>192</span>
             </div>
           </div>
           <div class="step-row">
@@ -1378,7 +1378,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.4">19:26:38.241 karate.env: dev 
+  <div class="preformatted" data-parent="3.4">23:42:59.988 karate.env: dev 
 </div>   
 
   
@@ -1398,7 +1398,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = callonce read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">59</div>
+    <div class="time-cell passed">133</div>
   </div>
 
    
@@ -1407,7 +1407,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.5">19:26:38.304 this thread waited 57 milliseconds for callonce lock: read(&#39;classpath:common/login.feature&#39;) adminCredentials
+  <div class="preformatted" data-parent="3.5">23:43:00.126 this thread waited 128 milliseconds for callonce lock: read(&#39;classpath:common/login.feature&#39;) adminCredentials
 </div>   
 
   
@@ -1455,7 +1455,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/discount-config&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1511,7 +1511,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request read(&#39;classpath:data/discount-config/negative-discount-limit.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1539,7 +1539,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">85</div>
+    <div class="time-cell passed">49</div>
   </div>
 
    
@@ -1548,20 +1548,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.25">19:26:38.315 request:
+  <div class="preformatted" data-parent="3.25">23:43:00.139 request:
 1 &gt; POST http://localhost:8081/api/v1/discount-config
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MCwiZXhwIjoxNzc1NjE2MTgwfQ.OuFkl7h4ytTVpmnOp8RuKFHc3bqBEXx4ct83bClfXSs5undr9Tbzn7-8ONu7J8fK
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 203
+1 &gt; Content-Length: 141
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountLimit&quot;:-5,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;capType&quot;:&quot;PERCENTAGE&quot;,&quot;capValue&quot;:50,&quot;capAppliesTo&quot;:&quot;ORDER&quot;}
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountCap&quot;:-5,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
 
-19:26:38.394 response time in milliseconds: 79
+23:43:00.185 response time in milliseconds: 45
 1 &lt; 400
-1 &lt; X-Correlation-Id: 0527e46f-843f-450a-90bc-78291e4648ee
+1 &lt; X-Correlation-Id: c2a56e98-7e1c-42e7-a7ff-f78d97c10a4a
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1570,9 +1570,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:00 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-04-04T22:26:38.387462200Z&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;BAD_REQUEST&quot;,&quot;message&quot;:&quot;maxDiscountLimit debe ser un valor positivo mayor a cero&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:00.179039900Z&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: maxDiscountCap: El maxDiscountCap debe ser mayor a 0&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
 
 </div>   
 

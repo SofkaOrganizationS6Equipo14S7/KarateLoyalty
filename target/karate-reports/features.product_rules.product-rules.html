@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-04 07:26:41 p. m.</div>
+    <div>2026-04-06 11:43:03 p. m.</div>
   </div>
 </div>
 
@@ -87,7 +87,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1599</span>
+              <span>ms:</span>&nbsp;<span>1575</span>
             </div>
           </div>
           <div class="step-row">
@@ -119,7 +119,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">19:26:38.810 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:00.875 karate.env: dev 
 </div>   
 
   
@@ -136,10 +136,75 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def utils        = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def utils        = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">51</div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">23:43:00.924 this thread waited 43 milliseconds for callonce lock: read(&#39;classpath:common/common-utils.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def loyaltyUser  = callonce read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1082</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">23:43:02.005 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.create-store-admin</div>
+      </div>
+      <div class="time-cell passed">1070</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">194</div>
   </div>
 
    
@@ -152,13 +217,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div>
         
-    <div class="step-row">
-      <div class="step-container" id="0.5.0.call">
+    <div class="step-row" data-parent="0.6.0.call">
+      <div class="step-container" id="0.6.0.call.0.5.0.call">
         <div class="step-ref bg-step">&gt;&gt;</div>
         <div class="step-indent"></div>
-        <div class="step-cell passed">common.common-utils</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">40</div>
+      <div class="time-cell passed">185</div>
     </div>
     <div>
       <div><div>
@@ -166,15 +232,46 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.5">
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5">
       <div class="step-ref bg-step">5</div>
       <div class="step-indent"></div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5">23:43:00.928 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -194,12 +291,126 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">183</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.8">23:43:00.944 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
+
+23:43:01.124 response time in milliseconds: 178
+1 &lt; 200
+1 &lt; X-Correlation-Id: 1dec8066-89c4-43fd-bf04-5245be5dcd10
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxfQ.PlFIvxcaS9T-BLtLTjZRVG-y7LICqWGIUoVH82Vy4mmcSx8bfpMNUQx8JfspEBP6&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -222,15 +433,682 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.7">
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.7">
       <div class="step-ref bg-step">7</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
+        <span>*</span>&nbsp;<span>def prefix     = typeof prefix != &#39;undefined&#39; ? prefix : &#39;sa&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">36</div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecommerce  = typeof ecommerce != &#39;undefined&#39; ? ecommerce : validEcommerceId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username   = prefix + &#39;.&#39; + java.util.UUID.randomUUID()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email      = username + &#39;@test.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, email: &#39;#(email)&#39;, password: &#39;#(testUserPassword)&#39;, roleId: &#39;#(storeAdminRoleId)&#39;, ecommerceId: &#39;#(ecommerce)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">438</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.16">23:43:01.162 request:
+1 &gt; POST http://localhost:8081/api/v1/users
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxfQ.PlFIvxcaS9T-BLtLTjZRVG-y7LICqWGIUoVH82Vy4mmcSx8bfpMNUQx8JfspEBP6
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 251
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;loyalty.face8977-6ef1-4e31-b77c-0808c5e4d9de&quot;,&quot;email&quot;:&quot;loyalty.face8977-6ef1-4e31-b77c-0808c5e4d9de@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+
+23:43:01.599 response time in milliseconds: 434
+1 &lt; 201
+1 &lt; X-Correlation-Id: 48462b85-fc3a-4ed9-ac11-2dcbb1cb7e0e
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;uid&quot;:&quot;54f50706-c96e-4eed-be4f-92cb381db83d&quot;,&quot;username&quot;:&quot;loyalty.face8977-6ef1-4e31-b77c-0808c5e4d9de&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.face8977-6ef1-4e31-b77c-0808c5e4d9de@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T02:43:01.580788200Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:01.580788200Z&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 201</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username  = response.username</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def saLogin   = call read(&#39;classpath:common/login.feature&#39;) { username: &#39;#(username)&#39;, password: &#39;#(testUserPassword)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">402</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.6.0.call">
+      <div class="step-container" id="0.6.0.call.0.19.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">391</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">40</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">348</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.19.0.call.0.8">23:43:01.655 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 86
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;loyalty.face8977-6ef1-4e31-b77c-0808c5e4d9de&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
+
+23:43:02.000 response time in milliseconds: 344
+1 &lt; 200
+1 &lt; X-Correlation-Id: 87077d5e-dadb-4d10-83d9-ba404ff00578
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:43:01 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;loyalty.face8977-6ef1-4e31-b77c-0808c5e4d9de&quot;,&quot;role&quot;:&quot;STORE_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.19.0.call">
+    <div class="step-container" id="0.6.0.call.0.19.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = saLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -256,35 +1134,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def loyaltyUser  = callonce read(&#39;classpath:common/create-loyalty-user.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1315</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6">19:26:40.182 this thread waited 1313 milliseconds for callonce lock: read(&#39;classpath:common/create-loyalty-user.feature&#39;)
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1:10]bg"><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
       
@@ -292,7 +1141,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authHeader   = &#39;Bearer &#39; + loyaltyUser.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -320,7 +1169,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def basePath     = &#39;/api/v1/rules&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -348,7 +1197,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def tipoProducto = &#39;TIPO-&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -376,7 +1225,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def rawPayload = read(&#39;classpath:data/product-rules/product-rule-base.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -460,7 +1309,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def created = call read(&#39;classpath:common/create-rule.feature@create_rule&#39;) { authHeader: &#39;#(authHeader)&#39;, payload: &#39;#(payload)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">101</div>
+    <div class="time-cell passed">325</div>
   </div>
 
    
@@ -479,7 +1328,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.create-rule</div>
       </div>
-      <div class="time-cell passed">77</div>
+      <div class="time-cell passed">300</div>
     </div>
     <div>
       <div><div>
@@ -495,7 +1344,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url adminBaseUrl + &#39;/api/v1/rules&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -579,7 +1428,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">74</div>
+    <div class="time-cell passed">296</div>
   </div>
 
    
@@ -588,20 +1437,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.15.0.call.0.9">19:26:40.217 request:
+  <div class="preformatted" data-parent="0.15.0.call.0.9">23:43:02.052 request:
 1 &gt; POST http://localhost:8081/api/v1/rules
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 259
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Product Rule - TIPO-7162223c-254a-4a3f-a5a4-3bd23c7f02fa&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-7162223c-254a-4a3f-a5a4-3bd23c7f02fa&quot;}}
+{&quot;name&quot;:&quot;Product Rule - TIPO-715f0298-d524-4283-ba2f-4c160d11dddd&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-715f0298-d524-4283-ba2f-4c160d11dddd&quot;}}
 
-19:26:40.289 response time in milliseconds: 70
+23:43:02.345 response time in milliseconds: 291
 1 &lt; 201
-1 &lt; X-Correlation-Id: c6fca7db-391b-4b06-acf4-c87d7aca8d76
+1 &lt; X-Correlation-Id: 41350795-1e5f-4fd9-8cad-ca4c0d0289ef
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -610,10 +1459,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;id&quot;:&quot;bbd3321d-1a5c-4c68-b122-7793cfd88244&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-7162223c-254a-4a3f-a5a4-3bd23c7f02fa&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-7162223c-254a-4a3f-a5a4-3bd23c7f02fa&quot;}],&quot;createdAt&quot;:&quot;2026-04-04T22:26:40.261143400Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:40.261143400Z&quot;}
+{&quot;id&quot;:&quot;54442435-7699-4ab1-a16e-18797780ecf0&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-715f0298-d524-4283-ba2f-4c160d11dddd&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-715f0298-d524-4283-ba2f-4c160d11dddd&quot;}],&quot;createdAt&quot;:&quot;2026-04-07T02:43:02.308217300Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:02.308217300Z&quot;}
 
 </div>   
 
@@ -695,7 +1544,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path basePath, created.ruleId</span>
       </div>
     </div>
-    <div class="time-cell passed">56</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -751,7 +1600,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">67</div>
+    <div class="time-cell passed">104</div>
   </div>
 
    
@@ -760,18 +1609,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.18">19:26:40.349 request:
-1 &gt; GET http://localhost:8081/api/v1/rules/bbd3321d-1a5c-4c68-b122-7793cfd88244
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+  <div class="preformatted" data-parent="0.18">23:43:02.351 request:
+1 &gt; GET http://localhost:8081/api/v1/rules/54442435-7699-4ab1-a16e-18797780ecf0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:26:40.415 response time in milliseconds: 65
+23:43:02.452 response time in milliseconds: 99
 1 &lt; 200
-1 &lt; X-Correlation-Id: 35169ac1-37a9-4de0-acd9-ff1e93631d97
+1 &lt; X-Correlation-Id: 8a59c53a-6f4b-4302-9b07-2881389be184
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -780,10 +1629,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;id&quot;:&quot;bbd3321d-1a5c-4c68-b122-7793cfd88244&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-7162223c-254a-4a3f-a5a4-3bd23c7f02fa&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10.00,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-7162223c-254a-4a3f-a5a4-3bd23c7f02fa&quot;}],&quot;assignedTiers&quot;:[],&quot;createdAt&quot;:&quot;2026-04-04T22:26:40.261143Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:40.261143Z&quot;}
+{&quot;id&quot;:&quot;54442435-7699-4ab1-a16e-18797780ecf0&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-715f0298-d524-4283-ba2f-4c160d11dddd&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10.00,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-715f0298-d524-4283-ba2f-4c160d11dddd&quot;}],&quot;assignedTiers&quot;:[],&quot;createdAt&quot;:&quot;2026-04-07T02:43:02.308217Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:02.308217Z&quot;}
 
 </div>   
 
@@ -861,7 +1710,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1637</span>
+              <span>ms:</span>&nbsp;<span>1659</span>
             </div>
           </div>
           <div class="step-row">
@@ -893,7 +1742,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">19:26:38.827 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:00.876 karate.env: dev 
 </div>   
 
   
@@ -910,10 +1759,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def utils        = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def utils        = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">36</div>
+    <div class="time-cell passed">43</div>
   </div>
 
    
@@ -922,105 +1771,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.common-utils</div>
-      </div>
-      <div class="time-cell passed">27</div>
-    </div>
-    <div>
-      <div><div>
-  
+  <div class="preformatted" data-parent="0.5">23:43:00.924 this thread waited 38 milliseconds for callonce lock: read(&#39;classpath:common/common-utils.feature&#39;)
+</div>   
 
   
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.5.0.call">
-    <div class="step-container" id="0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">24</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
 
 </div>
 </div>
@@ -1034,10 +1788,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def loyaltyUser  = callonce read(&#39;classpath:common/create-loyalty-user.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def loyaltyUser  = callonce read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1315</div>
+    <div class="time-cell passed">1082</div>
   </div>
 
    
@@ -1046,1082 +1800,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">19:26:40.182 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-loyalty-user.feature&#39;)
-</div>   
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.6.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.create-loyalty-user</div>
-      </div>
-      <div class="time-cell passed">1308</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def result    = call read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1307</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row" data-parent="0.6.0.call">
-      <div class="step-container" id="0.6.0.call.0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.create-store-admin</div>
-      </div>
-      <div class="time-cell passed">1296</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
-      </div>
-    </div>
-    <div class="time-cell passed">195</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-      <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.login</div>
-      </div>
-      <div class="time-cell passed">188</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5.0.call.0.5">19:26:38.869 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-loyalty-user.feature&#39;)
+  <div class="preformatted" data-parent="0.6">23:43:02.006 this thread waited 1078 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }
 </div>   
 
   
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">187</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5.0.call.0.8">19:26:38.892 request:
-1 &gt; POST http://localhost:8081/api/v1/auth/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 42
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
-
-19:26:39.076 response time in milliseconds: 182
-1 &lt; 200
-1 &lt; X-Correlation-Id: f55f1753-3036-4a42-9c7e-cccd80d342e2
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:39 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OSwiZXhwIjoxNzc1NDI3OTk5fQ.vf5Qwb-EJq9pvnJEI3hAMZ6WTUmxetHZdEZfjRhkoa6Z7DkWTy_7J_NfLye8KMui&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.5.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def prefix     = typeof prefix != &#39;undefined&#39; ? prefix : &#39;sa&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">31</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def ecommerce  = typeof ecommerce != &#39;undefined&#39; ? ecommerce : validEcommerceId</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def username   = prefix + &#39;.&#39; + java.util.UUID.randomUUID()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">179</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def email      = username + &#39;@test.com&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.12">
-      <div class="step-ref bg-step">12</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.13">
-      <div class="step-ref bg-step">13</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/users&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.14">
-      <div class="step-ref bg-step">14</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.15">
-      <div class="step-ref bg-step">15</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, email: &#39;#(email)&#39;, password: &#39;#(testUserPassword)&#39;, roleId: &#39;#(storeAdminRoleId)&#39;, ecommerceId: &#39;#(ecommerce)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.16">
-      <div class="step-ref bg-step">16</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">512</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.16">19:26:39.297 request:
-1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OSwiZXhwIjoxNzc1NDI3OTk5fQ.vf5Qwb-EJq9pvnJEI3hAMZ6WTUmxetHZdEZfjRhkoa6Z7DkWTy_7J_NfLye8KMui
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 251
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234&quot;,&quot;email&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
-
-19:26:39.805 response time in milliseconds: 507
-1 &lt; 201
-1 &lt; X-Correlation-Id: 5e86f108-7f81-411e-9dbe-0fc6659c5a04
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:39 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;ccef18a1-58d9-43de-91f1-ffdc79442883&quot;,&quot;username&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-04T22:26:39.787864Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:39.787864Z&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.17">
-      <div class="step-ref bg-step">17</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 201</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.18">
-      <div class="step-ref bg-step">18</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def username  = response.username</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19">
-      <div class="step-ref bg-step">19</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def saLogin   = call read(&#39;classpath:common/login.feature&#39;) { username: &#39;#(username)&#39;, password: &#39;#(testUserPassword)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">370</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-      <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call">
-        <div class="step-ref bg-step">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">common.login</div>
-      </div>
-      <div class="time-cell passed">355</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.19.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call.0.5">
-      <div class="step-ref bg-step">5</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.19.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.19.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.19.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call.0.8">
-      <div class="step-ref bg-step">8</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">351</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.19.0.call.0.8">19:26:39.829 request:
-1 &gt; POST http://localhost:8081/api/v1/auth/login
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 86
-1 &gt; Host: localhost:8081
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
-
-19:26:40.177 response time in milliseconds: 348
-1 &lt; 200
-1 &lt; X-Correlation-Id: 5fe5f1d8-72ba-4f6c-a0d3-3ed633700f7b
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;loyalty.ca68f696-b3d8-4334-8211-2404cbdc5234&quot;,&quot;role&quot;:&quot;STORE_ADMIN&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.19.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call.0.9">
-      <div class="step-ref bg-step">9</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.19.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call.0.10">
-      <div class="step-ref bg-step">10</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call.0.19.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.19.0.call.0.11">
-      <div class="step-ref bg-step">11</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = response.token</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
-    <div class="step-container" id="0.6.0.call.0.5.0.call.0.20">
-      <div class="step-ref bg-step">20</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = saLogin.authToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.6">
-      <div class="step-ref bg-step">6</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def username  = result.username</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.6.0.call">
-    <div class="step-container" id="0.6.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def authToken = result.authToken</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
 
 </div>
 </div>
@@ -2166,7 +1848,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def basePath     = &#39;/api/v1/rules&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2194,7 +1876,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def tipoProducto = &#39;TIPO-&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -2222,7 +1904,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def rawPayload = read(&#39;classpath:data/product-rules/product-rule-base.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -2306,7 +1988,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def created = call read(&#39;classpath:common/create-rule.feature@create_rule&#39;) { authHeader: &#39;#(authHeader)&#39;, payload: &#39;#(payload)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">102</div>
+    <div class="time-cell passed">328</div>
   </div>
 
    
@@ -2325,7 +2007,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.create-rule</div>
       </div>
-      <div class="time-cell passed">77</div>
+      <div class="time-cell passed">302</div>
     </div>
     <div>
       <div><div>
@@ -2425,7 +2107,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">75</div>
+    <div class="time-cell passed">299</div>
   </div>
 
    
@@ -2434,20 +2116,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27.0.call.0.9">19:26:40.217 request:
+  <div class="preformatted" data-parent="0.27.0.call.0.9">23:43:02.054 request:
 1 &gt; POST http://localhost:8081/api/v1/rules
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 259
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Product Rule - TIPO-bed79745-a7e6-425e-a6f8-f2eb28f8c30f&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-bed79745-a7e6-425e-a6f8-f2eb28f8c30f&quot;}}
+{&quot;name&quot;:&quot;Product Rule - TIPO-597f425a-3219-4cd2-bda7-b12a24c03704&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-597f425a-3219-4cd2-bda7-b12a24c03704&quot;}}
 
-19:26:40.290 response time in milliseconds: 71
+23:43:02.350 response time in milliseconds: 295
 1 &lt; 201
-1 &lt; X-Correlation-Id: cde04574-cc33-4b19-95e7-f61a6f3008fd
+1 &lt; X-Correlation-Id: c38efbea-e226-4fe6-81a4-1aa4d4fe0e72
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2456,10 +2138,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;id&quot;:&quot;97adc9ec-9d42-4d54-9f61-b02dc1815324&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-bed79745-a7e6-425e-a6f8-f2eb28f8c30f&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-bed79745-a7e6-425e-a6f8-f2eb28f8c30f&quot;}],&quot;createdAt&quot;:&quot;2026-04-04T22:26:40.260142800Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:40.260142800Z&quot;}
+{&quot;id&quot;:&quot;1d1ec17d-5021-4b07-99ed-781a5ef75166&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-597f425a-3219-4cd2-bda7-b12a24c03704&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-597f425a-3219-4cd2-bda7-b12a24c03704&quot;}],&quot;createdAt&quot;:&quot;2026-04-07T02:43:02.312587500Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:02.312587500Z&quot;}
 
 </div>   
 
@@ -2508,7 +2190,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def ruleId = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2569,7 +2251,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def updateBody = read(&#39;classpath:data/product-rules/update-discount-exceeded.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -2597,7 +2279,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path basePath, ruleId</span>
       </div>
     </div>
-    <div class="time-cell passed">51</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2625,7 +2307,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header Authorization = authHeader</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2681,7 +2363,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">75</div>
   </div>
 
    
@@ -2690,20 +2372,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.33">19:26:40.349 request:
-1 &gt; PUT http://localhost:8081/api/v1/rules/97adc9ec-9d42-4d54-9f61-b02dc1815324
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+  <div class="preformatted" data-parent="0.33">23:43:02.364 request:
+1 &gt; PUT http://localhost:8081/api/v1/rules/1d1ec17d-5021-4b07-99ed-781a5ef75166
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 209
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Updated Rule&quot;,&quot;description&quot;:&quot;Updated&quot;,&quot;discountPercentage&quot;:100.01,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-bed79745-a7e6-425e-a6f8-f2eb28f8c30f&quot;}}
+{&quot;name&quot;:&quot;Updated Rule&quot;,&quot;description&quot;:&quot;Updated&quot;,&quot;discountPercentage&quot;:100.01,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-597f425a-3219-4cd2-bda7-b12a24c03704&quot;}}
 
-19:26:40.402 response time in milliseconds: 53
+23:43:02.435 response time in milliseconds: 70
 1 &lt; 400
-1 &lt; X-Correlation-Id: 7a85eaf4-82c2-4ad9-9697-6af212fe6eee
+1 &lt; X-Correlation-Id: 31f64ea0-9a26-4672-95d7-64d3e0674b63
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2712,9 +2394,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-04-04T22:26:40.393973300Z&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: discountPercentage: discountPercentage must be &lt;= 100&quot;,&quot;path&quot;:&quot;/api/v1/rules/97adc9ec-9d42-4d54-9f61-b02dc1815324&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-07T02:43:02.425772700Z&quot;,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: discountPercentage: discountPercentage must be &lt;= 100&quot;,&quot;path&quot;:&quot;/api/v1/rules/1d1ec17d-5021-4b07-99ed-781a5ef75166&quot;}
 
 </div>   
 
@@ -2819,7 +2501,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">64</div>
+    <div class="time-cell passed">102</div>
   </div>
 
    
@@ -2828,18 +2510,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.37">19:26:40.406 request:
-2 &gt; GET http://localhost:8081/api/v1/rules/97adc9ec-9d42-4d54-9f61-b02dc1815324
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+  <div class="preformatted" data-parent="0.37">23:43:02.441 request:
+2 &gt; GET http://localhost:8081/api/v1/rules/1d1ec17d-5021-4b07-99ed-781a5ef75166
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 2 &gt; Host: localhost:8081
 2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-19:26:40.468 response time in milliseconds: 62
+23:43:02.525 response time in milliseconds: 83
 2 &lt; 200
-2 &lt; X-Correlation-Id: 9b06a430-1c29-47be-8627-65f170dc43a2
+2 &lt; X-Correlation-Id: 4118e69f-63ff-40f9-81b3-280b84ad0a90
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-XSS-Protection: 0
 2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2848,10 +2530,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; X-Frame-Options: DENY
 2 &lt; Content-Type: application/json
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+2 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 2 &lt; Keep-Alive: timeout=60
 2 &lt; Connection: keep-alive
-{&quot;id&quot;:&quot;97adc9ec-9d42-4d54-9f61-b02dc1815324&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-bed79745-a7e6-425e-a6f8-f2eb28f8c30f&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10.00,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-bed79745-a7e6-425e-a6f8-f2eb28f8c30f&quot;}],&quot;assignedTiers&quot;:[],&quot;createdAt&quot;:&quot;2026-04-04T22:26:40.260143Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:40.260143Z&quot;}
+{&quot;id&quot;:&quot;1d1ec17d-5021-4b07-99ed-781a5ef75166&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-597f425a-3219-4cd2-bda7-b12a24c03704&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:10.00,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-597f425a-3219-4cd2-bda7-b12a24c03704&quot;}],&quot;assignedTiers&quot;:[],&quot;createdAt&quot;:&quot;2026-04-07T02:43:02.312588Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:02.312588Z&quot;}
 
 </div>   
 
@@ -2900,7 +2582,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.discountPercentage == 10</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2929,7 +2611,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1640</span>
+              <span>ms:</span>&nbsp;<span>1666</span>
             </div>
           </div>
           <div class="step-row">
@@ -2961,7 +2643,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">19:26:38.827 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">23:43:00.875 karate.env: dev 
 </div>   
 
   
@@ -2978,10 +2660,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def utils        = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def utils        = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">36</div>
+    <div class="time-cell passed">46</div>
   </div>
 
    
@@ -2990,7 +2672,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5">23:43:00.923 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/common-utils.feature&#39;)
+</div>   
 
   <div>
         
@@ -3000,7 +2683,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.common-utils</div>
       </div>
-      <div class="time-cell passed">27</div>
+      <div class="time-cell passed">34</div>
     </div>
     <div>
       <div><div>
@@ -3025,7 +2708,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5.0.call.0.5">23:43:00.881 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/common-utils.feature&#39;)
+</div>   
 
   
 
@@ -3072,7 +2756,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomInt = function(max){ return Math.floor(Math.random() * max) }</span>
       </div>
     </div>
-    <div class="time-cell passed">24</div>
+    <div class="time-cell passed">31</div>
   </div>
 
    
@@ -3102,10 +2786,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def loyaltyUser  = callonce read(&#39;classpath:common/create-loyalty-user.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def loyaltyUser  = callonce read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1315</div>
+    <div class="time-cell passed">1083</div>
   </div>
 
    
@@ -3114,7 +2798,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">19:26:40.182 this thread waited 1313 milliseconds for callonce lock: read(&#39;classpath:common/create-loyalty-user.feature&#39;)
+  <div class="preformatted" data-parent="0.6">23:43:02.006 this thread waited 1077 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;) { prefix: &#39;loyalty&#39; }
 </div>   
 
   
@@ -3134,7 +2818,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authHeader   = &#39;Bearer &#39; + loyaltyUser.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3162,7 +2846,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def basePath     = &#39;/api/v1/rules&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3190,7 +2874,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def tipoProducto = &#39;TIPO-&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -3218,7 +2902,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def rawPayload = read(&#39;classpath:data/product-rules/product-rule-delete.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -3246,7 +2930,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>copy payload = rawPayload</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3302,7 +2986,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def created = call read(&#39;classpath:common/create-rule.feature@create_rule&#39;) { authHeader: &#39;#(authHeader)&#39;, payload: &#39;#(payload)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">101</div>
+    <div class="time-cell passed">321</div>
   </div>
 
    
@@ -3321,7 +3005,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.create-rule</div>
       </div>
-      <div class="time-cell passed">77</div>
+      <div class="time-cell passed">297</div>
     </div>
     <div>
       <div><div>
@@ -3337,7 +3021,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url adminBaseUrl + &#39;/api/v1/rules&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3421,7 +3105,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">75</div>
+    <div class="time-cell passed">293</div>
   </div>
 
    
@@ -3430,20 +3114,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.46.0.call.0.9">19:26:40.217 request:
+  <div class="preformatted" data-parent="0.46.0.call.0.9">23:43:02.052 request:
 1 &gt; POST http://localhost:8081/api/v1/rules
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 259
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;name&quot;:&quot;Product Rule - TIPO-346e3914-81ff-4e66-a780-5b9f76d5e787&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:30,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-346e3914-81ff-4e66-a780-5b9f76d5e787&quot;}}
+{&quot;name&quot;:&quot;Product Rule - TIPO-815399ba-f525-4be9-9344-8214bfa09ce5&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:30,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;attributes&quot;:{&quot;product_type&quot;:&quot;TIPO-815399ba-f525-4be9-9344-8214bfa09ce5&quot;}}
 
-19:26:40.289 response time in milliseconds: 71
+23:43:02.342 response time in milliseconds: 289
 1 &lt; 201
-1 &lt; X-Correlation-Id: 56e725ea-7ca6-4de5-97f3-f00496aa8d5d
+1 &lt; X-Correlation-Id: 7af8d56b-1186-4419-a815-309bd895a140
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3452,10 +3136,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;id&quot;:&quot;3928ae7d-25f9-46cb-a387-d485dceb787e&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-346e3914-81ff-4e66-a780-5b9f76d5e787&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:30,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-346e3914-81ff-4e66-a780-5b9f76d5e787&quot;}],&quot;createdAt&quot;:&quot;2026-04-04T22:26:40.262142500Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:40.262142500Z&quot;}
+{&quot;id&quot;:&quot;c38b2a63-2692-4a4b-838b-7a23411c5a1b&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-815399ba-f525-4be9-9344-8214bfa09ce5&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:30,&quot;isActive&quot;:true,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-815399ba-f525-4be9-9344-8214bfa09ce5&quot;}],&quot;createdAt&quot;:&quot;2026-04-07T02:43:02.304024300Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:02.304024300Z&quot;}
 
 </div>   
 
@@ -3504,7 +3188,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def ruleId = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3537,7 +3221,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def ruleId = created.ruleId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3565,7 +3249,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path basePath, ruleId</span>
       </div>
     </div>
-    <div class="time-cell passed">55</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -3621,7 +3305,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell passed">61</div>
+    <div class="time-cell passed">88</div>
   </div>
 
    
@@ -3630,25 +3314,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.50">19:26:40.349 request:
-1 &gt; DELETE http://localhost:8081/api/v1/rules/3928ae7d-25f9-46cb-a387-d485dceb787e
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+  <div class="preformatted" data-parent="0.50">23:43:02.351 request:
+1 &gt; DELETE http://localhost:8081/api/v1/rules/c38b2a63-2692-4a4b-838b-7a23411c5a1b
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-19:26:40.407 response time in milliseconds: 57
+23:43:02.435 response time in milliseconds: 82
 1 &lt; 204
-1 &lt; X-Correlation-Id: b185895e-cf6a-4cd6-b023-fdfda20d4044
+1 &lt; X-Correlation-Id: 9126a414-b9bc-4e20-8da2-7998de8092a0
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 
@@ -3700,7 +3384,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path basePath, ruleId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3756,7 +3440,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">59</div>
+    <div class="time-cell passed">103</div>
   </div>
 
    
@@ -3765,18 +3449,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.54">19:26:40.411 request:
-2 &gt; GET http://localhost:8081/api/v1/rules/3928ae7d-25f9-46cb-a387-d485dceb787e
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmNhNjhmNjk2LWIzZDgtNDMzNC04MjExLTI0MDRjYmRjNTIzNCIsInVzZXJJZCI6ImNjZWYxOGExLTU4ZDktNDNkZS05MWYxLWZmZGM3OTQ0Mjg4MyIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTM0MTYwMCwiZXhwIjoxNzc1NDI4MDAwLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.3b3UYlJTZPRvd23FozwW_Zsrk8tbZvYtmVJ6RegRw6EJoq-_7RYbqV3kT0IzDH1n
+  <div class="preformatted" data-parent="0.54">23:43:02.441 request:
+2 &gt; GET http://localhost:8081/api/v1/rules/c38b2a63-2692-4a4b-838b-7a23411c5a1b
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJsb3lhbHR5LmZhY2U4OTc3LTZlZjEtNGUzMS1iNzdjLTA4MDhjNWU0ZDlkZSIsInVzZXJJZCI6IjU0ZjUwNzA2LWM5NmUtNGVlZC1iZTRmLTkyY2IzODFkYjgzZCIsInJvbGUiOiJTVE9SRV9BRE1JTiIsImlhdCI6MTc3NTUyOTc4MSwiZXhwIjoxNzc1NjE2MTgxLCJlY29tbWVyY2VfaWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAifQ.DcevJ60SHEVuVBdYSafHjx3CXe1HqAAvCPg105kAwAPTgH-8amnSchgCgYaFR0XP
 2 &gt; Host: localhost:8081
 2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-19:26:40.466 response time in milliseconds: 55
+23:43:02.540 response time in milliseconds: 81
 2 &lt; 200
-2 &lt; X-Correlation-Id: 88b05413-6ecd-4fdb-9201-a97680aca04a
+2 &lt; X-Correlation-Id: 12a5fcb1-0dc3-4406-b73d-6b6dd9e9dfcc
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-XSS-Protection: 0
 2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3785,10 +3469,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; X-Frame-Options: DENY
 2 &lt; Content-Type: application/json
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Sat, 04 Apr 2026 22:26:40 GMT
+2 &lt; Date: Tue, 07 Apr 2026 02:43:02 GMT
 2 &lt; Keep-Alive: timeout=60
 2 &lt; Connection: keep-alive
-{&quot;id&quot;:&quot;3928ae7d-25f9-46cb-a387-d485dceb787e&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-346e3914-81ff-4e66-a780-5b9f76d5e787&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:30.00,&quot;isActive&quot;:false,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-346e3914-81ff-4e66-a780-5b9f76d5e787&quot;}],&quot;assignedTiers&quot;:[],&quot;createdAt&quot;:&quot;2026-04-04T22:26:40.262143Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:40.393973Z&quot;}
+{&quot;id&quot;:&quot;c38b2a63-2692-4a4b-838b-7a23411c5a1b&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;discountPriorityId&quot;:&quot;550e8400-e29b-41d4-a716-446655440112&quot;,&quot;name&quot;:&quot;Product Rule - TIPO-815399ba-f525-4be9-9344-8214bfa09ce5&quot;,&quot;description&quot;:&quot;Regla de producto&quot;,&quot;discountPercentage&quot;:30.00,&quot;isActive&quot;:false,&quot;attributes&quot;:[{&quot;attributeId&quot;:&quot;550e8400-e29b-41d4-a716-446655440310&quot;,&quot;attributeName&quot;:&quot;product_type&quot;,&quot;value&quot;:&quot;TIPO-815399ba-f525-4be9-9344-8214bfa09ce5&quot;}],&quot;assignedTiers&quot;:[],&quot;createdAt&quot;:&quot;2026-04-07T02:43:02.304024Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:43:02.417852Z&quot;}
 
 </div>   
 

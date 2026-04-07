@@ -2,7 +2,7 @@ Feature: HU-04 - Perfil y permisos de usuario con rol USER
 
   Background:
     * configure url = adminBaseUrl
-    * def utils          = call read('classpath:common/common-utils.feature')
+    * def utils          = callonce read('classpath:common/common-utils.feature')
     * def stdUser        = callonce read('classpath:common/create-store-user.feature')
     * def userAuthHeader = 'Bearer ' + stdUser.authToken
     * def profilePath    = '/api/v1/users/me'

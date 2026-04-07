@@ -2,12 +2,11 @@ Feature: HU-02 - Gestión de usuarios por administrador
 
   Background:
     * configure url = adminBaseUrl
-    * def utils        = call read('classpath:common/common-utils.feature')
+    * def utils        = callonce read('classpath:common/common-utils.feature')
     * def loginResult  = callonce read('classpath:common/login.feature') adminCredentials
     * def authHeader   = 'Bearer ' + loginResult.authToken
     * def basePath     = '/api/v1/users'
     * def stdUser      = callonce read('classpath:common/create-store-user.feature')
-    * def stdUsername  = stdUser.username
 
   Scenario Outline: TC-025 - Crear usuario: <escenario> retorna HTTP <expectedStatus>
     * def body = { username: '<username>', email: '<email>', password: '#(testUserPassword)', roleId: '#(storeUserRoleId)', ecommerceId: '<ecommerceId>' }
@@ -30,7 +29,7 @@ Feature: HU-02 - Gestión de usuarios por administrador
     And param ecommerceId = validEcommerceId
     When method GET
     Then status 200
-    And match each response contains { username: '#string', roleId: '#string', roleName: '#string', email: '#string', createdAt: '#string' }
+    And match each response.content contains { username: '#string', roleId: '#string', roleName: '#string', email: '#string', createdAt: '#string' }
 
   Scenario: TC-027 - Eliminar usuario impide su autenticación posterior
     * def tempUser = call read('classpath:common/create-store-user.feature')

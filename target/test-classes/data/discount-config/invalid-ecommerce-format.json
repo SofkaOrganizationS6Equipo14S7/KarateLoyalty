@@ -1,10 +1,7 @@
 {
   "ecommerceId": "invalid-uuid-format",
-  "maxDiscountLimit": 20,
+  "maxDiscountCap": 20,
   "currencyCode": "USD",
   "allowStacking": true,
-  "roundingRule": "HALF_UP",
-  "capType": "PERCENTAGE",
-  "capValue": 50,
-  "capAppliesTo": "ORDER"
+  "roundingRule": "HALF_UP"
 }
