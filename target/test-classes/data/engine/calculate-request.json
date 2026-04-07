@@ -1,5 +1,5 @@
 {
-  "ecommerceId"    : "550e8400-e29b-41d4-a716-446655440000",
+  "ecommerceId"    : "#(validEcommerceId)",
   "externalOrderId": "test-order-001",
   "customerId"     : "test-customer-001",
   "totalSpent"     : 1500.00,

@@ -16,8 +16,8 @@ Feature: HU-10 - Validación del motor de cálculo
 
     Examples:
       | escenario                    | payload                                                                             |
-      | Sin orderCount               | { ecommerceId: '550e8400-e29b-41d4-a716-446655440000' }                             |
+      | Sin orderCount               | { ecommerceId: '#(validEcommerceId)' }                                               |
       | Sin ecommerceId              | { orderCount: 10 }                                                                  |
       | Payload vacío                | {}                                                                                  |
-      | orderCount es null           | { ecommerceId: '550e8400-e29b-41d4-a716-446655440000', orderCount: null }           |
-      | orderCount negativo          | { ecommerceId: '550e8400-e29b-41d4-a716-446655440000', orderCount: -1 }             |
+      | orderCount es null           | { ecommerceId: '#(validEcommerceId)', orderCount: null }                             |
+      | orderCount negativo          | { ecommerceId: '#(validEcommerceId)', orderCount: -1 }                              |

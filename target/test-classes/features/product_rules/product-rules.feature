@@ -2,7 +2,7 @@ Feature: HU-07 - Gestión de reglas por tipo de producto
 
   Background:
     * configure url = adminBaseUrl
-    * def utils        = call read('classpath:common/common-utils.feature')
+    * def utils        = callonce read('classpath:common/common-utils.feature')
     * def loyaltyUser  = callonce read('classpath:common/create-loyalty-user.feature')
     * def authHeader   = 'Bearer ' + loyaltyUser.authToken
     * def basePath     = '/api/v1/rules'

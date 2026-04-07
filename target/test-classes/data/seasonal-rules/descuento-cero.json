@@ -2,7 +2,7 @@
   "name": "Descuento Negativo TC-040",
   "description": "Regla con descuento negativo",
   "discountPercentage": -1,
-  "discountPriorityId": "550e8400-e29b-41d4-a716-446655440111",
+  "discountPriorityId": "#(seasonalPriorityId)",
   "attributes": {
     "start_date": "2026-09-01",
     "end_date": "2026-09-30"

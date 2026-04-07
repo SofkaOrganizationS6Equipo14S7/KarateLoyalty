@@ -2,7 +2,7 @@
   "name": "Regla a actualizar TC-038",
   "description": "Regla inicial para actualización",
   "discountPercentage": 10,
-  "discountPriorityId": "550e8400-e29b-41d4-a716-446655440111",
+  "discountPriorityId": "#(seasonalPriorityId)",
   "attributes": {
     "start_date": "2026-01-01",
     "end_date": "2026-01-31"

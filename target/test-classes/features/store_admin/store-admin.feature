@@ -2,7 +2,7 @@ Feature: HU-03 - Gestión restringida por STORE_ADMIN
 
   Background:
     * configure url = adminBaseUrl
-    * def utils           = call read('classpath:common/common-utils.feature')
+    * def utils           = callonce read('classpath:common/common-utils.feature')
     * def saUser          = callonce read('classpath:common/create-store-admin.feature')
     * def storeAuthHeader = 'Bearer ' + saUser.authToken
     * def stdUser         = callonce read('classpath:common/create-store-user.feature')

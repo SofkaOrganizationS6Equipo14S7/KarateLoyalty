@@ -5,9 +5,10 @@ Feature: HU-05 - Autenticación del motor de cálculo
     * def enginePath = '/api/v1/engine/calculate'
     * def keySetup = callonce read('classpath:common/create-api-key.feature')
     * def validApiKey = keySetup.apiKey
+    * def basePayload = read('classpath:data/engine/calculate-request.json')
 
   Scenario: TC-035 Iter 1 - API Key válida retorna HTTP 200
-    * def payload = read('classpath:data/engine/calculate-request.json')
+    * copy payload = basePayload
     * set payload.externalOrderId = java.util.UUID.randomUUID() + ''
     Given path enginePath
     And header x-api-key = validApiKey
@@ -17,7 +18,7 @@ Feature: HU-05 - Autenticación del motor de cálculo
     And match response.customerTier == '#string'
 
   Scenario: TC-035 Iter 2 - API Key inválida retorna HTTP 401
-    * def payload = read('classpath:data/engine/calculate-request.json')
+    * copy payload = basePayload
     * set payload.externalOrderId = java.util.UUID.randomUUID() + ''
     Given path enginePath
     And header x-api-key = 'INVALID-KEY-000'

@@ -2,7 +2,7 @@ Feature: HU-02 - Gestión de usuarios por administrador
 
   Background:
     * configure url = adminBaseUrl
-    * def utils        = call read('classpath:common/common-utils.feature')
+    * def utils        = callonce read('classpath:common/common-utils.feature')
     * def loginResult  = callonce read('classpath:common/login.feature') adminCredentials
     * def authHeader   = 'Bearer ' + loginResult.authToken
     * def basePath     = '/api/v1/users'

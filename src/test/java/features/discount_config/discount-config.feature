@@ -13,7 +13,7 @@ Feature: HU-09 - Configuración de tope y prioridades de descuento
     * assert responseStatus == 201 || responseStatus == 500
     Given path '/api/v1/discount-config'
     And header Authorization = authHeader
-    And param ecommerceId = '550e8400-e29b-41d4-a716-446655440001'
+    And param ecommerceId = otherEcommerceId
     When method GET
     Then status 200
     And match response.maxDiscountCap == '#notnull'
