@@ -1,16 +1,16 @@
 Feature: HU-11 - Tope máximo en el motor de cálculo de descuentos
 
   Background:
-    * def configSetup = callonce read('classpath:common/setup-engine-config.feature')
-    * configure url   = engineBaseUrl
-    * def enginePath  = '/api/v1/engine/calculate'
-    * def keySetup    = callonce read('classpath:common/create-api-key.feature')
-    * def validApiKey = keySetup.apiKey
-    * def basePayload = read('classpath:data/engine/calculate-request.json')
+    * def setup      = callonce read('classpath:common/engine-setup.feature')
+    * def utils      = setup.utils
+    * configure url  = engineBaseUrl
+    * def enginePath = setup.enginePath
+    * def validApiKey = setup.validApiKey
+    * def basePayload = setup.basePayload
 
   Scenario: TC-053 - Descuento acumulado es limitado por el tope máximo configurado
     * copy payload = basePayload
-    * set payload.externalOrderId = 'TC053-' + java.util.UUID.randomUUID()
+    * set payload.externalOrderId = 'TC053-' + utils.uuid()
     * set payload.totalSpent      = 5000.00
     * set payload.orderCount      = 50
     * set payload.membershipDays  = 730
@@ -29,7 +29,7 @@ Feature: HU-11 - Tope máximo en el motor de cálculo de descuentos
 
   Scenario: TC-054 - Descuento sin recorte cuando acumulado no excede el tope
     * copy payload = basePayload
-    * set payload.externalOrderId = 'TC054-' + java.util.UUID.randomUUID()
+    * set payload.externalOrderId = 'TC054-' + utils.uuid()
     * set payload.totalSpent      = 100.00
     * set payload.orderCount      = 2
     * set payload.membershipDays  = 30

@@ -58,7 +58,7 @@ Feature: HU-15 - Gestión de ecommerces por SUPER_ADMIN
     Then status 201
     * def ecommerceId = response.uid
 
-    * def saUsername = 'tc061.' + java.util.UUID.randomUUID()
+    * def saUsername = 'tc061.' + utils.uuid()
     * def saEmail    = saUsername + '@test.com'
     Given path '/api/v1/users'
     And header Authorization = authHeader
@@ -93,7 +93,7 @@ Feature: HU-15 - Gestión de ecommerces por SUPER_ADMIN
     And path '/api/v1/engine/calculate'
     And header x-api-key = apiKey
     * copy payload = read('classpath:data/engine/calculate-request.json')
-    * set payload.externalOrderId = 'TC061-' + java.util.UUID.randomUUID()
+    * set payload.externalOrderId = 'TC061-' + utils.uuid()
     * set payload.ecommerceId = ecommerceId
     And request payload
     When method POST

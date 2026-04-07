@@ -1,16 +1,16 @@
 Feature: HU-11 - Validación de request en el motor de cálculo
 
   Background:
-    * def configSetup = callonce read('classpath:common/setup-engine-config.feature')
-    * configure url   = engineBaseUrl
-    * def enginePath  = '/api/v1/engine/calculate'
-    * def keySetup    = callonce read('classpath:common/create-api-key.feature')
-    * def validApiKey = keySetup.apiKey
-    * def basePayload = read('classpath:data/engine/calculate-request.json')
+    * def setup      = callonce read('classpath:common/engine-setup.feature')
+    * def utils      = setup.utils
+    * configure url  = engineBaseUrl
+    * def enginePath = setup.enginePath
+    * def validApiKey = setup.validApiKey
+    * def basePayload = setup.basePayload
 
   Scenario: TC-057 R1 - API Key válida + carrito válido + descuentos aplicables retorna HTTP 200
     * copy payload = basePayload
-    * set payload.externalOrderId = 'TC057R1-' + java.util.UUID.randomUUID()
+    * set payload.externalOrderId = 'TC057R1-' + utils.uuid()
     * set payload.items = [{ productId: 'PROD-R1', quantity: 2, unitPrice: 100.00, category: 'GENERAL' }]
     Given path enginePath
     And header x-api-key = validApiKey
@@ -38,7 +38,7 @@ Feature: HU-11 - Validación de request en el motor de cálculo
 
   Scenario: TC-057 R4 - Carrito válido con cliente nuevo retorna HTTP 200 con descuento calculado
     * copy payload = basePayload
-    * set payload.externalOrderId = 'TC057R4-' + java.util.UUID.randomUUID()
+    * set payload.externalOrderId = 'TC057R4-' + utils.uuid()
     * set payload.customerId = 'NEW-CUST-NO-DISCOUNT'
     * set payload.totalSpent = 0
     * set payload.orderCount = 0
