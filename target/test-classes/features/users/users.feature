@@ -30,7 +30,7 @@ Feature: HU-02 - Gestión de usuarios por administrador
     And param ecommerceId = validEcommerceId
     When method GET
     Then status 200
-    And match each response contains { username: '#string', roleId: '#string', roleName: '#string', email: '#string', createdAt: '#string' }
+    And match each response.content contains { username: '#string', roleId: '#string', roleName: '#string', email: '#string', createdAt: '#string' }
 
   Scenario: TC-027 - Eliminar usuario impide su autenticación posterior
     * def tempUser = call read('classpath:common/create-store-user.feature')

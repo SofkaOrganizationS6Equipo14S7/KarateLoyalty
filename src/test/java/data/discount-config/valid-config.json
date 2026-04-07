@@ -1,10 +1,7 @@
 {
   "ecommerceId": "550e8400-e29b-41d4-a716-446655440001",
-  "maxDiscountLimit": 20,
+  "maxDiscountCap": 20,
   "currencyCode": "USD",
   "allowStacking": true,
-  "roundingRule": "HALF_UP",
-  "capType": "PERCENTAGE",
-  "capValue": 50,
-  "capAppliesTo": "ORDER"
+  "roundingRule": "HALF_UP"
 }

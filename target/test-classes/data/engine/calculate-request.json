@@ -1,14 +1,11 @@
 {
-  "ecommerceId"  : "550e8400-e29b-41d4-a716-446655440000",
-  "subtotal"     : 1500.00,
-  "total"        : 1650.00,
-  "beforeTax"    : 1500.00,
-  "afterTax"     : 1650.00,
-  "totalSpent"   : 1500.00,
-  "orderCount"   : 25,
-  "loyaltyPoints": 0,
-  "discounts"    : [
-    { "type": "LOYALTY",   "amount": 150.00 },
-    { "type": "SEASONAL",  "amount": 100.00 }
+  "ecommerceId"    : "550e8400-e29b-41d4-a716-446655440000",
+  "externalOrderId": "test-order-001",
+  "customerId"     : "test-customer-001",
+  "totalSpent"     : 1500.00,
+  "orderCount"     : 25,
+  "membershipDays" : 365,
+  "items"          : [
+    { "productId": "PROD-001", "quantity": 1, "unitPrice": 100.00, "category": "GENERAL" }
   ]
 }

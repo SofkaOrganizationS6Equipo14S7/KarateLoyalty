@@ -16,7 +16,7 @@ Feature: HU-09 - Configuración de tope y prioridades de descuento
     And param ecommerceId = '550e8400-e29b-41d4-a716-446655440001'
     When method GET
     Then status 200
-    And match response.maxDiscountLimit == '#notnull'
+    And match response.maxDiscountCap == '#notnull'
 
   Scenario Outline: TC-058 - <escenario> retorna HTTP <expectedStatus>
     Given path '/api/v1/discount-config'

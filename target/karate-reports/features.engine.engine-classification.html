@@ -38,7 +38,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">14</div>
+      <div id="nav-pass" class="bg-success">5</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -49,52 +49,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-04 07:26:41 p. m.</div>
+    <div>2026-04-06 11:15:28 p. m.</div>
   </div>
 </div>
 
         <div class="nav-container">
           <div class="nav-item passed">
-            <a href="#[1.1:23]"><span>[1.1:23]</span> <span>TC-046 - totalSpent=50, orderCount=2 clasifica en tier &#39;Bronze&#39;</span></a>
+            <a href="#[1.1:19]"><span>[1.1:19]</span> <span>TC-049 - Payload inválido (Sin orderCount) retorna HTTP 400</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[1.2:24]"><span>[1.2:24]</span> <span>TC-046 - totalSpent=99, orderCount=0 clasifica en tier &#39;Bronze&#39;</span></a>
+            <a href="#[1.2:20]"><span>[1.2:20]</span> <span>TC-049 - Payload inválido (Sin ecommerceId) retorna HTTP 400</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[1.3:25]"><span>[1.3:25]</span> <span>TC-046 - totalSpent=300, orderCount=10 clasifica en tier &#39;Silver&#39;</span></a>
+            <a href="#[1.3:21]"><span>[1.3:21]</span> <span>TC-049 - Payload inválido (Payload vacío) retorna HTTP 400</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[1.4:26]"><span>[1.4:26]</span> <span>TC-046 - totalSpent=400, orderCount=5 clasifica en tier &#39;Silver&#39;</span></a>
+            <a href="#[1.4:22]"><span>[1.4:22]</span> <span>TC-049 - Payload inválido (orderCount es null) retorna HTTP 400</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[1.5:27]"><span>[1.5:27]</span> <span>TC-046 - totalSpent=1500, orderCount=25 clasifica en tier &#39;Gold&#39;</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[1.6:28]"><span>[1.6:28]</span> <span>TC-046 - totalSpent=1000, orderCount=50 clasifica en tier &#39;Gold&#39;</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[1.7:29]"><span>[1.7:29]</span> <span>TC-046 - totalSpent=3000, orderCount=60 clasifica en tier &#39;Platinum&#39;</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[1.8:30]"><span>[1.8:30]</span> <span>TC-046 - totalSpent=5000, orderCount=100 clasifica en tier &#39;Platinum&#39;</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[2.1:41]"><span>[2.1:41]</span> <span>TC-049 - Payload inválido (Sin orderCount) retorna HTTP 400</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[2.2:42]"><span>[2.2:42]</span> <span>TC-049 - Payload inválido (Sin ecommerceId) retorna HTTP 400</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[2.3:43]"><span>[2.3:43]</span> <span>TC-049 - Payload inválido (Payload vacío) retorna HTTP 400</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[2.4:44]"><span>[2.4:44]</span> <span>TC-049 - Payload inválido (orderCount es null) retorna HTTP 400</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[2.5:45]"><span>[2.5:45]</span> <span>TC-049 - Payload inválido (orderCount negativo) retorna HTTP 400</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[3:47]"><span>[3:47]</span> <span>TC-051 - Mismo payload produce tier Gold en dos llamadas consecutivas (determinismo)</span></a>
+            <a href="#[1.5:23]"><span>[1.5:23]</span> <span>TC-049 - Payload inválido (orderCount negativo) retorna HTTP 400</span></a>
           </div>
         </div>
       </div>
@@ -104,33 +77,33 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
           <span class="feature-path">features/engine/engine-classification.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">HU-10 - Clasificación de fidelidad en el motor de cálculo</span>
+          <span class="feature-name">HU-10 - Validación del motor de cálculo</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1.1:23]">
+          <div class="scenario-heading" id="[1.1:19]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1.1:23]</span>
-                <span class="scenario-name">TC-046 - totalSpent=50, orderCount=2 clasifica en tier &#39;Bronze&#39;</span>
+                Scenario: <span>[1.1:19]</span>
+                <span class="scenario-name">TC-049 - Payload inválido (Sin orderCount) retorna HTTP 400</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>358</span>
+              <span>ms:</span>&nbsp;<span>998</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1.1:23]bg">
+            <div class="step-container" id="[1.1:19]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1.1:23]bg"><div>
+          <div data-parent="[1.1:19]bg"><div>
   
 
   
@@ -140,10 +113,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
+        <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">366</div>
   </div>
 
    
@@ -152,75 +125,18 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4">19:26:38.388 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.1:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.1:23]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">296</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.6">19:26:38.689 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
+  <div class="preformatted" data-parent="1.4">23:15:27.570 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/setup-engine-config.feature&#39;)
 </div>   
 
   <div>
         
     <div class="step-row">
-      <div class="step-container" id="1.6.0.call">
+      <div class="step-container" id="1.4.0.call">
         <div class="step-ref bg-step">&gt;&gt;</div>
         <div class="step-indent"></div>
-        <div class="step-cell passed">common.create-api-key</div>
+        <div class="step-cell passed">common.setup-engine-config</div>
       </div>
-      <div class="time-cell passed">285</div>
+      <div class="time-cell passed">359</div>
     </div>
     <div>
       <div><div>
@@ -228,15 +144,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.5">
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.5">
       <div class="step-ref bg-step">5</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">205</div>
+    <div class="time-cell passed">131</div>
   </div>
 
    
@@ -249,14 +165,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div>
         
-    <div class="step-row" data-parent="1.6.0.call">
-      <div class="step-container" id="1.6.0.call.0.5.0.call">
+    <div class="step-row" data-parent="1.4.0.call">
+      <div class="step-container" id="1.4.0.call.0.5.0.call">
         <div class="step-ref bg-step">&gt;&gt;</div>
         <div class="step-indent"></div>
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">195</div>
+      <div class="time-cell passed">126</div>
     </div>
     <div>
       <div><div>
@@ -264,8 +180,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call.0.5.0.call">
-    <div class="step-container" id="1.6.0.call.0.5.0.call.0.5">
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.5">
       <div class="step-ref bg-step">5</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
@@ -282,7 +198,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.6.0.call.0.5.0.call.0.5">19:26:38.396 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
+  <div class="preformatted" data-parent="1.4.0.call.0.5.0.call.0.5">23:15:27.203 karate.env: dev 
+23:15:27.207 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/setup-engine-config.feature&#39;)
 </div>   
 
   
@@ -294,13 +211,42 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call.0.5.0.call">
-    <div class="step-container" id="1.6.0.call.0.5.0.call.0.6">
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.6">
       <div class="step-ref bg-step">6</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -323,37 +269,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call.0.5.0.call">
-    <div class="step-container" id="1.6.0.call.0.5.0.call.0.7">
-      <div class="step-ref bg-step">7</div>
-      <div class="step-indent"></div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="1.6.0.call.0.5.0.call">
-    <div class="step-container" id="1.6.0.call.0.5.0.call.0.8">
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.8">
       <div class="step-ref bg-step">8</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
@@ -361,7 +278,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">190</div>
+    <div class="time-cell passed">124</div>
   </div>
 
    
@@ -370,19 +287,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.6.0.call.0.5.0.call.0.8">19:26:38.417 request:
+  <div class="preformatted" data-parent="1.4.0.call.0.5.0.call.0.8">23:15:27.217 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 42
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
 
-19:26:38.604 response time in milliseconds: 185
+23:15:27.339 response time in milliseconds: 121
 1 &lt; 200
-1 &lt; X-Correlation-Id: 2232b8c8-e492-4213-b011-4a0f51a8e853
+1 &lt; X-Correlation-Id: df764546-957c-4f34-b09d-670a6779f435
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -391,10 +308,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:15:27 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyODEyNywiZXhwIjoxNzc1NjE0NTI3fQ.O_bI5IGZdiTJ8DDFjWOe3LJrtHcpvvLtlPf2G_DRoGGHW9MQM7JeiN1eHgU0NEuR&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
 
 </div>   
 
@@ -407,8 +324,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call.0.5.0.call">
-    <div class="step-container" id="1.6.0.call.0.5.0.call.0.9">
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
@@ -436,8 +353,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call.0.5.0.call">
-    <div class="step-container" id="1.6.0.call.0.5.0.call.0.10">
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
@@ -445,7 +362,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -465,8 +382,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call.0.5.0.call">
-    <div class="step-container" id="1.6.0.call.0.5.0.call.0.11">
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
       <div class="step-indent"></div>
@@ -474,7 +391,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authToken = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -499,12 +416,124 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.6">
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.6">
       <div class="step-ref bg-step">6</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
+        <span>*</span>&nbsp;<span>def adminAuth = &#39;Bearer &#39; + adminLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/discount-config&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = adminAuth</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39;, maxDiscountCap: 50, currencyCode: &#39;USD&#39;, allowStacking: true, roundingRule: &#39;HALF_UP&#39; }</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -527,8 +556,819 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.8">
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">205</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.4.0.call.0.11">23:15:27.345 request:
+1 &gt; POST http://localhost:8081/api/v1/discount-config
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyODEyNywiZXhwIjoxNzc1NjE0NTI3fQ.O_bI5IGZdiTJ8DDFjWOe3LJrtHcpvvLtlPf2G_DRoGGHW9MQM7JeiN1eHgU0NEuR
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 141
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountCap&quot;:50,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
+
+23:15:27.548 response time in milliseconds: 202
+1 &lt; 500
+1 &lt; X-Correlation-Id: 34292936-87f9-458f-8390-8dea782b319c
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:15:27 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:&quot;2026-04-07T02:15:27.542662800Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;could not execute statement [ERROR: duplicate key value violates unique constraint \&quot;idx_discount_settings_ecommerce_active\&quot;\n  Detail: Key (ecommerce_id)=(550e8400-e29b-41d4-a716-446655440000) already exists.] [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [idx_discount_settings_ecommerce_active]&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call">
+    <div class="step-container" id="1.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>assert responseStatus == 201 || responseStatus == 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1.1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/engine/calculate&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">573</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.7">23:15:28.143 this thread waited 571 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:19]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path enginePath</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { ecommerceId: &#39;550e8400-e29b-41d4-a716-446655440000&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">58</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">23:15:28.145 request:
+1 &gt; POST http://localhost:8082/api/v1/engine/calculate
+1 &gt; x-api-key: 4ba671d1-653f-4e5b-93a9-b3a0fbb1c273
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+
+23:15:28.202 response time in milliseconds: 55
+1 &lt; 400
+1 &lt; X-Correlation-Id: 8d832b01-fb24-4371-b471-d12e8793de08
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:15:28 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:1775528128.176157100,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: totalSpent: total_spent is required, customerId: customer_id is required, items: items array is required (min 1), externalOrderId: external_order_id is required, orderCount: order_count is required, membershipDays: membership_days is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.2:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.2:20]</span>
+                <span class="scenario-name">TC-049 - Payload inválido (Sin ecommerceId) retorna HTTP 400</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>998</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.2:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">366</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.4">23:15:27.203 karate.env: dev 
+23:15:27.570 this thread waited 363 milliseconds for callonce lock: read(&#39;classpath:common/setup-engine-config.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/engine/calculate&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">572</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7">23:15:28.143 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="2.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.create-api-key</div>
+      </div>
+      <div class="time-cell passed">566</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
+      </div>
+    </div>
+    <div class="time-cell passed">146</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="2.7.0.call">
+      <div class="step-container" id="2.7.0.call.0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">common.login</div>
+      </div>
+      <div class="time-cell passed">142</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call.0.5.0.call">
+    <div class="step-container" id="2.7.0.call.0.5.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.5.0.call.0.5">23:15:27.573 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-api-key.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call.0.5.0.call">
+    <div class="step-container" id="2.7.0.call.0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call.0.5.0.call">
+    <div class="step-container" id="2.7.0.call.0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call.0.5.0.call">
+    <div class="step-container" id="2.7.0.call.0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">139</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.7.0.call.0.5.0.call.0.8">23:15:27.582 request:
+1 &gt; POST http://localhost:8081/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 42
+1 &gt; Host: localhost:8081
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
+
+23:15:27.720 response time in milliseconds: 137
+1 &lt; 200
+1 &lt; X-Correlation-Id: 0491eb76-cf54-4ead-bf62-98acaf7733de
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:15:27 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Connection: keep-alive
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyODEyNywiZXhwIjoxNzc1NjE0NTI3fQ.O_bI5IGZdiTJ8DDFjWOe3LJrtHcpvvLtlPf2G_DRoGGHW9MQM7JeiN1eHgU0NEuR&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call.0.5.0.call">
+    <div class="step-container" id="2.7.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call.0.5.0.call">
+    <div class="step-container" id="2.7.0.call.0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call.0.5.0.call">
+    <div class="step-container" id="2.7.0.call.0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = response.token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.8">
       <div class="step-ref bg-step">8</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
@@ -555,8 +1395,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.9">
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
@@ -583,8 +1423,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.10">
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
@@ -611,8 +1451,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.11">
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
@@ -639,15 +1479,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.12">
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">76</div>
+    <div class="time-cell passed">58</div>
   </div>
 
    
@@ -656,20 +1496,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.6.0.call.0.12">19:26:38.614 request:
+  <div class="preformatted" data-parent="2.7.0.call.0.12">23:15:27.725 request:
 1 &gt; POST http://localhost:8081/api/v1/ecommerces/550e8400-e29b-41d4-a716-446655440000/api-keys
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6IjNjYzljMmM3LWU1YTAtNDljOC1iOTU1LTZjMTY0MDdkMDczZCIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTM0MTU5OCwiZXhwIjoxNzc1NDI3OTk4fQ.HE8GtTSC3nblU-XwvysQTg5h3T6CLX2fQix8Ok3t5In_o6VFuYOo5kC5BebxQSTm
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUyODEyNywiZXhwIjoxNzc1NjE0NTI3fQ.O_bI5IGZdiTJ8DDFjWOe3LJrtHcpvvLtlPf2G_DRoGGHW9MQM7JeiN1eHgU0NEuR
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-19:26:38.686 response time in milliseconds: 72
+23:15:27.780 response time in milliseconds: 55
 1 &lt; 201
-1 &lt; X-Correlation-Id: 52085466-d83d-4859-acee-a49998e93f51
+1 &lt; X-Correlation-Id: c8bd1536-d129-4b90-b7d5-7cb93e6d3861
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -678,10 +1518,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
+1 &lt; Date: Tue, 07 Apr 2026 02:15:27 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;ea9e44e2-a0a0-426b-b770-b409e1fe3372&quot;,&quot;key&quot;:&quot;a863e03b-702c-4b38-a1d3-16438f6d3115&quot;,&quot;expiresAt&quot;:&quot;2027-04-04T22:26:38.666805500Z&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;createdAt&quot;:&quot;2026-04-04T22:26:38.666805500Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-04T22:26:38.666805500Z&quot;}
+{&quot;uid&quot;:&quot;31fb9b84-743d-4ce8-92ad-0e420fdf2c7b&quot;,&quot;key&quot;:&quot;4ba671d1-653f-4e5b-93a9-b3a0fbb1c273&quot;,&quot;expiresAt&quot;:&quot;2027-04-07T02:15:27.763664Z&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;createdAt&quot;:&quot;2026-04-07T02:15:27.764662700Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T02:15:27.764662700Z&quot;}
 
 </div>   
 
@@ -694,15 +1534,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.13">
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -722,8 +1562,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="step-row" data-parent="1.6.0.call">
-    <div class="step-container" id="1.6.0.call.0.14">
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.14">
       <div class="step-ref bg-step">14</div>
       <div class="step-indent"></div>
       <div class="step-cell passed">
@@ -745,25 +1585,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-    </div>    
-  </div>
-
-</div>
-</div>
-          <div data-parent="[1.1:23]bg"><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="1.7">
-      <div class="step-ref bg-step">7</div>
-      
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
+        <span>*</span>&nbsp;<span>def retryPayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -778,45 +1613,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="1.10">
-      <div class="step-ref passed">10</div>
-      
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.11">
-      <div class="step-ref passed">11</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
+        <span>*</span>&nbsp;<span>set retryPayload.externalOrderId = java.util.UUID.randomUUID() + &#39;&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">4</div>
@@ -834,101 +1641,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="1.12">
-      <div class="step-ref passed">12</div>
-      
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 50</span>
-      </div>
-    </div>
-    <div class="time-cell passed">26</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 2</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
+        <span>*</span>&nbsp;<span>configure retry = { count: 20, interval: 1000 }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -946,17 +1669,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="1.16">
-      <div class="step-ref passed">16</div>
-      
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
+        <span>Given</span>&nbsp;<span>url engineBaseUrl</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -974,20 +1697,132 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+      <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="1.17">
-      <div class="step-ref passed">17</div>
-      
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/api/v1/engine/calculate&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.21">
+      <div class="step-ref bg-step">21</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-API-KEY = apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.22">
+      <div class="step-ref bg-step">22</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request retryPayload</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>retry until responseStatus != 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="2.7.0.call">
+    <div class="step-container" id="2.7.0.call.0.24">
+      <div class="step-ref bg-step">24</div>
+      <div class="step-indent"></div>
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">27</div>
+    <div class="time-cell passed">353</div>
   </div>
 
    
@@ -996,32 +1831,32 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.17">19:26:38.725 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 256
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:50,&quot;orderCount&quot;:2,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
+  <div class="preformatted" data-parent="2.7.0.call.0.24">23:15:27.802 request:
+2 &gt; POST http://localhost:8082/api/v1/engine/calculate
+2 &gt; X-API-KEY: 4ba671d1-653f-4e5b-93a9-b3a0fbb1c273
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 288
+2 &gt; Host: localhost:8082
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;externalOrderId&quot;:&quot;7fd68cdf-413d-4f6a-a409-5a97d8760ab8&quot;,&quot;customerId&quot;:&quot;test-customer-001&quot;,&quot;totalSpent&quot;:1500.0,&quot;orderCount&quot;:25,&quot;membershipDays&quot;:365,&quot;items&quot;:[{&quot;productId&quot;:&quot;PROD-001&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:100.0,&quot;category&quot;:&quot;GENERAL&quot;}]}
 
-19:26:38.748 response time in milliseconds: 23
-1 &lt; 200
-1 &lt; X-Correlation-Id: 85ecabc9-fe96-4cad-aa01-fd7dbbeeb756
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;,&quot;tierName&quot;:&quot;Bronze&quot;,&quot;tierLevel&quot;:1,&quot;classificationReason&quot;:&quot;Qualified for Bronze&quot;},&quot;calculatedAt&quot;:1775341598.744725600}
+23:15:28.134 response time in milliseconds: 331
+2 &lt; 200
+2 &lt; X-Correlation-Id: 2e56db53-14c1-4d36-84fc-0c1f0c03de52
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Date: Tue, 07 Apr 2026 02:15:28 GMT
+2 &lt; Keep-Alive: timeout=60
+2 &lt; Connection: keep-alive
+{&quot;subtotalAmount&quot;:100.0000,&quot;discountCalculated&quot;:0.00,&quot;discountApplied&quot;:0.00,&quot;finalAmount&quot;:100.00,&quot;customerTier&quot;:&quot;UNCLASSIFIED&quot;,&quot;wasCapped&quot;:false,&quot;capReason&quot;:null,&quot;appliedRules&quot;:[],&quot;transactionId&quot;:&quot;09269dd3-b5da-424a-adc0-13bf0d10fdbf&quot;,&quot;calculatedAt&quot;:1775528128.010661600}
 
 </div>   
 
@@ -1029,214 +1864,25 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
+    </div>    
   </div>
 
-   
-  
-  
-
-  
-
-     
-
-  
-
 </div>
 </div>
-          <div><div>
+          <div data-parent="[1.2:20]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="1.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Bronze&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.2:24]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.2:24]</span>
-                <span class="scenario-name">TC-046 - totalSpent=99, orderCount=0 clasifica en tier &#39;Bronze&#39;</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>343</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[1.2:24]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1.2:24]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="2.4">19:26:38.404 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.2:24]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.2:24]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">282</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="2.6">19:26:38.690 this thread waited 278 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.2:24]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="2.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1261,10 +1907,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
+        <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1289,10 +1935,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 99</span>
+        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1317,10 +1963,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">13</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 0</span>
+        <span>And</span>&nbsp;<span>request { orderCount: 10 }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1345,10 +1991,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
+        <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">58</div>
   </div>
 
    
@@ -1357,7 +2003,33 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="2.14">23:15:28.145 request:
+1 &gt; POST http://localhost:8082/api/v1/engine/calculate
+1 &gt; x-api-key: 4ba671d1-653f-4e5b-93a9-b3a0fbb1c273
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 17
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;orderCount&quot;:10}
+
+23:15:28.202 response time in milliseconds: 55
+1 &lt; 400
+1 &lt; X-Correlation-Id: 2418254c-acab-411a-acd2-2965ed3f20eb
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:15:28 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:1775528128.176157100,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: externalOrderId: external_order_id is required, ecommerceId: ecommerce_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required, items: items array is required (min 1), customerId: customer_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+
+</div>   
 
   
 
@@ -1373,149 +2045,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
+        <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">26</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="2.17">19:26:38.726 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 256
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:99,&quot;orderCount&quot;:0,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
-
-19:26:38.748 response time in milliseconds: 22
-1 &lt; 200
-1 &lt; X-Correlation-Id: 047eb789-9833-4950-9bc0-789775dbdc58
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;,&quot;tierName&quot;:&quot;Bronze&quot;,&quot;tierLevel&quot;:1,&quot;classificationReason&quot;:&quot;Qualified for Bronze&quot;},&quot;calculatedAt&quot;:1775341598.741589100}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Bronze&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1532,29 +2065,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1.3:25]">
+          <div class="scenario-heading" id="[1.3:21]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1.3:25]</span>
-                <span class="scenario-name">TC-046 - totalSpent=300, orderCount=10 clasifica en tier &#39;Silver&#39;</span>
+                Scenario: <span>[1.3:21]</span>
+                <span class="scenario-name">TC-049 - Payload inválido (Payload vacío) retorna HTTP 400</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>210</span>
+              <span>ms:</span>&nbsp;<span>557</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1.3:25]bg">
+            <div class="step-container" id="[1.3:21]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1.3:25]bg"><div>
+          <div data-parent="[1.3:21]bg"><div>
   
 
   
@@ -1562,6 +2095,35 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="3.4">
       <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.4">23:15:27.643 karate.env: dev 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
@@ -1576,42 +2138,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.4">19:26:38.540 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.3:25]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
      
 
   
 
 </div>
 </div>
-          <div data-parent="[1.3:25]bg"><div>
+          <div data-parent="[1.3:21]bg"><div>
   
 
   
@@ -1621,39 +2154,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/engine/calculate&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">147</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.6">19:26:38.689 this thread waited 144 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.3:25]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1668,20 +2172,49 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div><div>
+          <div data-parent="[1.3:21]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="3.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="3.7">
+      <div class="step-ref bg-step">7</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
+        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">495</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.7">23:15:28.143 this thread waited 493 milliseconds for callonce lock: read(&#39;classpath:common/create-api-key.feature&#39;)
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.3:21]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1706,10 +2239,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
+        <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1732,90 +2265,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="3.12">
       <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 300</span>
-      </div>
-    </div>
-    <div class="time-cell passed">26</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 10</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.15">
-      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
@@ -1842,11 +2291,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="3.16">
-      <div class="step-ref passed">16</div>
+    <div class="step-container" id="3.13">
+      <div class="step-ref passed">13</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
+        <span>And</span>&nbsp;<span>request {}</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -1870,14 +2319,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="3.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="3.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">26</div>
+    <div class="time-cell passed">58</div>
   </div>
 
    
@@ -1886,20 +2335,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.17">19:26:38.726 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
+  <div class="preformatted" data-parent="3.14">23:15:28.146 request:
+1 &gt; POST http://localhost:8082/api/v1/engine/calculate
+1 &gt; x-api-key: 4ba671d1-653f-4e5b-93a9-b3a0fbb1c273
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 258
+1 &gt; Content-Length: 2
 1 &gt; Host: localhost:8082
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:300,&quot;orderCount&quot;:10,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
+{}
 
-19:26:38.749 response time in milliseconds: 21
-1 &lt; 200
-1 &lt; X-Correlation-Id: a691901a-31a3-437b-8686-c954039cf677
+23:15:28.202 response time in milliseconds: 55
+1 &lt; 400
+1 &lt; X-Correlation-Id: c2b392fb-7294-4bcf-bdf1-ff586709e5a1
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1908,10 +2357,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440002&quot;,&quot;tierName&quot;:&quot;Silver&quot;,&quot;tierLevel&quot;:2,&quot;classificationReason&quot;:&quot;Qualified for Silver&quot;},&quot;calculatedAt&quot;:1775341598.744725600}
+1 &lt; Date: Tue, 07 Apr 2026 02:15:28 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:1775528128.176157100,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: orderCount: order_count is required, customerId: customer_id is required, ecommerceId: ecommerce_id is required, items: items array is required (min 1), membershipDays: membership_days is required, externalOrderId: external_order_id is required, totalSpent: total_spent is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -1925,42 +2373,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="3.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="3.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Silver&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1977,29 +2397,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1.4:26]">
+          <div class="scenario-heading" id="[1.4:22]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1.4:26]</span>
-                <span class="scenario-name">TC-046 - totalSpent=400, orderCount=5 clasifica en tier &#39;Silver&#39;</span>
+                Scenario: <span>[1.4:22]</span>
+                <span class="scenario-name">TC-049 - Payload inválido (orderCount es null) retorna HTTP 400</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>57</span>
+              <span>ms:</span>&nbsp;<span>32</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1.4:26]bg">
+            <div class="step-container" id="[1.4:22]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1.4:26]bg"><div>
+          <div data-parent="[1.4:22]bg"><div>
   
 
   
@@ -2009,7 +2429,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
+        <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
     <div class="time-cell passed">2</div>
@@ -2021,14 +2441,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="4.4">19:26:38.690 karate.env: dev 
+  <div class="preformatted" data-parent="4.4">23:15:28.168 karate.env: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1.4:26]bg"><div>
+          <div data-parent="[1.4:22]bg"><div>
   
 
   
@@ -2038,7 +2458,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
+        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2056,7 +2476,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1.4:26]bg"><div>
+          <div data-parent="[1.4:22]bg"><div>
   
 
   
@@ -2064,6 +2484,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="4.6">
       <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/engine/calculate&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.4:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="4.7">
+      <div class="step-ref bg-step">7</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
@@ -2084,14 +2532,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1.4:26]bg"><div>
+          <div data-parent="[1.4:22]bg"><div>
   
 
   
 
   <div class="step-row">
-    <div class="step-container" id="4.7">
-      <div class="step-ref bg-step">7</div>
+    <div class="step-container" id="4.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
@@ -2118,39 +2566,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="4.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="4.11">
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
+        <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2178,90 +2598,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">22</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 5</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
       </div>
     </div>
@@ -2286,11 +2622,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="4.16">
-      <div class="step-ref passed">16</div>
+    <div class="step-container" id="4.13">
+      <div class="step-ref passed">13</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
+        <span>And</span>&nbsp;<span>request { ecommerceId: &#39;550e8400-e29b-41d4-a716-446655440000&#39;, orderCount: null }</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2314,14 +2650,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="4.17">
-      <div class="step-ref passed">17</div>
+    <div class="step-container" id="4.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">27</div>
+    <div class="time-cell passed">26</div>
   </div>
 
    
@@ -2330,20 +2666,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="4.17">19:26:38.725 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
+  <div class="preformatted" data-parent="4.14">23:15:28.182 request:
+1 &gt; POST http://localhost:8082/api/v1/engine/calculate
+1 &gt; x-api-key: 4ba671d1-653f-4e5b-93a9-b3a0fbb1c273
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 257
+1 &gt; Content-Length: 72
 1 &gt; Host: localhost:8082
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:400,&quot;orderCount&quot;:5,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:null}
 
-19:26:38.749 response time in milliseconds: 23
-1 &lt; 200
-1 &lt; X-Correlation-Id: 0874fb17-8ad7-46a5-acf3-da1a25b93663
+23:15:28.204 response time in milliseconds: 21
+1 &lt; 400
+1 &lt; X-Correlation-Id: 6847d6b2-6f72-45cc-8132-0625ce1c4602
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2352,10 +2688,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440002&quot;,&quot;tierName&quot;:&quot;Silver&quot;,&quot;tierLevel&quot;:2,&quot;classificationReason&quot;:&quot;Qualified for Silver&quot;},&quot;calculatedAt&quot;:1775341598.746151800}
+1 &lt; Date: Tue, 07 Apr 2026 02:15:28 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:1775528128.193822000,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: items: items array is required (min 1), orderCount: order_count is required, customerId: customer_id is required, externalOrderId: external_order_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -2369,42 +2704,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="4.18">
-      <div class="step-ref passed">18</div>
+    <div class="step-container" id="4.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Silver&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2421,29 +2728,29 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 </div>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1.5:27]">
+          <div class="scenario-heading" id="[1.5:23]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1.5:27]</span>
-                <span class="scenario-name">TC-046 - totalSpent=1500, orderCount=25 clasifica en tier &#39;Gold&#39;</span>
+                Scenario: <span>[1.5:23]</span>
+                <span class="scenario-name">TC-049 - Payload inválido (orderCount negativo) retorna HTTP 400</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>56</span>
+              <span>ms:</span>&nbsp;<span>26</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1.5:27]bg">
+            <div class="step-container" id="[1.5:23]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1.5:27]bg"><div>
+          <div data-parent="[1.5:23]bg"><div>
   
 
   
@@ -2453,10 +2760,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
+        <span>*</span>&nbsp;<span>def configSetup = callonce read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2465,14 +2772,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="5.4">19:26:38.690 karate.env: dev 
+  <div class="preformatted" data-parent="5.4">23:15:28.202 karate.env: dev 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1.5:27]bg"><div>
+          <div data-parent="[1.5:23]bg"><div>
   
 
   
@@ -2482,7 +2789,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
+        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2500,7 +2807,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1.5:27]bg"><div>
+          <div data-parent="[1.5:23]bg"><div>
   
 
   
@@ -2510,7 +2817,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
+        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/engine/calculate&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -2528,7 +2835,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1.5:27]bg"><div>
+          <div data-parent="[1.5:23]bg"><div>
   
 
   
@@ -2536,6 +2843,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="5.7">
       <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.5:23]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="5.8">
+      <div class="step-ref bg-step">8</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
@@ -2562,39 +2897,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="5.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
     <div class="step-container" id="5.11">
       <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
+        <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
@@ -2622,10 +2929,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 1500</span>
+        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
       </div>
     </div>
-    <div class="time-cell passed">25</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -2648,2966 +2955,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   <div class="step-row">
     <div class="step-container" id="5.13">
       <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 25</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">26</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="5.17">19:26:38.725 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 259
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:1500,&quot;orderCount&quot;:25,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
-
-19:26:38.748 response time in milliseconds: 23
-1 &lt; 200
-1 &lt; X-Correlation-Id: f3e61f3e-377c-44c9-ae16-97c8c18579e5
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440003&quot;,&quot;tierName&quot;:&quot;Gold&quot;,&quot;tierLevel&quot;:3,&quot;classificationReason&quot;:&quot;Qualified for Gold&quot;},&quot;calculatedAt&quot;:1775341598.742712700}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Gold&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.6:28]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.6:28]</span>
-                <span class="scenario-name">TC-046 - totalSpent=1000, orderCount=50 clasifica en tier &#39;Gold&#39;</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>33</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[1.6:28]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1.6:28]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="6.4">19:26:38.756 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.6:28]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.6:28]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.6:28]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.11">
-      <div class="step-ref passed">11</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 1000</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 50</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">27</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="6.17">19:26:38.770 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 259
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:1000,&quot;orderCount&quot;:50,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
-
-19:26:38.793 response time in milliseconds: 22
-1 &lt; 200
-1 &lt; X-Correlation-Id: 1e8c12d1-2ac0-45c3-96d2-eec866155606
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440003&quot;,&quot;tierName&quot;:&quot;Gold&quot;,&quot;tierLevel&quot;:3,&quot;classificationReason&quot;:&quot;Qualified for Gold&quot;},&quot;calculatedAt&quot;:1775341598.786873900}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="6.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Gold&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.7:29]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.7:29]</span>
-                <span class="scenario-name">TC-046 - totalSpent=3000, orderCount=60 clasifica en tier &#39;Platinum&#39;</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>40</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[1.7:29]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1.7:29]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="7.4">19:26:38.756 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.7:29]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.7:29]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.7:29]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.11">
-      <div class="step-ref passed">11</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 3000</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 60</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">32</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="7.17">19:26:38.772 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 259
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:3000,&quot;orderCount&quot;:60,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
-
-19:26:38.800 response time in milliseconds: 27
-1 &lt; 200
-1 &lt; X-Correlation-Id: 81cf8d55-70dd-4cd3-9428-67cdfeb70152
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440004&quot;,&quot;tierName&quot;:&quot;Platinum&quot;,&quot;tierLevel&quot;:4,&quot;classificationReason&quot;:&quot;Qualified for Platinum&quot;},&quot;calculatedAt&quot;:1775341598.795623700}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="7.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Platinum&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[1.8:30]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[1.8:30]</span>
-                <span class="scenario-name">TC-046 - totalSpent=5000, orderCount=100 clasifica en tier &#39;Platinum&#39;</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>38</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[1.8:30]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[1.8:30]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="8.4">19:26:38.756 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.8:30]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.8:30]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[1.8:30]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.10">
-      <div class="step-ref passed">10</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.11">
-      <div class="step-ref passed">11</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>copy payload = basePayload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.12">
-      <div class="step-ref passed">12</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.totalSpent = 5000</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.13">
-      <div class="step-ref passed">13</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>set payload.orderCount = 100</span>
-      </div>
-    </div>
-    <div class="time-cell passed">4</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.14">
-      <div class="step-ref passed">14</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.15">
-      <div class="step-ref passed">15</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">28</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="8.17">19:26:38.774 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 260
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:5000,&quot;orderCount&quot;:100,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
-
-19:26:38.800 response time in milliseconds: 25
-1 &lt; 200
-1 &lt; X-Correlation-Id: 8d7982dd-3c42-4247-8273-8530a8b907fa
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440004&quot;,&quot;tierName&quot;:&quot;Platinum&quot;,&quot;tierLevel&quot;:4,&quot;classificationReason&quot;:&quot;Qualified for Platinum&quot;},&quot;calculatedAt&quot;:1775341598.795623700}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.18">
-      <div class="step-ref passed">18</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="8.19">
-      <div class="step-ref passed">19</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Platinum&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2.1:41]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2.1:41]</span>
-                <span class="scenario-name">TC-049 - Payload inválido (Sin orderCount) retorna HTTP 400</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>34</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2.1:41]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2.1:41]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.4">19:26:38.756 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.1:41]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.1:41]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.1:41]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.33">
-      <div class="step-ref passed">33</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.34">
-      <div class="step-ref passed">34</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { ecommerceId: &#39;550e8400-e29b-41d4-a716-446655440000&#39; }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">28</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="1.36">19:26:38.771 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 54
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
-
-19:26:38.796 response time in milliseconds: 25
-1 &lt; 400
-1 &lt; X-Correlation-Id: d9ceb505-e8e4-4393-bd7f-4dad56a36adf
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:1775341598.789682800,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: discounts: no debe ser nulo, totalSpent: no debe ser nulo, subtotal: no debe ser nulo, beforeTax: no debe ser nulo, afterTax: no debe ser nulo, orderCount: no debe ser nulo, total: no debe ser nulo&quot;,&quot;path&quot;:&quot;/api/v1/discounts/calculate&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="1.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2.2:42]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2.2:42]</span>
-                <span class="scenario-name">TC-049 - Payload inválido (Sin ecommerceId) retorna HTTP 400</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>34</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2.2:42]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2.2:42]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="2.4">19:26:38.760 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.2:42]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.2:42]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.2:42]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.33">
-      <div class="step-ref passed">33</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.34">
-      <div class="step-ref passed">34</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { orderCount: 10 }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">30</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="2.36">19:26:38.770 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 17
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;orderCount&quot;:10}
-
-19:26:38.796 response time in milliseconds: 26
-1 &lt; 400
-1 &lt; X-Correlation-Id: 24c428aa-61e0-4fa9-84fe-c7746bc0a511
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:1775341598.784996500,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: discounts: no debe ser nulo, totalSpent: no debe ser nulo, subtotal: no debe ser nulo, beforeTax: no debe ser nulo, afterTax: no debe ser nulo, total: no debe ser nulo, ecommerceId: no debe ser nulo&quot;,&quot;path&quot;:&quot;/api/v1/discounts/calculate&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="2.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2.3:43]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2.3:43]</span>
-                <span class="scenario-name">TC-049 - Payload inválido (Payload vacío) retorna HTTP 400</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>19</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2.3:43]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2.3:43]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.4">19:26:38.800 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.3:43]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.3:43]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.3:43]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.33">
-      <div class="step-ref passed">33</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.34">
-      <div class="step-ref passed">34</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request {}</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">18</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="3.36">19:26:38.805 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 2
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{}
-
-19:26:38.821 response time in milliseconds: 16
-1 &lt; 400
-1 &lt; X-Correlation-Id: 16397ed8-697e-4f49-9d87-27fe34f89ded
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:1775341598.814808300,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: total: no debe ser nulo, afterTax: no debe ser nulo, ecommerceId: no debe ser nulo, discounts: no debe ser nulo, totalSpent: no debe ser nulo, orderCount: no debe ser nulo, subtotal: no debe ser nulo, beforeTax: no debe ser nulo&quot;,&quot;path&quot;:&quot;/api/v1/discounts/calculate&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="3.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2.4:44]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2.4:44]</span>
-                <span class="scenario-name">TC-049 - Payload inválido (orderCount es null) retorna HTTP 400</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>21</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2.4:44]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2.4:44]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="4.4">19:26:38.800 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.4:44]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.4:44]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.4:44]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.33">
-      <div class="step-ref passed">33</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.34">
-      <div class="step-ref passed">34</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request { ecommerceId: &#39;550e8400-e29b-41d4-a716-446655440000&#39;, orderCount: null }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">20</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="4.36">19:26:38.805 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 72
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:null}
-
-19:26:38.823 response time in milliseconds: 17
-1 &lt; 400
-1 &lt; X-Correlation-Id: 8635ffff-8909-422d-87eb-8f2df89ed0e2
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:1775341598.816054900,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: total: no debe ser nulo, afterTax: no debe ser nulo, discounts: no debe ser nulo, totalSpent: no debe ser nulo, orderCount: no debe ser nulo, subtotal: no debe ser nulo, beforeTax: no debe ser nulo&quot;,&quot;path&quot;:&quot;/api/v1/discounts/calculate&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="4.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[2.5:45]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[2.5:45]</span>
-                <span class="scenario-name">TC-049 - Payload inválido (orderCount negativo) retorna HTTP 400</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>21</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[2.5:45]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[2.5:45]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="5.4">19:26:38.801 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.5:45]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.5:45]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[2.5:45]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.33">
-      <div class="step-ref passed">33</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.34">
-      <div class="step-ref passed">34</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.35">
-      <div class="step-ref passed">35</div>
       
       <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request { ecommerceId: &#39;550e8400-e29b-41d4-a716-446655440000&#39;, orderCount: -1 }</span>
@@ -5634,562 +2981,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="5.36">
-      <div class="step-ref passed">36</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">19</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="5.36">19:26:38.805 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 70
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:-1}
-
-19:26:38.823 response time in milliseconds: 18
-1 &lt; 400
-1 &lt; X-Correlation-Id: 517fb973-c9fa-4f6e-aad6-326f91f154d7
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Connection: close
-{&quot;timestamp&quot;:1775341598.814808300,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: afterTax: no debe ser nulo, total: no debe ser nulo, discounts: no debe ser nulo, totalSpent: no debe ser nulo, subtotal: no debe ser nulo, orderCount: debe ser mayor que o igual a 0, beforeTax: no debe ser nulo&quot;,&quot;path&quot;:&quot;/api/v1/discounts/calculate&quot;}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="5.37">
-      <div class="step-ref passed">37</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 400</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[3:47]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[3:47]</span>
-                <span class="scenario-name">TC-051 - Mismo payload produce tier Gold en dos llamadas consecutivas (determinismo)</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>49</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[3:47]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[3:47]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.4">
-      <div class="step-ref bg-step">4</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure url = engineBaseUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.4">19:26:38.804 karate.env: dev 
-</div>   
-
-  
-
-</div>
-</div>
-          <div data-parent="[3:47]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def enginePath = &#39;/api/v1/discounts/calculate&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[3:47]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.6">
-      <div class="step-ref bg-step">6</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def keySetup = callonce read(&#39;classpath:common/create-api-key.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div data-parent="[3:47]bg"><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.7">
-      <div class="step-ref bg-step">7</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def validApiKey = keySetup.apiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.48">
-      <div class="step-ref passed">48</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def payload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.50">
-      <div class="step-ref passed">50</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.51">
-      <div class="step-ref passed">51</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.52">
-      <div class="step-ref passed">52</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.53">
-      <div class="step-ref passed">53</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method POST</span>
-      </div>
-    </div>
-    <div class="time-cell passed">22</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.53">19:26:38.810 request:
-1 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-1 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 261
-1 &gt; Host: localhost:8082
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:1500.0,&quot;orderCount&quot;:25,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
-
-19:26:38.830 response time in milliseconds: 18
-1 &lt; 200
-1 &lt; X-Correlation-Id: 3902cec7-3ac6-428f-8897-21618b11407b
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-1 &lt; Keep-Alive: timeout=60
-1 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440003&quot;,&quot;tierName&quot;:&quot;Gold&quot;,&quot;tierLevel&quot;:3,&quot;classificationReason&quot;:&quot;Qualified for Gold&quot;},&quot;calculatedAt&quot;:1775341598.824750100}
-
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.54">
-      <div class="step-ref passed">54</div>
-      
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.55">
-      <div class="step-ref passed">55</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == &#39;Gold&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.56">
-      <div class="step-ref passed">56</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def tierPrimeraLlamada = response.classification.tierName</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path enginePath</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.58">
-      <div class="step-ref passed">58</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header x-api-key = validApiKey</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.59">
-      <div class="step-ref passed">59</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request payload</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.60">
-      <div class="step-ref passed">60</div>
+    <div class="step-container" id="5.14">
+      <div class="step-ref passed">14</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method POST</span>
@@ -6204,32 +2997,31 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.60">19:26:38.836 request:
-2 &gt; POST http://localhost:8082/api/v1/discounts/calculate
-2 &gt; x-api-key: a863e03b-702c-4b38-a1d3-16438f6d3115
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 261
-2 &gt; Host: localhost:8082
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.17)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;subtotal&quot;:1500.0,&quot;total&quot;:1650.0,&quot;beforeTax&quot;:1500.0,&quot;afterTax&quot;:1650.0,&quot;totalSpent&quot;:1500.0,&quot;orderCount&quot;:25,&quot;loyaltyPoints&quot;:0,&quot;discounts&quot;:[{&quot;type&quot;:&quot;LOYALTY&quot;,&quot;amount&quot;:150.0},{&quot;type&quot;:&quot;SEASONAL&quot;,&quot;amount&quot;:100.0}]}
+  <div class="preformatted" data-parent="5.14">23:15:28.211 request:
+1 &gt; POST http://localhost:8082/api/v1/engine/calculate
+1 &gt; x-api-key: 4ba671d1-653f-4e5b-93a9-b3a0fbb1c273
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 70
+1 &gt; Host: localhost:8082
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:-1}
 
-19:26:38.851 response time in milliseconds: 14
-2 &lt; 200
-2 &lt; X-Correlation-Id: 014cacfb-9acd-4640-b8b8-42e8dd8dafa3
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-XSS-Protection: 0
-2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 &lt; Pragma: no-cache
-2 &lt; Expires: 0
-2 &lt; X-Frame-Options: DENY
-2 &lt; Content-Type: application/json
-2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Sat, 04 Apr 2026 22:26:38 GMT
-2 &lt; Keep-Alive: timeout=60
-2 &lt; Connection: keep-alive
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;currency&quot;:&quot;COP&quot;,&quot;roundingRule&quot;:&quot;HALF_UP&quot;,&quot;totalRequested&quot;:0.00,&quot;capAmount&quot;:null,&quot;totalApplied&quot;:0.00,&quot;capped&quot;:false,&quot;appliedDiscounts&quot;:[],&quot;classification&quot;:{&quot;tierUid&quot;:&quot;550e8400-e29b-41d4-a716-446655440003&quot;,&quot;tierName&quot;:&quot;Gold&quot;,&quot;tierLevel&quot;:3,&quot;classificationReason&quot;:&quot;Qualified for Gold&quot;},&quot;calculatedAt&quot;:1775341598.846458300}
+23:15:28.230 response time in milliseconds: 18
+1 &lt; 400
+1 &lt; X-Correlation-Id: 4d492cd8-bbbf-4ee0-a38a-2b2bb56c7494
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Date: Tue, 07 Apr 2026 02:15:28 GMT
+1 &lt; Connection: close
+{&quot;timestamp&quot;:1775528128.225557800,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: membershipDays: membership_days is required, orderCount: order_count must be &gt;= 0, externalOrderId: external_order_id is required, items: items array is required (min 1), totalSpent: total_spent is required, customerId: customer_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -6243,39 +3035,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.61">
-      <div class="step-ref passed">61</div>
+    <div class="step-container" id="5.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>status 200</span>
-      </div>
-    </div>
-    <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.62">
-      <div class="step-ref passed">62</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match response.classification.tierName == tierPrimeraLlamada</span>
+        <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
