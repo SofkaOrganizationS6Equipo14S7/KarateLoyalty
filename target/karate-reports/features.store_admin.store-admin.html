@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-07 01:21:29 a. m.</div>
+    <div>2026-04-09 09:30:56 a. m.</div>
   </div>
 </div>
 
@@ -93,7 +93,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2410</span>
+              <span>ms:</span>&nbsp;<span>2857</span>
             </div>
           </div>
           <div class="step-row">
@@ -125,7 +125,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">01:21:26.635 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">09:30:52.292 karate.env: dev 
 </div>   
 
   
@@ -145,7 +145,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">16</div>
+    <div class="time-cell passed">11</div>
   </div>
 
    
@@ -154,7 +154,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">01:21:26.656 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/common-utils.feature&#39;)
+  <div class="preformatted" data-parent="0.5">09:30:52.305 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/common-utils.feature&#39;)
 </div>   
 
   <div>
@@ -165,7 +165,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.common-utils</div>
       </div>
-      <div class="time-cell passed">4</div>
+      <div class="time-cell passed">2</div>
     </div>
     <div>
       <div><div>
@@ -190,7 +190,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.5">01:21:26.644 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/common-utils.feature&#39;)
+  <div class="preformatted" data-parent="0.5.0.call.0.5">09:30:52.297 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/common-utils.feature&#39;)
 </div>   
 
   
@@ -210,7 +210,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -238,7 +238,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomUsername = function(prefix){ return (prefix || &#39;user&#39;) + &#39;.&#39; + java.util.UUID.randomUUID() }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -266,12 +266,50 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomEmail   = function(prefix){ return (prefix || &#39;user&#39;) + &#39;.&#39; + java.util.UUID.randomUUID() + &#39;@test.com&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
   
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def futureDateRange =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.5.0.call.0.9">function(offsetDays) {
+  var random = Math.floor(Math.random() * 3000);
+  var cal = java.util.Calendar.getInstance();
+  cal.add(java.util.Calendar.YEAR, 10);
+  cal.add(java.util.Calendar.DAY_OF_YEAR, (offsetDays || 0) + random);
+  var fmt = new java.text.SimpleDateFormat(&#39;yyyy-MM-dd&#39;);
+  var start = fmt.format(cal.getTime());
+  cal.add(java.util.Calendar.DAY_OF_YEAR, 3);
+  var end = fmt.format(cal.getTime());
+  return { start: start, end: end };
+}</div>
 
   
 
@@ -299,7 +337,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1813</div>
+    <div class="time-cell passed">2090</div>
   </div>
 
    
@@ -308,7 +346,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">01:21:28.457 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">09:30:54.394 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   <div>
@@ -319,7 +357,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.create-store-admin</div>
       </div>
-      <div class="time-cell passed">1800</div>
+      <div class="time-cell passed">2078</div>
     </div>
     <div>
       <div><div>
@@ -335,7 +373,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils      = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -381,7 +419,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5">01:21:26.659 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.5">09:30:52.307 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
@@ -475,6 +513,45 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call.0.5.0.call">
+    <div class="step-container" id="0.6.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def futureDateRange =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.6.0.call.0.5.0.call.0.9">function(offsetDays) {
+  var random = Math.floor(Math.random() * 3000);
+  var cal = java.util.Calendar.getInstance();
+  cal.add(java.util.Calendar.YEAR, 10);
+  cal.add(java.util.Calendar.DAY_OF_YEAR, (offsetDays || 0) + random);
+  var fmt = new java.text.SimpleDateFormat(&#39;yyyy-MM-dd&#39;);
+  var start = fmt.format(cal.getTime());
+  cal.add(java.util.Calendar.DAY_OF_YEAR, 3);
+  var end = fmt.format(cal.getTime());
+  return { start: start, end: end };
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
     </div>    
   </div>
 
@@ -493,7 +570,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">622</div>
+    <div class="time-cell passed">598</div>
   </div>
 
    
@@ -513,7 +590,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">611</div>
+      <div class="time-cell passed">588</div>
     </div>
     <div>
       <div><div>
@@ -588,7 +665,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -617,7 +694,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">608</div>
+    <div class="time-cell passed">567</div>
   </div>
 
    
@@ -626,7 +703,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.6.0.call.0.8">01:21:26.698 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.6.0.call.0.8">09:30:52.336 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 42
@@ -636,9 +713,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
 
-01:21:27.302 response time in milliseconds: 602
+09:30:52.899 response time in milliseconds: 563
 1 &lt; 200
-1 &lt; X-Correlation-Id: caa1b997-ba99-4b08-9420-18c98ae9bb8a
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: bf6a666d-d671-4bb7-b1fb-3ea637bc147d
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -647,10 +727,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:27 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:52 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUzNTY4NywiZXhwIjoxNzc1NjIyMDg3fQ.NSFH-mQYx2L-Y47OzOMDdCXgZ0ZYCgVuapGl9tszgmhRuwy4_pcc-x0JAUOeMAFV&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImE5MzU3ODczLTdlNjMtNDUzYy1hNzVmLTJiNzQzZTlhNzdiZiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTczNzg1MiwiZXhwIjoxNzc1ODI0MjUyfQ.nGk4FtgYNu9PHzsV9tVm3HfsQ_AAeECgMOYV1VFyQ7t9eJzx3sjcxnRkK3XZP-Jj&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
 
 </div>   
 
@@ -730,7 +810,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authToken = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">19</div>
   </div>
 
    
@@ -791,7 +871,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def prefix     = typeof prefix != &#39;undefined&#39; ? prefix : &#39;sa&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -819,7 +899,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def ecommerce  = typeof ecommerce != &#39;undefined&#39; ? ecommerce : validEcommerceId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -847,7 +927,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def username   = prefix + &#39;.&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -875,7 +955,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def email      = username + &#39;@test.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -987,7 +1067,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, email: &#39;#(email)&#39;, password: &#39;#(testUserPassword)&#39;, roleId: &#39;#(storeAdminRoleId)&#39;, ecommerceId: &#39;#(ecommerce)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">83</div>
   </div>
 
    
@@ -1015,7 +1095,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">638</div>
+    <div class="time-cell passed">680</div>
   </div>
 
    
@@ -1024,20 +1104,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.17">01:21:27.320 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.17">09:30:53.015 request:
 1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUzNTY4NywiZXhwIjoxNzc1NjIyMDg3fQ.NSFH-mQYx2L-Y47OzOMDdCXgZ0ZYCgVuapGl9tszgmhRuwy4_pcc-x0JAUOeMAFV
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImE5MzU3ODczLTdlNjMtNDUzYy1hNzVmLTJiNzQzZTlhNzdiZiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTczNzg1MiwiZXhwIjoxNzc1ODI0MjUyfQ.nGk4FtgYNu9PHzsV9tVm3HfsQ_AAeECgMOYV1VFyQ7t9eJzx3sjcxnRkK3XZP-Jj
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 241
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;sa.503b2529-efbd-41b0-8c41-e60271adb8f9&quot;,&quot;email&quot;:&quot;sa.503b2529-efbd-41b0-8c41-e60271adb8f9@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+{&quot;username&quot;:&quot;sa.a7422b28-bd51-4ee1-8f90-bfa0ff67a291&quot;,&quot;email&quot;:&quot;sa.a7422b28-bd51-4ee1-8f90-bfa0ff67a291@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
 
-01:21:27.952 response time in milliseconds: 632
+09:30:53.691 response time in milliseconds: 674
 1 &lt; 201
-1 &lt; X-Correlation-Id: 449d3a25-3585-4dee-9343-32e2f5bb6ff0
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: ef975a10-5814-4aeb-9bc0-85ef63119cb8
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1046,10 +1129,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:27 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:53 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;0a642699-96f3-4e62-955e-3361c67d3031&quot;,&quot;username&quot;:&quot;sa.503b2529-efbd-41b0-8c41-e60271adb8f9&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.503b2529-efbd-41b0-8c41-e60271adb8f9@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T04:21:27.925647900Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T04:21:27.925647900Z&quot;}
+{&quot;uid&quot;:&quot;e6ec0cd2-c15a-4cae-b0b4-b924fb1c92fd&quot;,&quot;username&quot;:&quot;sa.a7422b28-bd51-4ee1-8f90-bfa0ff67a291&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.a7422b28-bd51-4ee1-8f90-bfa0ff67a291@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T12:30:53.660222093Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T12:30:53.660222352Z&quot;}
 
 </div>   
 
@@ -1126,7 +1209,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saLogin   = call read(&#39;classpath:common/login.feature&#39;) { username: &#39;#(username)&#39;, password: &#39;#(testUserPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">513</div>
+    <div class="time-cell passed">700</div>
   </div>
 
    
@@ -1146,7 +1229,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">499</div>
+      <div class="time-cell passed">688</div>
     </div>
     <div>
       <div><div>
@@ -1221,7 +1304,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1250,7 +1333,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">497</div>
+    <div class="time-cell passed">682</div>
   </div>
 
    
@@ -1259,7 +1342,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.20.0.call.0.8">01:21:27.969 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.20.0.call.0.8">09:30:53.707 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 81
@@ -1267,11 +1350,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;sa.503b2529-efbd-41b0-8c41-e60271adb8f9&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
+{&quot;username&quot;:&quot;sa.a7422b28-bd51-4ee1-8f90-bfa0ff67a291&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;}
 
-01:21:28.457 response time in milliseconds: 488
+09:30:54.387 response time in milliseconds: 677
 1 &lt; 200
-1 &lt; X-Correlation-Id: d4ef5361-b80a-4923-a551-c4aea926e54b
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 8699ce5c-8ef5-4261-a53a-be0fb3617646
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1280,10 +1366,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:28 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:54 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS41MDNiMjUyOS1lZmJkLTQxYjAtOGM0MS1lNjAyNzFhZGI4ZjkiLCJ1c2VySWQiOiIwYTY0MjY5OS05NmYzLTRlNjItOTU1ZS0zMzYxYzY3ZDMwMzEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MzU2ODgsImV4cCI6MTc3NTYyMjA4OCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.Dnrk2myNJVLnW5RT3l7FU8mY_SOGMYnaquLXa6DnCiGcDnxQC_3wdUwoXXzGErC2&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;sa.503b2529-efbd-41b0-8c41-e60271adb8f9&quot;,&quot;role&quot;:&quot;STORE_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS5hNzQyMmIyOC1iZDUxLTRlZTEtOGY5MC1iZmEwZmY2N2EyOTEiLCJ1c2VySWQiOiJlNmVjMGNkMi1jMTVhLTRjYWUtYjBiNC1iOTI0ZmIxYzkyZmQiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU3Mzc4NTQsImV4cCI6MTc3NTgyNDI1NCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.ztBfzlYOLY5mmk6WidgcC-UVqJKQT9g0gdSn-3EJCxE4r24xRQGXnmfyd4RsKX_u&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;sa.a7422b28-bd51-4ee1-8f90-bfa0ff67a291&quot;,&quot;role&quot;:&quot;STORE_ADMIN&quot;}
 
 </div>   
 
@@ -1334,7 +1420,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response contains { token: &#39;#string&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1363,7 +1449,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authToken = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1396,7 +1482,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authToken = saLogin.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1429,7 +1515,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1485,7 +1571,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def newUser  = &#39;tc029.&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1513,7 +1599,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def newEmail = newUser + &#39;@test.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1541,7 +1627,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def body     = read(&#39;classpath:data/store-admin/create-user-own-ecommerce.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1653,7 +1739,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">575</div>
+    <div class="time-cell passed">747</div>
   </div>
 
    
@@ -1662,20 +1748,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.17">01:21:28.477 request:
+  <div class="preformatted" data-parent="0.17">09:30:54.409 request:
 1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS41MDNiMjUyOS1lZmJkLTQxYjAtOGM0MS1lNjAyNzFhZGI4ZjkiLCJ1c2VySWQiOiIwYTY0MjY5OS05NmYzLTRlNjItOTU1ZS0zMzYxYzY3ZDMwMzEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MzU2ODgsImV4cCI6MTc3NTYyMjA4OCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.Dnrk2myNJVLnW5RT3l7FU8mY_SOGMYnaquLXa6DnCiGcDnxQC_3wdUwoXXzGErC2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS5hNzQyMmIyOC1iZDUxLTRlZTEtOGY5MC1iZmEwZmY2N2EyOTEiLCJ1c2VySWQiOiJlNmVjMGNkMi1jMTVhLTRjYWUtYjBiNC1iOTI0ZmIxYzkyZmQiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU3Mzc4NTQsImV4cCI6MTc3NTgyNDI1NCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.ztBfzlYOLY5mmk6WidgcC-UVqJKQT9g0gdSn-3EJCxE4r24xRQGXnmfyd4RsKX_u
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 247
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;tc029.31043b13-372e-4c59-9eb5-bb7fa4a539d9&quot;,&quot;email&quot;:&quot;tc029.31043b13-372e-4c59-9eb5-bb7fa4a539d9@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
+{&quot;username&quot;:&quot;tc029.d7f31bdf-9f19-4e75-8bb8-d54ed0b224fe&quot;,&quot;email&quot;:&quot;tc029.d7f31bdf-9f19-4e75-8bb8-d54ed0b224fe@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
 
-01:21:29.049 response time in milliseconds: 572
+09:30:55.151 response time in milliseconds: 741
 1 &lt; 201
-1 &lt; X-Correlation-Id: d5ca68b3-d3dd-4b44-abc4-0199455d3e51
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: d07861d4-e21d-489c-9ce7-5404337552fc
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1684,10 +1773,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:29 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:55 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;62028d80-ce0b-4571-bd39-6dc2115b8842&quot;,&quot;username&quot;:&quot;tc029.31043b13-372e-4c59-9eb5-bb7fa4a539d9&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.31043b13-372e-4c59-9eb5-bb7fa4a539d9@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T04:21:29.016987100Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T04:21:29.016987100Z&quot;}
+{&quot;uid&quot;:&quot;1c965e16-2d95-4eca-b5e3-d715b4ac2881&quot;,&quot;username&quot;:&quot;tc029.d7f31bdf-9f19-4e75-8bb8-d54ed0b224fe&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.d7f31bdf-9f19-4e75-8bb8-d54ed0b224fe@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T12:30:55.113861558Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T12:30:55.113862288Z&quot;}
 
 </div>   
 
@@ -1736,7 +1825,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.ecommerceId == validEcommerceId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1765,7 +1854,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1541</span>
+              <span>ms:</span>&nbsp;<span>2016</span>
             </div>
           </div>
           <div class="step-row">
@@ -1797,7 +1886,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">01:21:27.010 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">09:30:52.481 karate.env: dev 
 </div>   
 
   
@@ -1817,7 +1906,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1845,7 +1934,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1455</div>
+    <div class="time-cell passed">1916</div>
   </div>
 
    
@@ -1854,7 +1943,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">01:21:28.457 this thread waited 1439 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">09:30:54.400 this thread waited 1907 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
@@ -1874,7 +1963,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1902,7 +1991,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1930,7 +2019,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def newUser  = &#39;tc030.&#39; + utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -1958,7 +2047,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def newEmail = newUser + &#39;@test.com&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1986,7 +2075,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def body     = read(&#39;classpath:data/store-admin/create-user-other-ecommerce.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">7</div>
   </div>
 
    
@@ -2098,7 +2187,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">79</div>
+    <div class="time-cell passed">81</div>
   </div>
 
    
@@ -2107,20 +2196,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.28">01:21:28.477 request:
+  <div class="preformatted" data-parent="0.28">09:30:54.427 request:
 1 &gt; POST http://localhost:8081/api/v1/users
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS41MDNiMjUyOS1lZmJkLTQxYjAtOGM0MS1lNjAyNzFhZGI4ZjkiLCJ1c2VySWQiOiIwYTY0MjY5OS05NmYzLTRlNjItOTU1ZS0zMzYxYzY3ZDMwMzEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MzU2ODgsImV4cCI6MTc3NTYyMjA4OCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.Dnrk2myNJVLnW5RT3l7FU8mY_SOGMYnaquLXa6DnCiGcDnxQC_3wdUwoXXzGErC2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS5hNzQyMmIyOC1iZDUxLTRlZTEtOGY5MC1iZmEwZmY2N2EyOTEiLCJ1c2VySWQiOiJlNmVjMGNkMi1jMTVhLTRjYWUtYjBiNC1iOTI0ZmIxYzkyZmQiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU3Mzc4NTQsImV4cCI6MTc3NTgyNDI1NCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.ztBfzlYOLY5mmk6WidgcC-UVqJKQT9g0gdSn-3EJCxE4r24xRQGXnmfyd4RsKX_u
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 247
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;username&quot;:&quot;tc030.6ca75990-1d12-4738-af11-3da6d23bdede&quot;,&quot;email&quot;:&quot;tc030.6ca75990-1d12-4738-af11-3da6d23bdede@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;}
+{&quot;username&quot;:&quot;tc030.69fb6c05-88af-419c-bcfc-6cec8e092313&quot;,&quot;email&quot;:&quot;tc030.69fb6c05-88af-419c-bcfc-6cec8e092313@test.com&quot;,&quot;password&quot;:&quot;Admin123456!@&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440001&quot;}
 
-01:21:28.550 response time in milliseconds: 73
+09:30:54.505 response time in milliseconds: 76
 1 &lt; 403
-1 &lt; X-Correlation-Id: 7b1633b9-6846-44ca-bf7c-0cf78e120c5f
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 4d3aff22-ca60-4aa8-a913-eafb18e92dbe
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2129,10 +2221,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:28 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:54 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2026-04-07T04:21:28.548938600Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;Solo puede crear usuarios dentro de su ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-09T12:30:54.496354894Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;Solo puede crear usuarios dentro de su ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
 
 </div>   
 
@@ -2182,7 +2274,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1395</span>
+              <span>ms:</span>&nbsp;<span>1867</span>
             </div>
           </div>
           <div class="step-row">
@@ -2214,7 +2306,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">01:21:27.179 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">09:30:52.706 karate.env: dev 
 </div>   
 
   
@@ -2262,7 +2354,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1286</div>
+    <div class="time-cell passed">1689</div>
   </div>
 
    
@@ -2271,7 +2363,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">01:21:28.457 this thread waited 1270 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">09:30:54.399 this thread waited 1687 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
@@ -2291,7 +2383,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2431,7 +2523,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">105</div>
+    <div class="time-cell passed">174</div>
   </div>
 
    
@@ -2440,18 +2532,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.35">01:21:28.472 request:
+  <div class="preformatted" data-parent="0.35">09:30:54.404 request:
 1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440000
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS41MDNiMjUyOS1lZmJkLTQxYjAtOGM0MS1lNjAyNzFhZGI4ZjkiLCJ1c2VySWQiOiIwYTY0MjY5OS05NmYzLTRlNjItOTU1ZS0zMzYxYzY3ZDMwMzEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MzU2ODgsImV4cCI6MTc3NTYyMjA4OCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.Dnrk2myNJVLnW5RT3l7FU8mY_SOGMYnaquLXa6DnCiGcDnxQC_3wdUwoXXzGErC2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS5hNzQyMmIyOC1iZDUxLTRlZTEtOGY5MC1iZmEwZmY2N2EyOTEiLCJ1c2VySWQiOiJlNmVjMGNkMi1jMTVhLTRjYWUtYjBiNC1iOTI0ZmIxYzkyZmQiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU3Mzc4NTQsImV4cCI6MTc3NTgyNDI1NCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.ztBfzlYOLY5mmk6WidgcC-UVqJKQT9g0gdSn-3EJCxE4r24xRQGXnmfyd4RsKX_u
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-01:21:28.576 response time in milliseconds: 102
+09:30:54.574 response time in milliseconds: 168
 1 &lt; 200
-1 &lt; X-Correlation-Id: b3eae23f-3526-4854-a0a8-ee7faf98770c
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 8f3bcddc-1374-4d78-ab28-4103b0bd0bd9
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2460,10 +2555,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:28 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:54 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;content&quot;:[{&quot;uid&quot;:&quot;c5c41e97-198c-4d36-86b4-3b66052e4b68&quot;,&quot;username&quot;:&quot;loyalty.5a026aef-4662-44e1-8d0b-0dd4f0a90150&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.5a026aef-4662-44e1-8d0b-0dd4f0a90150@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:43.083790Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:43.083790Z&quot;},{&quot;uid&quot;:&quot;7cfd39e1-77a7-4067-9cf2-4972f893a108&quot;,&quot;username&quot;:&quot;loyalty.1aac2d9b-6082-497c-bb8c-80a9e7d6f7cb&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.1aac2d9b-6082-497c-bb8c-80a9e7d6f7cb@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:43.067898Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:43.067898Z&quot;},{&quot;uid&quot;:&quot;80e62ef1-1a76-4492-92b1-7528341a750c&quot;,&quot;username&quot;:&quot;sa.bf88eedc-3b73-4194-a296-18aba8429611&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.bf88eedc-3b73-4194-a296-18aba8429611@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:45.752525Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:45.752525Z&quot;},{&quot;uid&quot;:&quot;a2d56b22-cc54-45bc-85b7-2a1535a7f124&quot;,&quot;username&quot;:&quot;std.9d53e683-e1a3-47b0-ad11-0aa9234b4944&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.9d53e683-e1a3-47b0-ad11-0aa9234b4944@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:47.036155Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:47.036155Z&quot;},{&quot;uid&quot;:&quot;314e5886-3c52-4514-80b0-c5045f048bfb&quot;,&quot;username&quot;:&quot;tc029.1642eb1c-3b3c-409d-a0db-e2f83f08699b&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.1642eb1c-3b3c-409d-a0db-e2f83f08699b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:48.101306Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:48.101306Z&quot;},{&quot;uid&quot;:&quot;d14f052e-3071-4076-afea-af05d534a638&quot;,&quot;username&quot;:&quot;std.9782f486-28ab-4cea-a72d-5225390aba91&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.9782f486-28ab-4cea-a72d-5225390aba91@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:48.630116Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:48.630116Z&quot;},{&quot;uid&quot;:&quot;70d4391d-90b1-4fa5-9b94-eabc97396c3f&quot;,&quot;username&quot;:&quot;tc028.28615195-f663-4b44-9e9a-0d149b331d94&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.28615195-f663-4b44-9e9a-0d149b331d94@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:49.831200Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:49.831200Z&quot;},{&quot;uid&quot;:&quot;e46ca3b5-29a7-473d-a445-3a8c16f99e96&quot;,&quot;username&quot;:&quot;std.8424df6f-fc47-4a12-b520-88e73c19a537&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.4d3cf24c-f9d2-480f-9ee5-7c659e3ebe3b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:24:49.905753Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:24:50.738030Z&quot;},{&quot;uid&quot;:&quot;0f28f34a-c7d5-43bf-86d9-47e4ecf6977a&quot;,&quot;username&quot;:&quot;loyalty.2d481024-cd0b-4f56-85ac-994cb2e39640&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.2d481024-cd0b-4f56-85ac-994cb2e39640@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;},{&quot;uid&quot;:&quot;0cab5f32-bfd1-45ea-88c1-8c13f6c87ad5&quot;,&quot;username&quot;:&quot;loyalty.23c6e15f-8c5a-4306-bef5-16d010e3614e&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.23c6e15f-8c5a-4306-bef5-16d010e3614e@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:30:57.678728Z&quot;},{&quot;uid&quot;:&quot;2277f8a4-2e56-4ff4-aef8-865e86f390f7&quot;,&quot;username&quot;:&quot;sa.0740d70e-2c70-4845-8fcc-8cbd83f1cd42&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.0740d70e-2c70-4845-8fcc-8cbd83f1cd42@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:00.008268Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:00.008268Z&quot;},{&quot;uid&quot;:&quot;e5c3d4f6-20e1-4cf0-bfd8-fb66cebaa9f2&quot;,&quot;username&quot;:&quot;std.96d6e7cc-563a-4cc2-9d01-b4c02e356f98&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.96d6e7cc-563a-4cc2-9d01-b4c02e356f98@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:01.232555Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:01.232555Z&quot;},{&quot;uid&quot;:&quot;26783d5f-0247-4f2b-9fb7-a8dd7f6de4de&quot;,&quot;username&quot;:&quot;tc029.3feef020-b2e1-49ba-834e-47c513e8b81c&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.3feef020-b2e1-49ba-834e-47c513e8b81c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:02.238882Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:02.238882Z&quot;},{&quot;uid&quot;:&quot;ac307fa6-917a-4bed-87e0-f490f2abbcc1&quot;,&quot;username&quot;:&quot;std.62d04ac6-cbbb-4930-b796-3fb691aade75&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.62d04ac6-cbbb-4930-b796-3fb691aade75@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:02.747172Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:02.747172Z&quot;},{&quot;uid&quot;:&quot;55e248a7-7761-40f4-9b64-1c5d031f71db&quot;,&quot;username&quot;:&quot;tc028.bf1fa6ca-4a7a-453b-b4d8-c16d0201b5e3&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.bf1fa6ca-4a7a-453b-b4d8-c16d0201b5e3@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:04.021299Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:04.021299Z&quot;},{&quot;uid&quot;:&quot;5c056cf5-84f0-4790-8c56-b9805a3e777c&quot;,&quot;username&quot;:&quot;std.d2f97401-d2a0-4008-af32-9b80cc29aeaf&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.cf5d520d-db35-47ff-bc3a-de810478460a@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:31:04.108504Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:31:04.671524Z&quot;},{&quot;uid&quot;:&quot;52f21cc6-8dfc-4515-aab9-59300ef4fd4e&quot;,&quot;username&quot;:&quot;loyalty.3a727ae0-2af3-4986-a6ff-350602f9f9be&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.3a727ae0-2af3-4986-a6ff-350602f9f9be@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:46.587493Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:46.587493Z&quot;},{&quot;uid&quot;:&quot;7d79936a-9160-443a-9800-5e3907c8e209&quot;,&quot;username&quot;:&quot;loyalty.3dbfd51f-932c-4af9-bcc1-621322d31914&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.3dbfd51f-932c-4af9-bcc1-621322d31914@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:46.580515Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:46.580515Z&quot;},{&quot;uid&quot;:&quot;4510a611-7ec2-4e2a-81d6-862e5c552934&quot;,&quot;username&quot;:&quot;sa.11cc2840-0fa5-4fd9-9314-86bed6f09063&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.11cc2840-0fa5-4fd9-9314-86bed6f09063@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:48.694043Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:48.694043Z&quot;},{&quot;uid&quot;:&quot;17fbc3a8-ed62-4cf6-9e8d-2f91838ec98a&quot;,&quot;username&quot;:&quot;std.73207a98-38b1-4bb7-a517-2c5a1d973556&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.73207a98-38b1-4bb7-a517-2c5a1d973556@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-07T01:45:50.091198Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T01:45:50.091198Z&quot;}],&quot;pageable&quot;:{&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;unsorted&quot;:true,&quot;sorted&quot;:false},&quot;offset&quot;:0,&quot;unpaged&quot;:false,&quot;paged&quot;:true},&quot;last&quot;:false,&quot;totalPages&quot;:8,&quot;totalElements&quot;:155,&quot;size&quot;:20,&quot;number&quot;:0,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;unsorted&quot;:true,&quot;sorted&quot;:false},&quot;first&quot;:true,&quot;numberOfElements&quot;:20,&quot;empty&quot;:false}
+{&quot;content&quot;:[{&quot;uid&quot;:&quot;f87e56dc-7367-494e-afb7-cf70054421e0&quot;,&quot;username&quot;:&quot;sa.5f34bbb6-435b-4430-a85c-7ec858b4a3ba&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.5f34bbb6-435b-4430-a85c-7ec858b4a3ba@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:35:06.614642Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:35:06.614645Z&quot;},{&quot;uid&quot;:&quot;145699d6-ef1f-4c84-9871-1314b7104213&quot;,&quot;username&quot;:&quot;tc029.3e6f8cb0-09bd-4ddf-99e1-4c47072ccaa8&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.3e6f8cb0-09bd-4ddf-99e1-4c47072ccaa8@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:35:07.740189Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:35:07.740192Z&quot;},{&quot;uid&quot;:&quot;8ad8d1d4-89c1-4512-9ee2-a6c075dbca9b&quot;,&quot;username&quot;:&quot;std.d8d5a32f-a01d-4571-89b6-f7f31d282a48&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.d8d5a32f-a01d-4571-89b6-f7f31d282a48@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:35:13.237541Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:35:13.237543Z&quot;},{&quot;uid&quot;:&quot;c7315bdf-75d8-4b67-b205-f04cec85f2bd&quot;,&quot;username&quot;:&quot;tc028.4861bb31-9ad0-48f8-b4dd-13ce89ec1f5b&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.4861bb31-9ad0-48f8-b4dd-13ce89ec1f5b@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:35:16.434929Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:35:16.434932Z&quot;},{&quot;uid&quot;:&quot;f5c72259-2bd5-44ab-b6fa-bcae95956c7b&quot;,&quot;username&quot;:&quot;loyalty.964f017f-99b0-409b-ac8e-331fac00e516&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.964f017f-99b0-409b-ac8e-331fac00e516@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:39:26.184605Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:39:26.184609Z&quot;},{&quot;uid&quot;:&quot;42fcdaed-be52-4dcd-9be5-7105fbce0801&quot;,&quot;username&quot;:&quot;loyalty.b9090e05-5249-4b51-a948-92535a8aea0c&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.b9090e05-5249-4b51-a948-92535a8aea0c@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:39:33.442067Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:39:33.442071Z&quot;},{&quot;uid&quot;:&quot;ca21ed42-34ab-4586-a67d-ba154a183b4f&quot;,&quot;username&quot;:&quot;std.099e06ce-c6c8-45f8-8001-e623cee37186&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.4634e660-4c20-4fc0-9fb4-54c515dfdce3@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:39:45.318074Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:39:47.821961Z&quot;},{&quot;uid&quot;:&quot;53a23d49-03fb-4dea-9112-c439ff74b7f0&quot;,&quot;username&quot;:&quot;tc059.73b9e789-6a44-4968-9242-36288f3409f9&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;tc059.73b9e789-6a44-4968-9242-36288f3409f9@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:40:50.854906Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:40:50.854909Z&quot;},{&quot;uid&quot;:&quot;5b88987d-0af0-45bf-b72b-d50fbe2e2b25&quot;,&quot;username&quot;:&quot;sa.8a7ee7eb-98c1-4fd9-850e-13d1517ab28e&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.8a7ee7eb-98c1-4fd9-850e-13d1517ab28e@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:43:45.859133Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:43:45.859134Z&quot;},{&quot;uid&quot;:&quot;bbc342aa-f626-4a41-ba7c-f2907599b80a&quot;,&quot;username&quot;:&quot;tc029.5d15a7bf-b507-49b0-b02b-c99c6415baff&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.5d15a7bf-b507-49b0-b02b-c99c6415baff@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:43:46.812311Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:43:46.812311Z&quot;},{&quot;uid&quot;:&quot;99b0b74c-c31a-49ad-97cc-ee4df25fa08a&quot;,&quot;username&quot;:&quot;std.07125b99-51c7-4dd2-9eac-2a2ac591d853&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.07125b99-51c7-4dd2-9eac-2a2ac591d853@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:44:03.544503Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:44:03.544504Z&quot;},{&quot;uid&quot;:&quot;5da83b97-1a93-4414-90dc-0fd47b69031e&quot;,&quot;username&quot;:&quot;tc028.7574a8a8-87a3-4f5e-9bed-95fbd6c2eb60&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.7574a8a8-87a3-4f5e-9bed-95fbd6c2eb60@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:44:07.472534Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:44:07.472535Z&quot;},{&quot;uid&quot;:&quot;4a494144-1f61-497e-955e-6def2c6eb4a1&quot;,&quot;username&quot;:&quot;tc059.2058cddf-c35d-481a-9fc4-9abab357186a&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;tc059.2058cddf-c35d-481a-9fc4-9abab357186a@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:53.663975Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:55:53.663976Z&quot;},{&quot;uid&quot;:&quot;df8481e9-aeba-4d90-8a93-6c6b176f1953&quot;,&quot;username&quot;:&quot;loyalty.29e88fd3-9a4c-414d-8afa-8fcf9dc55b37&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.29e88fd3-9a4c-414d-8afa-8fcf9dc55b37@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:53.722361Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:55:53.722361Z&quot;},{&quot;uid&quot;:&quot;6d521da0-db79-49fe-b919-bea45c70b641&quot;,&quot;username&quot;:&quot;loyalty.9720fbfb-a703-48a3-95b2-d3fb3db2be29&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;loyalty.9720fbfb-a703-48a3-95b2-d3fb3db2be29@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:55.301889Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:55:55.301890Z&quot;},{&quot;uid&quot;:&quot;42ee7863-7e5f-48c0-8eec-e9c50eecd1c4&quot;,&quot;username&quot;:&quot;sa.86c595c2-32c3-451e-84f0-aeeb6b3ba900&quot;,&quot;roleId&quot;:&quot;fa94e179-670c-484a-a8ae-5e55a400b724&quot;,&quot;roleName&quot;:&quot;STORE_ADMIN&quot;,&quot;email&quot;:&quot;sa.86c595c2-32c3-451e-84f0-aeeb6b3ba900@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:56.730181Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:55:56.730181Z&quot;},{&quot;uid&quot;:&quot;968923e4-1ba0-4ea2-b0a0-acbe0fc762d7&quot;,&quot;username&quot;:&quot;tc029.71a2b5a3-65df-42d1-a758-4e1d6c89923f&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc029.71a2b5a3-65df-42d1-a758-4e1d6c89923f@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:57.560913Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:55:57.560913Z&quot;},{&quot;uid&quot;:&quot;6fcaed79-3beb-43c2-84c5-e1534326db81&quot;,&quot;username&quot;:&quot;std.7bc680d3-dac0-4527-81b5-a63f7f80faff&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;std.7bc680d3-dac0-4527-81b5-a63f7f80faff@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:58.086679Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:55:58.086679Z&quot;},{&quot;uid&quot;:&quot;843362c8-353a-4d70-a7dd-330df875976a&quot;,&quot;username&quot;:&quot;tc028.46f4dc35-c3f9-41c6-9093-7366f9225a73&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc028.46f4dc35-c3f9-41c6-9093-7366f9225a73@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:59.486997Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:55:59.486998Z&quot;},{&quot;uid&quot;:&quot;8cd2f1d8-5f47-4086-9abd-ad119566da59&quot;,&quot;username&quot;:&quot;std.08d7c001-9d0b-48ff-9d27-cf159a77aaf8&quot;,&quot;roleId&quot;:&quot;8c23eacb-dbbd-4f31-9613-af9cda1d4cce&quot;,&quot;roleName&quot;:&quot;STORE_USER&quot;,&quot;email&quot;:&quot;tc034.c19ec7ff-4735-40f6-aa6a-770040b5bb82@test.com&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;isActive&quot;:true,&quot;createdAt&quot;:&quot;2026-04-09T11:55:59.710911Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T11:56:00.204663Z&quot;}],&quot;pageable&quot;:{&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;sort&quot;:{&quot;unsorted&quot;:true,&quot;sorted&quot;:false,&quot;empty&quot;:true},&quot;offset&quot;:0,&quot;unpaged&quot;:false,&quot;paged&quot;:true},&quot;totalPages&quot;:3,&quot;totalElements&quot;:55,&quot;last&quot;:false,&quot;numberOfElements&quot;:20,&quot;size&quot;:20,&quot;number&quot;:0,&quot;sort&quot;:{&quot;unsorted&quot;:true,&quot;sorted&quot;:false,&quot;empty&quot;:true},&quot;first&quot;:true,&quot;empty&quot;:false}
 
 </div>   
 
@@ -2513,7 +2608,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1355</span>
+              <span>ms:</span>&nbsp;<span>1511</span>
             </div>
           </div>
           <div class="step-row">
@@ -2545,7 +2640,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">01:21:27.195 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">09:30:53.074 karate.env: dev 
 </div>   
 
   
@@ -2565,7 +2660,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils           = callonce read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2593,7 +2688,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1267</div>
+    <div class="time-cell passed">1321</div>
   </div>
 
    
@@ -2602,7 +2697,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">01:21:28.457 this thread waited 1252 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">09:30:54.398 this thread waited 1316 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
@@ -2622,7 +2717,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2650,7 +2745,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -2678,7 +2773,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path basePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2762,7 +2857,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">83</div>
+    <div class="time-cell passed">182</div>
   </div>
 
    
@@ -2771,18 +2866,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.42">01:21:28.472 request:
+  <div class="preformatted" data-parent="0.42">09:30:54.410 request:
 1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440001
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS41MDNiMjUyOS1lZmJkLTQxYjAtOGM0MS1lNjAyNzFhZGI4ZjkiLCJ1c2VySWQiOiIwYTY0MjY5OS05NmYzLTRlNjItOTU1ZS0zMzYxYzY3ZDMwMzEiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU1MzU2ODgsImV4cCI6MTc3NTYyMjA4OCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.Dnrk2myNJVLnW5RT3l7FU8mY_SOGMYnaquLXa6DnCiGcDnxQC_3wdUwoXXzGErC2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzYS5hNzQyMmIyOC1iZDUxLTRlZTEtOGY5MC1iZmEwZmY2N2EyOTEiLCJ1c2VySWQiOiJlNmVjMGNkMi1jMTVhLTRjYWUtYjBiNC1iOTI0ZmIxYzkyZmQiLCJyb2xlIjoiU1RPUkVfQURNSU4iLCJpYXQiOjE3NzU3Mzc4NTQsImV4cCI6MTc3NTgyNDI1NCwiZWNvbW1lcmNlX2lkIjoiNTUwZTg0MDAtZTI5Yi00MWQ0LWE3MTYtNDQ2NjU1NDQwMDAwIn0.ztBfzlYOLY5mmk6WidgcC-UVqJKQT9g0gdSn-3EJCxE4r24xRQGXnmfyd4RsKX_u
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-01:21:28.550 response time in milliseconds: 78
+09:30:54.587 response time in milliseconds: 177
 1 &lt; 403
-1 &lt; X-Correlation-Id: 0dc9c3f7-dda0-4e0d-9efd-703c94e5f1d3
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 41639480-fde5-4840-bcbc-fdc42126a6ff
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2791,10 +2889,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:28 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:54 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;timestamp&quot;:&quot;2026-04-07T04:21:28.546921800Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;No tiene permiso para acceder a este ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-09T12:30:54.583856970Z&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;Forbidden&quot;,&quot;code&quot;:&quot;FORBIDDEN&quot;,&quot;message&quot;:&quot;No tiene permiso para acceder a este ecommerce&quot;,&quot;path&quot;:&quot;/api/v1/users&quot;}
 
 </div>   
 
@@ -2844,7 +2942,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1247</span>
+              <span>ms:</span>&nbsp;<span>1135</span>
             </div>
           </div>
           <div class="step-row">
@@ -2876,7 +2974,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">01:21:27.227 karate.env: dev 
+  <div class="preformatted" data-parent="0.4">09:30:53.410 karate.env: dev 
 </div>   
 
   
@@ -2924,7 +3022,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def saUser          = callonce read(&#39;classpath:common/create-store-admin.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1237</div>
+    <div class="time-cell passed">983</div>
   </div>
 
    
@@ -2933,7 +3031,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6">01:21:28.457 this thread waited 1221 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
+  <div class="preformatted" data-parent="0.6">09:30:54.397 this thread waited 978 milliseconds for callonce lock: read(&#39;classpath:common/create-store-admin.feature&#39;)
 </div>   
 
   
@@ -2953,7 +3051,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def storeAuthHeader = &#39;Bearer &#39; + saUser.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2981,7 +3079,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def basePath        = &#39;/api/v1/users&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -3009,7 +3107,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path basePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3065,7 +3163,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell passed">144</div>
   </div>
 
    
@@ -3074,7 +3172,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.48">01:21:28.472 request:
+  <div class="preformatted" data-parent="0.48">09:30:54.408 request:
 1 &gt; GET http://localhost:8081/api/v1/users?ecommerceId=550e8400-e29b-41d4-a716-446655440000
 1 &gt; Host: localhost:8081
 1 &gt; Connection: Keep-Alive
@@ -3082,8 +3180,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-01:21:28.477 response time in milliseconds: 5
+09:30:54.546 response time in milliseconds: 137
 1 &lt; 401
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3092,7 +3193,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json;charset=ISO-8859-1
 1 &lt; Content-Length: 52
-1 &lt; Date: Tue, 07 Apr 2026 04:21:28 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:54 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
 {&quot;error&quot;:&quot;Unauthorized&quot;,&quot;message&quot;:&quot;Token requerido&quot;}

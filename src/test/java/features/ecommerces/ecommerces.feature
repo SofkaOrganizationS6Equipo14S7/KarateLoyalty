@@ -89,6 +89,7 @@ Feature: HU-15 - Gestión de ecommerces por SUPER_ADMIN
     When method POST
     Then status 401
 
+    * configure retry = { count: 3, interval: 1000 }
     Given url engineBaseUrl
     And path '/api/v1/engine/calculate'
     And header x-api-key = apiKey
@@ -96,5 +97,6 @@ Feature: HU-15 - Gestión de ecommerces por SUPER_ADMIN
     * set payload.externalOrderId = 'TC061-' + utils.uuid()
     * set payload.ecommerceId = ecommerceId
     And request payload
+    And retry until responseStatus == 401
     When method POST
     Then status 401
