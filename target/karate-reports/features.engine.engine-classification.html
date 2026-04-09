@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-04-07 01:21:22 a. m.</div>
+    <div>2026-04-09 09:30:53 a. m.</div>
   </div>
 </div>
 
@@ -93,7 +93,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1144</span>
+              <span>ms:</span>&nbsp;<span>1233</span>
             </div>
           </div>
           <div class="step-row">
@@ -116,7 +116,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def setup      = callonce read(&#39;classpath:common/engine-setup.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1103</div>
+    <div class="time-cell passed">1196</div>
   </div>
 
    
@@ -125,7 +125,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4">01:21:18.011 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/engine-setup.feature&#39;)
+  <div class="preformatted" data-parent="1.4">09:30:47.669 &lt;&lt; lock released, cached callonce: read(&#39;classpath:common/engine-setup.feature&#39;)
 </div>   
 
   <div>
@@ -136,7 +136,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.engine-setup</div>
       </div>
-      <div class="time-cell passed">1083</div>
+      <div class="time-cell passed">1182</div>
     </div>
     <div>
       <div><div>
@@ -152,7 +152,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils       = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">21</div>
+    <div class="time-cell passed">24</div>
   </div>
 
    
@@ -172,7 +172,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.common-utils</div>
       </div>
-      <div class="time-cell passed">8</div>
+      <div class="time-cell passed">12</div>
     </div>
     <div>
       <div><div>
@@ -189,7 +189,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -198,8 +198,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4.0.call.0.5.0.call.0.5">01:21:16.899 karate.env: dev 
-01:21:16.914 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/engine-setup.feature&#39;)
+  <div class="preformatted" data-parent="1.4.0.call.0.5.0.call.0.5">09:30:46.466 karate.env: dev 
+09:30:46.478 &gt;&gt; lock acquired, begin callonce: read(&#39;classpath:common/engine-setup.feature&#39;)
 </div>   
 
   
@@ -220,7 +220,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def timestamp = function(){ return java.lang.System.currentTimeMillis() + &#39;&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -278,12 +278,51 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomEmail   = function(prefix){ return (prefix || &#39;user&#39;) + &#39;.&#39; + java.util.UUID.randomUUID() + &#39;@test.com&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
   
   
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def futureDateRange =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.4.0.call.0.5.0.call.0.9">function(offsetDays) {
+  var random = Math.floor(Math.random() * 3000);
+  var cal = java.util.Calendar.getInstance();
+  cal.add(java.util.Calendar.YEAR, 10);
+  cal.add(java.util.Calendar.DAY_OF_YEAR, (offsetDays || 0) + random);
+  var fmt = new java.text.SimpleDateFormat(&#39;yyyy-MM-dd&#39;);
+  var start = fmt.format(cal.getTime());
+  cal.add(java.util.Calendar.DAY_OF_YEAR, 3);
+  var end = fmt.format(cal.getTime());
+  return { start: start, end: end };
+}</div>
 
   
 
@@ -311,7 +350,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def configSetup = call read(&#39;classpath:common/setup-engine-config.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">421</div>
+    <div class="time-cell passed">605</div>
   </div>
 
    
@@ -331,7 +370,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.setup-engine-config</div>
       </div>
-      <div class="time-cell passed">403</div>
+      <div class="time-cell passed">590</div>
     </div>
     <div>
       <div><div>
@@ -348,7 +387,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">290</div>
+    <div class="time-cell passed">416</div>
   </div>
 
    
@@ -369,7 +408,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">278</div>
+      <div class="time-cell passed">400</div>
     </div>
     <div>
       <div><div>
@@ -387,7 +426,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>url adminBaseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -417,7 +456,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -477,7 +516,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">272</div>
+    <div class="time-cell passed">398</div>
   </div>
 
    
@@ -486,7 +525,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4.0.call.0.6.0.call.0.5.0.call.0.8">01:21:16.981 request:
+  <div class="preformatted" data-parent="1.4.0.call.0.6.0.call.0.5.0.call.0.8">09:30:46.544 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 42
@@ -496,9 +535,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
 
-01:21:17.247 response time in milliseconds: 264
+09:30:46.938 response time in milliseconds: 393
 1 &lt; 200
-1 &lt; X-Correlation-Id: 3c7dcfb5-bfad-4381-abb4-0d1593a41720
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: f7744c7d-e6ed-47f7-bec9-bc7d888cdcea
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -507,10 +549,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:17 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:46 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUzNTY3NywiZXhwIjoxNzc1NjIyMDc3fQ.r7T610qRsnWTIPh4vz74MqV7qUXxr4SQLi1FjVfcZGdGNA9GoEGAcejnTcoUILdQ&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImE5MzU3ODczLTdlNjMtNDUzYy1hNzVmLTJiNzQzZTlhNzdiZiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTczNzg0NiwiZXhwIjoxNzc1ODI0MjQ2fQ.uA79MBt7_GBP624n_2nIcI4NftGNmssidHY_0Al3pckGcsaIBNG-PVpJZ0n4DUC9&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
 
 </div>   
 
@@ -593,7 +635,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def authToken = response.token</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -627,7 +669,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminAuth = &#39;Bearer &#39; + adminLogin.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -685,7 +727,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path &#39;/api/v1/discount-config&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -743,7 +785,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39;, maxDiscountCap: 50, currencyCode: &#39;USD&#39;, allowStacking: true, roundingRule: &#39;HALF_UP&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -772,7 +814,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">106</div>
+    <div class="time-cell passed">171</div>
   </div>
 
    
@@ -781,9 +823,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4.0.call.0.6.0.call.0.11">01:21:17.263 request:
+  <div class="preformatted" data-parent="1.4.0.call.0.6.0.call.0.11">09:30:46.945 request:
 1 &gt; POST http://localhost:8081/api/v1/discount-config
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUzNTY3NywiZXhwIjoxNzc1NjIyMDc3fQ.r7T610qRsnWTIPh4vz74MqV7qUXxr4SQLi1FjVfcZGdGNA9GoEGAcejnTcoUILdQ
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImE5MzU3ODczLTdlNjMtNDUzYy1hNzVmLTJiNzQzZTlhNzdiZiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTczNzg0NiwiZXhwIjoxNzc1ODI0MjQ2fQ.uA79MBt7_GBP624n_2nIcI4NftGNmssidHY_0Al3pckGcsaIBNG-PVpJZ0n4DUC9
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 141
 1 &gt; Host: localhost:8081
@@ -792,9 +834,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;maxDiscountCap&quot;:50,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;allowStacking&quot;:true,&quot;roundingRule&quot;:&quot;HALF_UP&quot;}
 
-01:21:17.363 response time in milliseconds: 100
+09:30:47.111 response time in milliseconds: 165
 1 &lt; 500
-1 &lt; X-Correlation-Id: 280ed7da-53ad-4991-83d0-9a3a88f63d95
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 13f5c6b7-4dda-4b0d-b7c6-b54695a3f45e
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -803,9 +848,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:17 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:&quot;2026-04-07T04:21:17.358179900Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;could not execute statement [ERROR: duplicate key value violates unique constraint \&quot;idx_discount_settings_ecommerce_active\&quot;\n  Detail: Key (ecommerce_id)=(550e8400-e29b-41d4-a716-446655440000) already exists.] [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [idx_discount_settings_ecommerce_active]&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
+{&quot;timestamp&quot;:&quot;2026-04-09T12:30:47.107750706Z&quot;,&quot;status&quot;:500,&quot;error&quot;:&quot;Internal Server Error&quot;,&quot;code&quot;:&quot;INTERNAL_ERROR&quot;,&quot;message&quot;:&quot;could not execute statement [ERROR: duplicate key value violates unique constraint \&quot;idx_discount_settings_ecommerce_active\&quot;\n  Detail: Key (ecommerce_id)=(550e8400-e29b-41d4-a716-446655440000) already exists.] [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; SQL [insert into discount_settings (allow_stacking,created_at,currency_code,ecommerce_id,is_active,max_discount_cap,rounding_rule,updated_at,version,id) values (?,?,?,?,?,?,?,?,?,?)]; constraint [idx_discount_settings_ecommerce_active]&quot;,&quot;path&quot;:&quot;/api/v1/discount-config&quot;}
 
 </div>   
 
@@ -827,7 +872,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>assert responseStatus == 201 || responseStatus == 500</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -916,7 +961,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def keySetup    = call read(&#39;classpath:common/create-api-key.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">635</div>
+    <div class="time-cell passed">548</div>
   </div>
 
    
@@ -936,7 +981,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.create-api-key</div>
       </div>
-      <div class="time-cell passed">622</div>
+      <div class="time-cell passed">534</div>
     </div>
     <div>
       <div><div>
@@ -953,7 +998,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def utils      = call read(&#39;classpath:common/common-utils.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">14</div>
+    <div class="time-cell passed">13</div>
   </div>
 
    
@@ -974,7 +1019,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.common-utils</div>
       </div>
-      <div class="time-cell passed">5</div>
+      <div class="time-cell passed">3</div>
     </div>
     <div>
       <div><div>
@@ -992,7 +1037,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def uuid      = function(){ return java.util.UUID.randomUUID() + &#39;&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1052,7 +1097,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomUsername = function(prefix){ return (prefix || &#39;user&#39;) + &#39;.&#39; + java.util.UUID.randomUUID() }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1082,12 +1127,52 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def randomEmail   = function(prefix){ return (prefix || &#39;user&#39;) + &#39;.&#39; + java.util.UUID.randomUUID() + &#39;@test.com&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
   
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="1.4.0.call.0.9.0.call.0.5.0.call">
+    <div class="step-container" id="1.4.0.call.0.9.0.call.0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def futureDateRange =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="1.4.0.call.0.9.0.call.0.5.0.call.0.9">function(offsetDays) {
+  var random = Math.floor(Math.random() * 3000);
+  var cal = java.util.Calendar.getInstance();
+  cal.add(java.util.Calendar.YEAR, 10);
+  cal.add(java.util.Calendar.DAY_OF_YEAR, (offsetDays || 0) + random);
+  var fmt = new java.text.SimpleDateFormat(&#39;yyyy-MM-dd&#39;);
+  var start = fmt.format(cal.getTime());
+  cal.add(java.util.Calendar.DAY_OF_YEAR, 3);
+  var end = fmt.format(cal.getTime());
+  return { start: start, end: end };
+}</div>
 
   
 
@@ -1116,7 +1201,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminLogin = call read(&#39;classpath:common/login.feature&#39;) adminCredentials</span>
       </div>
     </div>
-    <div class="time-cell passed">357</div>
+    <div class="time-cell passed">359</div>
   </div>
 
    
@@ -1137,7 +1222,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">common.login</div>
       </div>
-      <div class="time-cell passed">346</div>
+      <div class="time-cell passed">348</div>
     </div>
     <div>
       <div><div>
@@ -1185,7 +1270,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>path &#39;/api/v1/auth/login&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1215,7 +1300,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;#(username)&#39;, password: &#39;#(password)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1245,7 +1330,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">341</div>
+    <div class="time-cell passed">345</div>
   </div>
 
    
@@ -1254,7 +1339,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4.0.call.0.9.0.call.0.6.0.call.0.8">01:21:17.410 request:
+  <div class="preformatted" data-parent="1.4.0.call.0.9.0.call.0.6.0.call.0.8">09:30:47.156 request:
 1 &gt; POST http://localhost:8081/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 42
@@ -1264,9 +1349,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;admin&quot;,&quot;password&quot;:&quot;admin123&quot;}
 
-01:21:17.748 response time in milliseconds: 336
+09:30:47.497 response time in milliseconds: 340
 1 &lt; 200
-1 &lt; X-Correlation-Id: a289d9da-d419-439e-865d-17a52937ad49
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 3f2c501e-724b-45e3-a72b-1089268c8b30
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1275,10 +1363,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:17 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUzNTY3NywiZXhwIjoxNzc1NjIyMDc3fQ.r7T610qRsnWTIPh4vz74MqV7qUXxr4SQLi1FjVfcZGdGNA9GoEGAcejnTcoUILdQ&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
+{&quot;token&quot;:&quot;eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImE5MzU3ODczLTdlNjMtNDUzYy1hNzVmLTJiNzQzZTlhNzdiZiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTczNzg0NywiZXhwIjoxNzc1ODI0MjQ3fQ.H2H7a_lThv9f0OOwS9XydRLTTNnhykWnBjDTKuaoCXMwq9BC4v8mtZWXsrTuEgPN&quot;,&quot;tipo&quot;:&quot;Bearer&quot;,&quot;username&quot;:&quot;admin&quot;,&quot;role&quot;:&quot;SUPER_ADMIN&quot;}
 
 </div>   
 
@@ -1395,7 +1483,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def adminAuth  = &#39;Bearer &#39; + adminLogin.authToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1540,7 +1628,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">131</div>
+    <div class="time-cell passed">85</div>
   </div>
 
    
@@ -1549,9 +1637,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4.0.call.0.9.0.call.0.13">01:21:17.758 request:
+  <div class="preformatted" data-parent="1.4.0.call.0.9.0.call.0.13">09:30:47.507 request:
 1 &gt; POST http://localhost:8081/api/v1/ecommerces/550e8400-e29b-41d4-a716-446655440000/api-keys
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImEyYTNkMTM4LThhMTYtNGRjYi04NTJhLTNlYTY0NjRhZWU4NSIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTUzNTY3NywiZXhwIjoxNzc1NjIyMDc3fQ.r7T610qRsnWTIPh4vz74MqV7qUXxr4SQLi1FjVfcZGdGNA9GoEGAcejnTcoUILdQ
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJhZG1pbiIsInVzZXJJZCI6ImE5MzU3ODczLTdlNjMtNDUzYy1hNzVmLTJiNzQzZTlhNzdiZiIsInJvbGUiOiJTVVBFUl9BRE1JTiIsImlhdCI6MTc3NTczNzg0NywiZXhwIjoxNzc1ODI0MjQ3fQ.H2H7a_lThv9f0OOwS9XydRLTTNnhykWnBjDTKuaoCXMwq9BC4v8mtZWXsrTuEgPN
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: localhost:8081
@@ -1560,9 +1648,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-01:21:17.883 response time in milliseconds: 121
+09:30:47.586 response time in milliseconds: 77
 1 &lt; 201
-1 &lt; X-Correlation-Id: 0edf7e68-e36a-49d4-a2f3-5c86229034e4
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 9b8ea79e-a515-4e2e-b0db-1736b2717cb9
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1571,10 +1662,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:17 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Connection: keep-alive
-{&quot;uid&quot;:&quot;6ba0f2c5-aa82-4781-ae55-c3aec8f55736&quot;,&quot;key&quot;:&quot;eb24de4c-4994-4af8-97e0-ecd42e8dbdba&quot;,&quot;expiresAt&quot;:&quot;2027-04-07T04:21:17.835548200Z&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;createdAt&quot;:&quot;2026-04-07T04:21:17.835548200Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-07T04:21:17.835548200Z&quot;}
+{&quot;uid&quot;:&quot;5dbc174d-e255-4bf2-9de2-0bb86c2280d8&quot;,&quot;key&quot;:&quot;91bdbd1f-79ef-4d53-ba96-022eb96aa0d5&quot;,&quot;expiresAt&quot;:&quot;2027-04-09T12:30:47.552543061Z&quot;,&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;createdAt&quot;:&quot;2026-04-09T12:30:47.552945017Z&quot;,&quot;updatedAt&quot;:&quot;2026-04-09T12:30:47.552945277Z&quot;}
 
 </div>   
 
@@ -1625,7 +1716,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def apiKey = response.key</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -1654,7 +1745,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>copy retryPayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">6</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -1683,7 +1774,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>set retryPayload.externalOrderId = utils.uuid()</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">6</div>
   </div>
 
    
@@ -1886,7 +1977,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">95</div>
+    <div class="time-cell passed">63</div>
   </div>
 
    
@@ -1895,20 +1986,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.4.0.call.0.9.0.call.0.25">01:21:17.915 request:
+  <div class="preformatted" data-parent="1.4.0.call.0.9.0.call.0.25">09:30:47.605 request:
 2 &gt; POST http://localhost:8082/api/v1/engine/calculate
-2 &gt; X-API-KEY: eb24de4c-4994-4af8-97e0-ecd42e8dbdba
+2 &gt; X-API-KEY: 91bdbd1f-79ef-4d53-ba96-022eb96aa0d5
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Content-Length: 288
 2 &gt; Host: localhost:8082
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.9)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;externalOrderId&quot;:&quot;3d39797b-17da-49c4-9ae4-a03bf0e09dcf&quot;,&quot;customerId&quot;:&quot;test-customer-001&quot;,&quot;totalSpent&quot;:1500.0,&quot;orderCount&quot;:25,&quot;membershipDays&quot;:365,&quot;items&quot;:[{&quot;productId&quot;:&quot;PROD-001&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:100.0,&quot;category&quot;:&quot;GENERAL&quot;}]}
+{&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;externalOrderId&quot;:&quot;daed0f53-c703-4509-b803-63c5980d18ea&quot;,&quot;customerId&quot;:&quot;test-customer-001&quot;,&quot;totalSpent&quot;:1500.0,&quot;orderCount&quot;:25,&quot;membershipDays&quot;:365,&quot;items&quot;:[{&quot;productId&quot;:&quot;PROD-001&quot;,&quot;quantity&quot;:1,&quot;unitPrice&quot;:100.0,&quot;category&quot;:&quot;GENERAL&quot;}]}
 
-01:21:18.001 response time in milliseconds: 86
+09:30:47.661 response time in milliseconds: 51
 2 &lt; 200
-2 &lt; X-Correlation-Id: 31cf8940-6f1b-454f-9d7c-fd24d94ee082
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Correlation-Id: 85f53ee6-afb9-4472-b118-03eaa019bf25
 2 &lt; X-Content-Type-Options: nosniff
 2 &lt; X-XSS-Protection: 0
 2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -1917,10 +2011,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; X-Frame-Options: DENY
 2 &lt; Content-Type: application/json
 2 &lt; Transfer-Encoding: chunked
-2 &lt; Date: Tue, 07 Apr 2026 04:21:17 GMT
+2 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 2 &lt; Keep-Alive: timeout=60
 2 &lt; Connection: keep-alive
-{&quot;subtotalAmount&quot;:100.0000,&quot;discountCalculated&quot;:0.00,&quot;discountApplied&quot;:0.00,&quot;finalAmount&quot;:100.00,&quot;customerTier&quot;:&quot;UNCLASSIFIED&quot;,&quot;wasCapped&quot;:false,&quot;capReason&quot;:null,&quot;appliedRules&quot;:[],&quot;transactionId&quot;:&quot;342f76e3-6677-4f45-897e-f49f20dc9847&quot;,&quot;calculatedAt&quot;:1775535677.956431700}
+{&quot;subtotalAmount&quot;:100.0000,&quot;discountCalculated&quot;:0.00,&quot;discountApplied&quot;:0.00,&quot;finalAmount&quot;:100.00,&quot;customerTier&quot;:&quot;UNCLASSIFIED&quot;,&quot;wasCapped&quot;:false,&quot;capReason&quot;:null,&quot;appliedRules&quot;:[],&quot;transactionId&quot;:&quot;f340ef6a-2433-48c1-837e-2e37a7b7c449&quot;,&quot;calculatedAt&quot;:1775737847.630190465}
 
 </div>   
 
@@ -2003,7 +2097,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def basePayload = read(&#39;classpath:data/engine/calculate-request.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2064,7 +2158,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def enginePath = setup.enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2176,7 +2270,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2204,7 +2298,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">38</div>
+    <div class="time-cell passed">33</div>
   </div>
 
    
@@ -2213,9 +2307,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="1.13">01:21:18.018 request:
+  <div class="preformatted" data-parent="1.13">09:30:47.677 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: eb24de4c-4994-4af8-97e0-ecd42e8dbdba
+1 &gt; x-api-key: 91bdbd1f-79ef-4d53-ba96-022eb96aa0d5
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 54
 1 &gt; Host: localhost:8082
@@ -2224,9 +2318,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;}
 
-01:21:18.050 response time in milliseconds: 30
+09:30:47.707 response time in milliseconds: 28
 1 &lt; 400
-1 &lt; X-Correlation-Id: 784853da-1cb4-447c-99a3-0b0dc253ac50
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 6a1eb92d-e2ba-4760-bffb-834f94c0c270
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2235,9 +2332,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:18 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775535678.036813300,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: totalSpent: total_spent is required, customerId: customer_id is required, items: items array is required (min 1), externalOrderId: external_order_id is required, orderCount: order_count is required, membershipDays: membership_days is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775737847.699814335,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: orderCount: order_count is required, externalOrderId: external_order_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required, items: items array is required (min 1), customerId: customer_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -2287,7 +2384,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1102</span>
+              <span>ms:</span>&nbsp;<span>1270</span>
             </div>
           </div>
           <div class="step-row">
@@ -2310,7 +2407,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def setup      = callonce read(&#39;classpath:common/engine-setup.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1062</div>
+    <div class="time-cell passed">1185</div>
   </div>
 
    
@@ -2319,8 +2416,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.4">01:21:16.942 karate.env: dev 
-01:21:18.013 this thread waited 1058 milliseconds for callonce lock: read(&#39;classpath:common/engine-setup.feature&#39;)
+  <div class="preformatted" data-parent="2.4">09:30:46.483 karate.env: dev 
+09:30:47.674 this thread waited 1180 milliseconds for callonce lock: read(&#39;classpath:common/engine-setup.feature&#39;)
 </div>   
 
   
@@ -2368,7 +2465,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def enginePath = setup.enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -2424,7 +2521,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2508,7 +2605,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">38</div>
+    <div class="time-cell passed">80</div>
   </div>
 
    
@@ -2517,9 +2614,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="2.13">01:21:18.018 request:
+  <div class="preformatted" data-parent="2.13">09:30:47.683 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: eb24de4c-4994-4af8-97e0-ecd42e8dbdba
+1 &gt; x-api-key: 91bdbd1f-79ef-4d53-ba96-022eb96aa0d5
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 17
 1 &gt; Host: localhost:8082
@@ -2528,9 +2625,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;orderCount&quot;:10}
 
-01:21:18.054 response time in milliseconds: 35
+09:30:47.758 response time in milliseconds: 71
 1 &lt; 400
-1 &lt; X-Correlation-Id: 07c3d961-82b0-4a38-95c0-3c3fbf4bffe3
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 9706ba1c-49b4-4fb0-b5a1-1cd62e2ef433
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2539,9 +2639,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:18 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775535678.038899100,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: ecommerceId: ecommerce_id is required, externalOrderId: external_order_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required, items: items array is required (min 1), customerId: customer_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775737847.735149295,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: ecommerceId: ecommerce_id is required, items: items array is required (min 1), customerId: customer_id is required, totalSpent: total_spent is required, membershipDays: membership_days is required, externalOrderId: external_order_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -2591,7 +2691,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>355</span>
+              <span>ms:</span>&nbsp;<span>382</span>
             </div>
           </div>
           <div class="step-row">
@@ -2614,7 +2714,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def setup      = callonce read(&#39;classpath:common/engine-setup.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">317</div>
+    <div class="time-cell passed">287</div>
   </div>
 
    
@@ -2623,8 +2723,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.4">01:21:17.686 karate.env: dev 
-01:21:18.013 this thread waited 309 milliseconds for callonce lock: read(&#39;classpath:common/engine-setup.feature&#39;)
+  <div class="preformatted" data-parent="3.4">09:30:47.377 karate.env: dev 
+09:30:47.673 this thread waited 281 milliseconds for callonce lock: read(&#39;classpath:common/engine-setup.feature&#39;)
 </div>   
 
   
@@ -2672,7 +2772,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def enginePath = setup.enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2700,7 +2800,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def validApiKey = setup.validApiKey</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -2812,7 +2912,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">37</div>
+    <div class="time-cell passed">92</div>
   </div>
 
    
@@ -2821,9 +2921,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="3.13">01:21:18.018 request:
+  <div class="preformatted" data-parent="3.13">09:30:47.679 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: eb24de4c-4994-4af8-97e0-ecd42e8dbdba
+1 &gt; x-api-key: 91bdbd1f-79ef-4d53-ba96-022eb96aa0d5
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: localhost:8082
@@ -2832,9 +2932,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-01:21:18.051 response time in milliseconds: 32
+09:30:47.761 response time in milliseconds: 81
 1 &lt; 400
-1 &lt; X-Correlation-Id: f6c840c9-7000-4356-b2f0-5d78ed350c91
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 234d6aad-5f40-4e2c-9c29-3d3267b455a6
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -2843,9 +2946,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:18 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775535678.038358300,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: items: items array is required (min 1), orderCount: order_count is required, ecommerceId: ecommerce_id is required, customerId: customer_id is required, externalOrderId: external_order_id is required, totalSpent: total_spent is required, membershipDays: membership_days is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775737847.707886400,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: items: items array is required (min 1), totalSpent: total_spent is required, customerId: customer_id is required, externalOrderId: external_order_id is required, membershipDays: membership_days is required, orderCount: order_count is required, ecommerceId: ecommerce_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -2895,7 +2998,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>344</span>
+              <span>ms:</span>&nbsp;<span>372</span>
             </div>
           </div>
           <div class="step-row">
@@ -2918,7 +3021,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def setup      = callonce read(&#39;classpath:common/engine-setup.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">299</div>
+    <div class="time-cell passed">293</div>
   </div>
 
    
@@ -2927,8 +3030,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="4.4">01:21:17.705 karate.env: dev 
-01:21:18.011 this thread waited 295 milliseconds for callonce lock: read(&#39;classpath:common/engine-setup.feature&#39;)
+  <div class="preformatted" data-parent="4.4">09:30:47.375 karate.env: dev 
+09:30:47.674 this thread waited 289 milliseconds for callonce lock: read(&#39;classpath:common/engine-setup.feature&#39;)
 </div>   
 
   
@@ -2976,7 +3079,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def enginePath = setup.enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3088,7 +3191,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { ecommerceId: &#39;#(validEcommerceId)&#39;, orderCount: null }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3116,7 +3219,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">43</div>
+    <div class="time-cell passed">77</div>
   </div>
 
    
@@ -3125,9 +3228,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="4.13">01:21:18.018 request:
+  <div class="preformatted" data-parent="4.13">09:30:47.679 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: eb24de4c-4994-4af8-97e0-ecd42e8dbdba
+1 &gt; x-api-key: 91bdbd1f-79ef-4d53-ba96-022eb96aa0d5
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 72
 1 &gt; Host: localhost:8082
@@ -3136,9 +3239,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:null}
 
-01:21:18.054 response time in milliseconds: 35
+09:30:47.752 response time in milliseconds: 71
 1 &lt; 400
-1 &lt; X-Correlation-Id: 4713fcb3-f8f1-4f5a-bc23-7719c219759e
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: aae9f907-ef7b-412c-9405-e762615613b8
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3147,9 +3253,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:18 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775535678.039438200,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: externalOrderId: external_order_id is required, membershipDays: membership_days is required, orderCount: order_count is required, totalSpent: total_spent is required, customerId: customer_id is required, items: items array is required (min 1)&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775737847.707121187,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: orderCount: order_count is required, items: items array is required (min 1), customerId: customer_id is required, totalSpent: total_spent is required, externalOrderId: external_order_id is required, membershipDays: membership_days is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 
@@ -3199,7 +3305,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>71</span>
+              <span>ms:</span>&nbsp;<span>49</span>
             </div>
           </div>
           <div class="step-row">
@@ -3222,7 +3328,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def setup      = callonce read(&#39;classpath:common/engine-setup.feature&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">4</div>
   </div>
 
    
@@ -3231,7 +3337,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="5.4">01:21:18.061 karate.env: dev 
+  <div class="preformatted" data-parent="5.4">09:30:47.786 karate.env: dev 
 </div>   
 
   
@@ -3307,7 +3413,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def validApiKey = setup.validApiKey</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3335,7 +3441,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path enginePath</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -3419,7 +3525,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">65</div>
+    <div class="time-cell passed">42</div>
   </div>
 
    
@@ -3428,9 +3534,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="5.13">01:21:18.076 request:
+  <div class="preformatted" data-parent="5.13">09:30:47.806 request:
 1 &gt; POST http://localhost:8082/api/v1/engine/calculate
-1 &gt; x-api-key: eb24de4c-4994-4af8-97e0-ecd42e8dbdba
+1 &gt; x-api-key: 91bdbd1f-79ef-4d53-ba96-022eb96aa0d5
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 70
 1 &gt; Host: localhost:8082
@@ -3439,9 +3545,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;ecommerceId&quot;:&quot;550e8400-e29b-41d4-a716-446655440000&quot;,&quot;orderCount&quot;:-1}
 
-01:21:18.137 response time in milliseconds: 59
+09:30:47.843 response time in milliseconds: 36
 1 &lt; 400
-1 &lt; X-Correlation-Id: 14f203ab-e9dd-4d3a-b19d-f189491e1de1
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Correlation-Id: 5cd3bd06-b69f-4366-a5b3-754bbbd87890
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; X-XSS-Protection: 0
 1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
@@ -3450,9 +3559,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; X-Frame-Options: DENY
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Date: Tue, 07 Apr 2026 04:21:18 GMT
+1 &lt; Date: Thu, 09 Apr 2026 12:30:47 GMT
 1 &lt; Connection: close
-{&quot;timestamp&quot;:1775535678.121162300,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: customerId: customer_id is required, items: items array is required (min 1), membershipDays: membership_days is required, externalOrderId: external_order_id is required, orderCount: order_count must be &gt;= 0, totalSpent: total_spent is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
+{&quot;timestamp&quot;:1775737847.835052486,&quot;status&quot;:400,&quot;error&quot;:&quot;Bad Request&quot;,&quot;code&quot;:&quot;VALIDATION_ERROR&quot;,&quot;message&quot;:&quot;Validation failed: items: items array is required (min 1), orderCount: order_count must be &gt;= 0, customerId: customer_id is required, membershipDays: membership_days is required, totalSpent: total_spent is required, externalOrderId: external_order_id is required&quot;,&quot;path&quot;:&quot;/api/v1/engine/calculate&quot;}
 
 </div>   
 

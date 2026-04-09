@@ -4,6 +4,6 @@
   "discountPercentage": 30,
   "discountPriorityId": "#(productPriorityId)",
   "attributes": {
-    "product_type": "#(tipoProducto)"
+    "productType": "#(tipoProducto)"
   }
 }
